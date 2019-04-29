@@ -1,0 +1,205 @@
+#footer {
+    background: #222428;
+    color: #919294;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: left;
+}
+
+footer {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#checkscreen {
+    font-size: 2px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.container .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row .col.l3 {
+    width: 25%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#footer .add-nav {
+    padding-bottom: 20px;
+}
+
+#footer .nav-list {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.list-inline, .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.row .col.l9 {
+    width: 75%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+}
+
+.row .col.l7 {
+    width: 58.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+.fa-phone:before {
+    content: "\f095";
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.lesson-no-video .lesson-title:hover, i {
+    text-decoration: none;
+    cursor: default;
+}
+
+.row .col.l5 {
+    width: 41.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+#footer .nav-list li {
+    padding: 0 0 11px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.row .col.l5 {
+    width: 41.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+ul.list-inline li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#footer h4 {
+    color: #fff;
+    font-size: 18px;
+}
+
+h4 {
+    font-weight: 400;
+    line-height: 110%;
+    margin: 1.14rem 0 0.912rem 0;
+}
+
+#footer a {
+    color: #919294;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+}
+
+ul.social-links .facebook {
+    background: #3a5795;
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+ul.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+ul.social-links .youtube {
+    background: #e62117;
+    padding-left: 6px;
+    padding-top: 7px;
+}
+
+ul.social-links .github {
+    background: #bc6bc3;
+    padding-left: 6px;
+    padding-top: 7px;
+}
