@@ -1,79 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>iPhone Xs 512GB</title>
-	<meta charset="utf-8" />
-
+	<title>Mobile Website Detail</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			padding: 10px;
+			background: #f1f1f1;
+		}
+
+		.header {
+			padding: 10px;
+			text-align: center;
+			background-color: white;
+		}
+
+		.header h1 {
+			font-size: 40px;
+		}
+
 		a {
 			text-decoration: none;
 		}
 
-		div {
-			text-align: center;
+		/*left column*/
+		.leftcolumn {
+			float: left;
+			width: 75%;
 		}
 
-		h1 {
-			text-align: center;
+		/*right column*/
+		.rightcolumn {
+			float: left;
+			width: 25%;
+			background-color: #f1f1f1;
+			padding-left: 20px;
 		}
 
-		h3 {
-			margin-right: 400px;
-			margin-left: 400px;
-		}
-
+		/*image*/
 		img {
 			max-width: 500px;
+			border: #aaa solid 1px;
 		}
 
 		p {
-			font-size: 18px;
 			text-align: justify;
-			margin-right: 400px;
-			margin-left: 400px;
+			font-size: 18px;
 		}
-		
-	</style>
 
+		/*fake image*/
+		.fakeimg {
+			text-align: center;
+			padding: 10px;
+		}
+
+		/*add a card effect for articles*/
+		.card {
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		/*clear floats after the columns*/
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/*footer*/
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: #ddd;
+			margin-top: 20px;
+		}
+
+		/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 800px) {
+			.leftcolumn, .rightcolumn {   
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+		/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+		@media screen and (max-width: 400px) {
+			.topnav a {
+				float: none;
+				width: 100%;
+			}
+		}
+	</style>
 </head>
 <body>
-	<a href="index.html#mobile" title="iPhone Xs 512GB" target="_parent">
-		<h1>iPhone Xs 512GB</h1>
-	</a>
-	
-	<p><strong>Trong thân hình nhỏ gọn, iPhone Xs 512GB có sức mạnh và bộ nhớ không thua gì những máy tính thực thụ. Tất nhiên bạn cũng được tận hưởng màn hình và camera xuất sắc hàng đầu hiện nay.</strong></p>
-
-	<div>
-		<a href="index.html#mobile" title="iPhone Xs 512GB" target="_parent">
-				<img src="image/iphone-xs-select-2019-family.jpg" alt="iPhone Xs 512GB">
-		</a>
+	<div class="header">
+		<a href="index.html#mobile" title="iPhone Xs 512GB" target="_parent"><h1>iPhone Xs 512GB</h1></a>
 	</div>
 
-	<h3>Apple A12 Bionic, không chỉ mạnh mẽ mà còn thông minh</h3>
-	<p>“Bộ não” của iPhone Xs 512GB mang tên A12 Bionic. Đây là con chip mới có 6 nhân, trong đó 2 nhân hiệu năng cao nhanh hơn 15% và 4 nhân tiết kiệm điện tiết kiệm hơn 50% so với thế hệ trước A11 Bionic của iPhone X. Khả năng chơi game của iPhone Xs 512GB cũng là hoàn hảo khi GPU được nâng cấp mạnh hơn 50% thế hệ trước.</p>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<p><strong>Trong thân hình nhỏ gọn, iPhone Xs 512GB có sức mạnh và bộ nhớ không thua gì những máy tính thực thụ. Tất nhiên bạn cũng được tận hưởng màn hình và camera xuất sắc hàng đầu hiện nay.</strong></p>
+				
+				<div class="fakeimg">
+					<a href="index.html#mobile" title="iPhone Xs 512GB" target="_parent">
+						<img src="image/iphone-xs-select-2019-family.jpg" alt="iPhone Xs 512GB">
+					</a>
+					
+				</div>
+				<h2>Apple A12 Bionic, không chỉ mạnh mẽ mà còn thông minh</h2>
+				<p>“Bộ não” của iPhone Xs 512GB mang tên A12 Bionic. Đây là con chip mới có 6 nhân, trong đó 2 nhân hiệu năng cao nhanh hơn 15% và 4 nhân tiết kiệm điện tiết kiệm hơn 50% so với thế hệ trước A11 Bionic của iPhone X. Khả năng chơi game của iPhone Xs 512GB cũng là hoàn hảo khi GPU được nâng cấp mạnh hơn 50% thế hệ trước.</p>
 
-	<p>Apple A12 Bionic xứng danh là con chip đến từ tương lai khi có tới 8 nhân Neural Engine riêng biệt đóng vai trò trí tuệ nhân tạo. 8 nhân này giúp cho iPhone Xs 512GB có khả năng học hỏi theo thời gian thực, hành động dựa theo thói quen sử dụng điện thoại của bạn. Nhờ vậy mà tốc độ phản hồi, mở ứng dụng của iPhone Xs hết sức nhanh chóng. 8 nhân AI riêng biệt không chỉ giúp iPhone chạy nhanh mà còn đóng vai trò quan trọng trong rất nhiều trường hợp, từ nhận diện khuôn mặt, chụp ảnh xóa phông, smart HDR cho đến công nghệ thực tế tăng cường AR.</p>
+				<p>Apple A12 Bionic xứng danh là con chip đến từ tương lai khi có tới 8 nhân Neural Engine riêng biệt đóng vai trò trí tuệ nhân tạo. 8 nhân này giúp cho iPhone Xs 512GB có khả năng học hỏi theo thời gian thực, hành động dựa theo thói quen sử dụng điện thoại của bạn. Nhờ vậy mà tốc độ phản hồi, mở ứng dụng của iPhone Xs hết sức nhanh chóng. 8 nhân AI riêng biệt không chỉ giúp iPhone chạy nhanh mà còn đóng vai trò quan trọng trong rất nhiều trường hợp, từ nhận diện khuôn mặt, chụp ảnh xóa phông, smart HDR cho đến công nghệ thực tế tăng cường AR.</p>
 
-	<h3>Vẻ đẹp cao cấp trong lòng bàn tay</h3>
-	<p>Sự kết hợp giữa viền thép không gỉ sáng bóng và mặt kính siêu bền tạo nên một tác phẩm nghệ thuật đích thực. Kỹ thuật gia công chính xác hoàn hảo của Apple mang đến chiếc điện thoại iPhone Xs 512GB sang trọng, vừa vặn hoàn hảo trong lòng bàn tay bạn. Ba màu sắc thời thượng Xám không gian, Bạc và Vàng cho những lựa chọn cá tính. Đặc biệt, hai phiên bản màu Vàng và Xám được sơn bằng quá trình xử lý màu PVD cao cấp, tạo hiệu ứng ánh sáng qua lớp kính hết sức đẹp mắt.</p>
+				<h2>Vẻ đẹp cao cấp trong lòng bàn tay</h2>
+				<p>Sự kết hợp giữa viền thép không gỉ sáng bóng và mặt kính siêu bền tạo nên một tác phẩm nghệ thuật đích thực. Kỹ thuật gia công chính xác hoàn hảo của Apple mang đến chiếc điện thoại iPhone Xs 512GB sang trọng, vừa vặn hoàn hảo trong lòng bàn tay bạn. Ba màu sắc thời thượng Xám không gian, Bạc và Vàng cho những lựa chọn cá tính. Đặc biệt, hai phiên bản màu Vàng và Xám được sơn bằng quá trình xử lý màu PVD cao cấp, tạo hiệu ứng ánh sáng qua lớp kính hết sức đẹp mắt.</p>
 
-	<h3>Bước tiến vượt bậc từ công nghệ OLED</h3>
-	<p>iPhone Xs 512GB sử dụng tấm nền OLED công nghệ tiên tiến nhất hiện nay, hỗ trợ hiển thị HDR. Màn hình HDR có ưu điểm là màu sắc chính xác, màu đen có chiều sâu, độ sáng và độ tương phản nổi bật. Bạn sẽ được tận hưởng màn hình đẹp nhất, trong trẻo sắc nét đáng kinh ngạc trên iPhone Xs 512GB.</p>
+				<h2>Bước tiến vượt bậc từ công nghệ OLED</h2>
+				<p>iPhone Xs 512GB sử dụng tấm nền OLED công nghệ tiên tiến nhất hiện nay, hỗ trợ hiển thị HDR. Màn hình HDR có ưu điểm là màu sắc chính xác, màu đen có chiều sâu, độ sáng và độ tương phản nổi bật. Bạn sẽ được tận hưởng màn hình đẹp nhất, trong trẻo sắc nét đáng kinh ngạc trên iPhone Xs 512GB.</p>
 
-	<h3>Camera kép đỉnh cao, dễ dàng có được những bức ảnh đẹp</h3>
-	<p>Camera iPhone Xs không chỉ chụp ảnh đẹp, mà bạn còn rất dễ dàng để chụp được những bức ảnh đẹp đó. Dựa trên cảm biến xử lý hình ảnh ISP tiên tiến, tính năng Smart HDR mang đến sự tương phản ánh sáng rõ rệt trong mỗi bức ảnh, tái hiện cuộc sống đầy chân thực. Chỉ cần bạn nhấn chụp hình, cả phần cứng và phần mềm sẽ tự động hỗ trợ để mang lại bức ảnh đẹp nhất. Tính năng ảnh chụp xóa phông cũng được nâng cấp khi không những xóa phông chính xác mà còn có thể tùy chỉnh độ mờ hậu cảnh sau khi chụp.</p>
+				<h2>Camera kép đỉnh cao, dễ dàng có được những bức ảnh đẹp</h2>
+				<p>Camera iPhone Xs không chỉ chụp ảnh đẹp, mà bạn còn rất dễ dàng để chụp được những bức ảnh đẹp đó. Dựa trên cảm biến xử lý hình ảnh ISP tiên tiến, tính năng Smart HDR mang đến sự tương phản ánh sáng rõ rệt trong mỗi bức ảnh, tái hiện cuộc sống đầy chân thực. Chỉ cần bạn nhấn chụp hình, cả phần cứng và phần mềm sẽ tự động hỗ trợ để mang lại bức ảnh đẹp nhất. Tính năng ảnh chụp xóa phông cũng được nâng cấp khi không những xóa phông chính xác mà còn có thể tùy chỉnh độ mờ hậu cảnh sau khi chụp.</p>
 
-	<h3>Camera TrueDepth, chụp ảnh selfie chân dung xóa phông</h3>
-	<p>Hệ thống camera TrueDepth của iPhone Xs 512GB ngoài việc đóng vai trò nhận diện khuôn mặt còn giúp cho bạn có thể chụp ảnh xóa phông đầy nghệ thuật. Không cần phải nhờ ai chụp, tự bạn cũng sẽ tạo được những bức ảnh đẹp cho riêng mình.</p>
+				<h2>Camera TrueDepth, chụp ảnh selfie chân dung xóa phông</h2>
+				<p>Hệ thống camera TrueDepth của iPhone Xs 512GB ngoài việc đóng vai trò nhận diện khuôn mặt còn giúp cho bạn có thể chụp ảnh xóa phông đầy nghệ thuật. Không cần phải nhờ ai chụp, tự bạn cũng sẽ tạo được những bức ảnh đẹp cho riêng mình.</p>
 
-	<h3>Face ID được nâng cấp, tương lai của bảo mật di động</h3>
-	<p>Face ID trên iPhone Xs khiến cho việc bảo mật an toàn và tiện lợi hơn bao giờ hết. Bạn có thể mở khóa, đăng nhập, thanh toán nhanh chóng thông qua nhận diện khuôn mặt. Hệ thống camera TrueDepth ở mặt trước có khả năng nhận diện tới 30.000 điểm trên khuôn mặt của bạn và mở khóa ngay khi xác thực. Kể cả bạn có đội mũ hay đeo khẩu trang thì Face ID cũng tự động học hỏi để nhận diện chính xác một cách tiện lợi.</p>
+				<h2>Face ID được nâng cấp, tương lai của bảo mật di động</h2>
+				<p>Face ID trên iPhone Xs khiến cho việc bảo mật an toàn và tiện lợi hơn bao giờ hết. Bạn có thể mở khóa, đăng nhập, thanh toán nhanh chóng thông qua nhận diện khuôn mặt. Hệ thống camera TrueDepth ở mặt trước có khả năng nhận diện tới 30.000 điểm trên khuôn mặt của bạn và mở khóa ngay khi xác thực. Kể cả bạn có đội mũ hay đeo khẩu trang thì Face ID cũng tự động học hỏi để nhận diện chính xác một cách tiện lợi.</p>
 
-	<h3>Giải trí hấp dẫn</h3>
-	<p>Bạn sẽ được tận hưởng những phút giây giải trí đỉnh cao trên iPhone Xs 512GB khi đây là chiếc điện thoại xuất sắc cả hình ảnh lẫn âm thanh. Sự kết hợp giữa màn hình HDR10 công nghệ hình ảnh Dolby Vision và cụm loa kép stereo mang đến những trải nghiệm thực sự cao cấp. Đặc biệt là khi xem phim hay chơi game, iPhone Xs thể hiện quá tuyệt vời.</p>
+				<h2>Giải trí hấp dẫn</h2>
+				<p>Bạn sẽ được tận hưởng những phút giây giải trí đỉnh cao trên iPhone Xs 512GB khi đây là chiếc điện thoại xuất sắc cả hình ảnh lẫn âm thanh. Sự kết hợp giữa màn hình HDR10 công nghệ hình ảnh Dolby Vision và cụm loa kép stereo mang đến những trải nghiệm thực sự cao cấp. Đặc biệt là khi xem phim hay chơi game, iPhone Xs thể hiện quá tuyệt vời.</p>
 
-	<h3>Chống nước an toàn, thoải mái sử dụng</h3>
-	<p>Chuẩn chống nước IP68 trên iPhone Xs là chuẩn chống nước cao nhất trên một thiết bị di động, cho phép ngâm nước ở độ sâu 2m trong vòng 30 phút. Những tác nhân vốn là “kẻ thù” cho điện thoại như coffee, trà, soda cũng không thể làm hại chiếc iPhone Xs của bạn.</p>
+				<h2>Chống nước an toàn, thoải mái sử dụng</h2>
+				<p>Chuẩn chống nước IP68 trên iPhone Xs là chuẩn chống nước cao nhất trên một thiết bị di động, cho phép ngâm nước ở độ sâu 2m trong vòng 30 phút. Những tác nhân vốn là “kẻ thù” cho điện thoại như coffee, trà, soda cũng không thể làm hại chiếc iPhone Xs của bạn.</p>
+
+			</div>
+		</div>
+
+		<div class="rightcolumn">
+			<div class="card">
+				<h2>Advertisement</h2>
+				<div class="fakeimg" style="height: 100px; background-color: #aaa">Image</div>
+				<p>Some text ...</p>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<p>Footer</p>
+	</div>
 
 </body>
 </html>
