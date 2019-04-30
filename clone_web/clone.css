@@ -155,6 +155,11 @@ a {
     background-color: transparent;
 }
 
+i {
+    text-decoration: none;
+    cursor: default;
+}
+
 ul li {
     list-style-type: none;
 }
