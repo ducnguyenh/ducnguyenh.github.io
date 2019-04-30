@@ -1,24 +1,104 @@
-div {
-	padding: 30px;
-	text-align: center;
+* {
+	box-sizing: border-box;
 }
 
+body {
+	padding: 10px;
+	background: #f1f1f1;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*image*/
 img {
 	max-width: 300px;
-	border: black solid 1px;
-	padding: 30px;
+	border: #aaa solid 1px;
 }
 
-li {
+.header {
+	padding: 10px;
+	text-align: center;
+	background-color: white;
+}
+
+.header h1 {
+	font-size: 40px;
+}
+
+
+
+/*left column*/
+.leftcolumn {
+	float: left;
+	width: 75%;
+}
+
+/*right column*/
+.rightcolumn {
+	float: left;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding-left: 20px;
+}
+
+.fakeimg p {
+	text-align: center;
 	font-size: 18px;
-	list-style-type: none;
+	padding-bottom: 40px; 
+}
+
+/*fake image*/
+.fakeimg {
+	text-align: center;
+	padding: 10px;
+}
+
+/*add a card effect for articles*/
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+/*clear floats after the columns*/
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*footer*/
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {   
+		width: 100%;
+		padding: 0;
+	}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
 }
 
 a:link, a:visited{
 	color: black;
 	text-decoration: none;
 }
- 
+
 a:hover {
 	color: blue;
 }
