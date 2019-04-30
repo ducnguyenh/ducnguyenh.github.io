@@ -1,69 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Đồng hồ Ogival OG388.89-1AGR-GL</title>
-	<meta charset="utf-8" />
+	<title>Watch Website Detail</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			padding: 10px;
+			background: #f1f1f1;
+		}
+
+		.header {
+			padding: 10px;
+			text-align: center;
+			background-color: white;
+		}
+
+		.header h1 {
+			font-size: 40px;
+		}
+
 		a {
 			text-decoration: none;
 		}
 
-		div {
-			text-align: center;
+		/*left column*/
+		.leftcolumn {
+			float: left;
+			width: 75%;
 		}
 
-		h1 {
-			text-align: center;
+		/*right column*/
+		.rightcolumn {
+			float: left;
+			width: 25%;
+			background-color: #f1f1f1;
+			padding-left: 20px;
 		}
 
-		h3 {
-			margin-right: 400px;
-			margin-left: 400px;
-		}
-
+		/*image*/
 		img {
 			max-width: 500px;
+			border: #aaa solid 1px;
 		}
 
 		p {
-			font-size: 18px;
 			text-align: justify;
-			margin-right: 400px;
-			margin-left: 400px;
+			font-size: 18px;
 		}
-		
+
+		/*fake image*/
+		.fakeimg {
+			text-align: center;
+			padding: 10px;
+		}
+
+		/*add a card effect for articles*/
+		.card {
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		/*clear floats after the columns*/
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/*footer*/
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: #ddd;
+			margin-top: 20px;
+		}
+
+		/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 800px) {
+			.leftcolumn, .rightcolumn {   
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+		/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+		@media screen and (max-width: 400px) {
+			.topnav a {
+				float: none;
+				width: 100%;
+			}
+		}
 	</style>
 </head>
 <body>
-	<a href="index.html#watch" title="Đồng hồ Ogival OG388.89-1AGR-GL" target="_parent"><h1>Đồng hồ Ogival OG388.89-1AGR-GL</h1>
-	</a>
 
-	<h3>Món quà đến từ Thụy Sỹ </h3>
-	<p>Ogival là thương hiệu được thành lập ở La Chaux-de-Fonds, Thụy Sỹ vào năm 1903 bởi nghệ nhân Rene Brandt. Biểu tượng con cá nhảy may mắn là món quà đầu tiên của Ogival dành cho chủ nhân của chiếc đồng hồ và cũng là biểu tượng của tình yêu và sự phước lành.</p>
-
-	<div>
-		<a href="index.html#watch" title="Đồng hồ Ogival OG388.89-1AGR-GL" target="_parent">
-			<img src="image/donghoOgival_og388.89-1agr-gl.jpg" alt="Đồng hồ Ogival OG388.89-1AGR-GL">
+	<div class="header">
+		<a href="index.html#watch" title="Đồng hồ Ogival OG388.89-1AGR-GL" target="_parent"><h1>Đồng hồ Ogival OG388.89-1AGR-GL</h1>
 		</a>
 	</div>
-	
-	<h3>Không chỉ là 1 chiếc máy đo thời gian</h3>
-	<p>Đó là linh hồn, là nghệ thuật chế tác thực sự của những nghệ nhân đồng hồ. Họ đã bỏ ra hàng trăm giờ nghiên cứu với rất nhiều tâm huyết và đam mê để tạo nên những tác phẩm nghệ thuật thực sự của thời gian. Và còn tuyệt vời hơn khi chúng ta có thể mang cả nó đến bất cứ nơi nào bạn muốn.</p>
 
-	<h3>Skeleton – Đỉnh cao của sự tinh xảo</h3>
-	<p>Skeleton cho người ta thấy những khía cạnh khác của đồng hồ, không chỉ về nghệ thuật mà còn trong công nghệ và cách thức sử dụng vật liệu.Skeleton đã trở thành một dòng đồng hồ nằm ở bậc nhất trong bảng xếp hạng về mọi khía cạnh – độ tinh xảo, chất lượng và sự tỉ mỉ. Để làm 1 chiếc đồng hồ skeleton tinh xáo, độ phức tạp, thời gian tiêu tốn có thể gấp vài lần thậm chí vài chục lần so với một chiếc đồng hồ thường cùng loại.</p>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>Món quà đến từ Thụy Sỹ </h2>
+				<p>Ogival là thương hiệu được thành lập ở La Chaux-de-Fonds, Thụy Sỹ vào năm 1903 bởi nghệ nhân Rene Brandt. Biểu tượng con cá nhảy may mắn là món quà đầu tiên của Ogival dành cho chủ nhân của chiếc đồng hồ và cũng là biểu tượng của tình yêu và sự phước lành.</p>
 
-	<h3>Mềm mại và trẻ trung</h3>
-	<p>Dây da – sự lựa chọn hàng đầu cho khách hàng cổ tay nhỏ, mang lại sự tinh tế trẻ trung. Tuổi thọ của dây được bảo đảm bằng chất liệu da bê Calfskin bề mặt, da thuộc bên trong.</p>
+				<div class="fakeimg">
+					<a href="index.html#watch" title="Đồng hồ Ogival OG388.89-1AGR-GL" target="_parent">
+						<img src="image/donghoOgival_og388.89-1agr-gl.jpg" alt="Đồng hồ Ogival OG388.89-1AGR-GL">
+					</a>
 
-	<h3>Case back xuyên thấu</h3>
-	<p>Bạn cảm nhận được sự chuyển động nhịp nhàng, sự ăn rơ của các bánh răng – đó là cảm giác mà case back xuyên thấu mang lại. Sự tinh tế đến không ngờ!</p>
+				</div>
+				<h2>Không chỉ là 1 chiếc máy đo thời gian</h2>
+				<p>Đó là linh hồn, là nghệ thuật chế tác thực sự của những nghệ nhân đồng hồ. Họ đã bỏ ra hàng trăm giờ nghiên cứu với rất nhiều tâm huyết và đam mê để tạo nên những tác phẩm nghệ thuật thực sự của thời gian. Và còn tuyệt vời hơn khi chúng ta có thể mang cả nó đến bất cứ nơi nào bạn muốn.</p>
 
-	<h3>Khỏe khoắn trong thiết kế</h3>
-	<p>Thiết kế mạnh mẽ góc cạnh, đường nét mạch lạc, độ dày vừa phải cùng chi tiết máy rõ ràng, mạch lạc OG388.89-1AGR-GL thật sự phù hợp với những ai có vòng tay lớn 1 chút, vừa thể hiện sự năng động thể thao vừa mang lại nét nam tình mạnh mẽ.</p>
+				<h2>Skeleton – Đỉnh cao của sự tinh xảo</h2>
+				<p>Skeleton cho người ta thấy những khía cạnh khác của đồng hồ, không chỉ về nghệ thuật mà còn trong công nghệ và cách thức sử dụng vật liệu.Skeleton đã trở thành một dòng đồng hồ nằm ở bậc nhất trong bảng xếp hạng về mọi khía cạnh – độ tinh xảo, chất lượng và sự tỉ mỉ. Để làm 1 chiếc đồng hồ skeleton tinh xáo, độ phức tạp, thời gian tiêu tốn có thể gấp vài lần thậm chí vài chục lần so với một chiếc đồng hồ thường cùng loại.</p>
 
-	<h3>Thoả sức thể hiện cá tính</h3>
-	<p>Water Resistant là thông số thể hiện khả năng chống nước cho chiếc đồng hồ. Với WR ở mức 50m bạn có thể thoải mái sử dụng ở mức đi mưa rửa tay/ thoải mái bơi lộitheo quy chuẩn của hãng. Nhưng sau khi đi bơi nhớ vệ sinh đồng hồ bằng nước ngọt để tránh muối có trong nước biển làm hư đồng hồ, nhất là dây da.</p>
+				<h2>Mềm mại và trẻ trung</h2>
+				<p>Dây da – sự lựa chọn hàng đầu cho khách hàng cổ tay nhỏ, mang lại sự tinh tế trẻ trung. Tuổi thọ của dây được bảo đảm bằng chất liệu da bê Calfskin bề mặt, da thuộc bên trong.</p>
 
-</body>
-</html>
+				<h2>Case back xuyên thấu</h2>
+				<p>Bạn cảm nhận được sự chuyển động nhịp nhàng, sự ăn rơ của các bánh răng – đó là cảm giác mà case back xuyên thấu mang lại. Sự tinh tế đến không ngờ!</p>
+
+				<h2>Khỏe khoắn trong thiết kế</h2>
+				<p>Thiết kế mạnh mẽ góc cạnh, đường nét mạch lạc, độ dày vừa phải cùng chi tiết máy rõ ràng, mạch lạc OG388.89-1AGR-GL thật sự phù hợp với những ai có vòng tay lớn 1 chút, vừa thể hiện sự năng động thể thao vừa mang lại nét nam tình mạnh mẽ.</p>
+
+				<h2>Thoả sức thể hiện cá tính</h2>
+				<p>Water Resistant là thông số thể hiện khả năng chống nước cho chiếc đồng hồ. Với WR ở mức 50m bạn có thể thoải mái sử dụng ở mức đi mưa rửa tay/ thoải mái bơi lộitheo quy chuẩn của hãng. Nhưng sau khi đi bơi nhớ vệ sinh đồng hồ bằng nước ngọt để tránh muối có trong nước biển làm hư đồng hồ, nhất là dây da.</p>
+			</div>
+		</div>
+
+		<div class="rightcolumn">
+			<div class="card">
+				<h2>Advertisement</h2>
+				<div class="fakeimg" style="height: 100px; background-color: #aaa">Image</div>
+				<p>Some text ...</p>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<p>Footer</p>
+	</div>
