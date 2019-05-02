@@ -149,6 +149,9 @@ footer {
     color: #919294;
 }
 
+a:hover {
+    text-decoration: underline;
+}
 a {
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
