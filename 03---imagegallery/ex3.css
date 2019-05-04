@@ -5,6 +5,7 @@
 body {
 	background: #f1f1f1;
 	font-family: Roboto,Helvetica,Arial,sans-serif;
+	margin: 0;
 }
 
 h2 {
@@ -18,18 +19,6 @@ h3 {
 	padding-top: 10px;
 }
 
-img {
-	border-radius: 16px;
-	max-width: 300px;
-	height: 204px;
-	overflow: hidden;
-    transition-duration: 0.5s;  
-}
-
-img:hover {
-	transform: scale(1.2, 1.2);
-}
-
 li {
 	list-style-type: none;
 	background-color: #5FB404;
@@ -41,6 +30,7 @@ li {
 nav {
 	display: flex;
 	background-color: #5FB404;
+	width: 100%;
 }
 
 nav a {
@@ -48,7 +38,7 @@ nav a {
 	color: white;
 	font-size: 18px;
 	font-weight: 700;
-	margin: 16px;
+	margin: 12px;
 }
 
 nav a:hover:not(.active) {
@@ -59,13 +49,30 @@ p {
 	font-weight: bold;
 }
 
+#logo {
+	max-height: 110px;
+	padding: 5px; 
+}
+
+.pokemon > img {
+	border-radius: 16px;
+	max-width: 285px;
+	height: 189px;
+	overflow: hidden;
+    transition-duration: 0.5s;  
+}
+
+.pokemon > img:hover {
+	transform: scale(1.2, 1.2);
+}
+
 .active {
 	color: #8A0808;
 }
 
 .menu {
 	flex: 80%;
-	padding: 10px;
+	padding: 13px;
 }
 
 .title-name {
@@ -97,16 +104,11 @@ p {
 }
 
 .left {
-	flex: 15%;
+	flex: 12%;
 }
 
 .middle {
-	flex: 70%;
-	padding-left: 20px;
-}
-
-.right {
-	flex: 15%;
+	flex: 88%;
 	padding-left: 20px;
 }
 
@@ -137,19 +139,25 @@ p {
 /*.pokemon {
 	border: 1px solid #5FB404;
 	border-radius: 16px;
-}
+}*/
 
 /*footer*/
 .footer {
 	padding: 20px;
 	text-align: center;
 	background: #ddd;
+	color: white;
 	margin-top: 20px;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+.wrap {
+	max-width: 1100px;
+	margin: auto;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-	.left, .middle, .right {   
+	.left, .middle {   
 		width: 100%;
 		padding: 0;
 	}
