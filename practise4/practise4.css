@@ -1,0 +1,42 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.container {
+	color: white;
+	display: flex;
+}
+
+.left {
+	flex: calc(100% / 3);
+	padding-right: 15px;
+}
+
+.mid {
+	flex: calc(100% / 3);
+	padding-right: 15px;
+}
+
+.right {
+	flex: calc(100% / 3);
+}
+
+.red {
+	background-color: red;
+	height: 400px;
+}
+
+.green {
+	background-color: green;
+	height: 400px;
+}
+
+.blue {
+	background-color: blue;
+	height: 400px;
+}
