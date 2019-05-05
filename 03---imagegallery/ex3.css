@@ -79,12 +79,6 @@ p {
 	padding: 13px;
 }
 
-.title-name {
-	background-color:white;
-	text-align: center;
-	padding: 10px;
-}
-
 .search-zone {
 	flex: 20%;
 	margin: 10px;
