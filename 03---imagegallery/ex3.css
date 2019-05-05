@@ -24,7 +24,11 @@ li {
 	background-color: #5FB404;
 	color: white;
 	padding: 5px;
-	margin: 3px;  
+	margin: 3px; 
+}
+
+li:hover {
+	background-color: orange;
 }
 
 nav {
