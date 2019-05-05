@@ -1,4 +1,4 @@
-
+/* CSS for index.html */
 * {
 	box-sizing: border-box;
 }
@@ -10,14 +10,10 @@ body {
 .container {
 	color: white;
 	display: flex;
+	text-align: center;
 }
 
-.left {
-	flex: calc(100% / 3);
-	padding-right: 15px;
-}
-
-.mid {
+.left, .mid {
 	flex: calc(100% / 3);
 	padding-right: 15px;
 }
@@ -26,17 +22,18 @@ body {
 	flex: calc(100% / 3);
 }
 
+.red, .blue, .green {
+	height: 400px;
+	line-height: 400px;
+}
 .red {
 	background-color: red;
-	height: 400px;
 }
 
 .green {
 	background-color: green;
-	height: 400px;
 }
 
 .blue {
 	background-color: blue;
-	height: 400px;
 }
