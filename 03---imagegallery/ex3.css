@@ -130,13 +130,6 @@ p {
   text-align: center;
 }
 
-/*clear floats after the columns*/
-.row-content:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 /*.pokemon {
 	border: 1px solid #5FB404;
 	border-radius: 16px;
