@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu multi-level</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Roboto,sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		ul {
+			list-style-type: none;
+			text-align: center;
+			background: #5FB404;
+		}
+		/*---dùng float-----
+		li {
+			float: left;
+			width: 125px;
+			height: 40px;
+			line-height: 40px;
+		}*/
+		/*---dùng inline-block-----*/
+		li {
+			display: inline-block;
+			width: 125px;
+			height: 40px;
+			line-height: 40px;
+			margin-left: -5px;
+		}
+
+		.main-menu a {
+			text-decoration: none;
+			color: #fff;
+			display: block;
+		}
+
+		.main-menu a:hover {
+			background: #f1f1f1;
+			color: #333;
+		}
+
+		.main-menu li {
+			position: relative;
+		}
+		.sub-menu {
+			display: none;
+			position: absolute;
+			padding: 0;
+			margin: 0;
+		}
+
+		.main-menu > li:hover .sub-menu {
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul class="main-menu">
+		<li><a href="#">TRANG CHỦ</a></li>
+		<li><a href="#">#ZINGCHART</a>
+			<ul class="sub-menu">
+				<li class="title">TUẦN</li>
+				<li><a href="#">Bài hát</a></li>
+				<li><a href="#">MV</a></li>
+			</ul>
+		</li>
+		<li><a href="#">TOP 100</a>
+			<ul class="sub-menu">
+				<li class="title">VIỆT NAM</li>
+				<li><a href="#">Nhạc trẻ</a></li>
+				<li><a href="#">Nhạc trữ tình</a></li>
+				<li><a href="#">Quê hương</a></li>
+				<li><a href="#">Nhạc cách mạng</a></li>
+			</ul>
+		</li>
+		<li><a href="#">CHỦ ĐỀ</a>
+			<ul class="sub-menu">
+				<li class="title">ĐỀ XUẤT</li>
+				<li><a href="#">Nhạc HOT</a></li>
+				<li><a href="#">Những bài HIT</a></li>
+				<li><a href="#">Nhạc Việt bất hủ</a></li>
+				<li><a href="#">K-Pop HITs</a></li>
+			</ul>
+		</li>
+		<li><a href="#">VIDEO</a>
+			<ul class="sub-menu">
+				<li class="title">VIỆT NAM</li>
+				<li><a href="#">Nhạc trẻ</a></li>
+				<li><a href="#">Nhạc trữ tình</a></li>
+				<li><a href="#">Dance Việt</a></li>
+				<li><a href="#">Rock Việt</a></li>
+			</ul>
+		</li>
+		<li><a href="#">ALBUM</a>
+			<ul class="sub-menu">
+				<li class="title">CHÂU Á</li>
+				<li><a href="#">Hàn Quốc</a></li>
+				<li><a href="#">Nhật Bản</a></li>
+				<li><a href="#">Hoa Ngữ</a></li>
+				<li><a href="#">Thái Lan</a></li>
+			</ul>
+		</li>
+		<li><a href="#">NGHỆ SĨ</a>
+			<ul class="sub-menu">
+				<li><a href="#">Việt Nam</a></li>
+				<li><a href="#">Hàn Quốc</a></li>
+				<li><a href="#">Nhật Bản</a></li>
+				<li><a href="#">Hoa Ngữ</a></li>
+				<li><a href="#">Âu Mỹ</a></li>
+			</ul>
+		</li>
+		<li><a href="#">NHẠC CÁ NHÂN</a></li>
+		<li><a href="#">VIP</a></li>
+
+	</ul>
+	</div>
+</body>
+</html>
