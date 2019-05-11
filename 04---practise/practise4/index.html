@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation for Aphalbe</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: consolas;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.room {
+			width: 350px;
+			text-align: center;
+			line-height: 1.5;
+			background-color: #f1f1f1f1;
+			padding: 15px;
+			margin: auto;
+			font-size: 40px;
+		}
+
+		.container {
+			position: relative;
+			text-align: center;
+			height: 60px;
+			line-height: 60px;
+			overflow: hidden;
+		}
+
+		.container div {
+			left: 50%;
+			top: 0;
+			transform: translate(-50%);
+		}
+
+		.learn, .code, .teach {
+			color: white;
+			position: absolute;
+		}
+
+		.learn {
+			background-color: green;
+			animation: learn 1s infinite;
+		}
+
+		.code {
+			background-color: orange;
+			animation: code 1s infinite;
+		}
+
+		.teach {
+			background-color: violet;
+			animation: teach 1s infinite;
+		}
+
+		@keyframes code {
+			0% {top: -45px; opacity: 0;}
+			33% {top: 0; opacity: 1;}
+			66% {top: 0; opacity: 0;}
+			100% {top: 0; opacity: 0;}
+		}
+
+		@keyframes learn {
+			0% {top: 0; opacity: 0;}
+			33% {top: 0; opacity: 0;}
+			66% {top: 0; opacity: 1;}
+			100% {top: 0; opacity: 0;}
+		}
+
+		@keyframes teach {
+			0% {top: 0; opacity: 0;}
+			33% {top: 0; opacity: 0;}
+			66% {top: 10px; opacity: 0;}
+			100% {top: 0; opacity: 1;}
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="room">
+		<div class="first">START</div>
+		<div class="container">
+			<div class="learn">LEARNING</div>
+			<div class="code">CODING</div>
+			<div class="teach">TEACHING</div>
+		</div>
+		
+		<div class="third">TODAY</div>
+	</div>
+</body>
+</html>
