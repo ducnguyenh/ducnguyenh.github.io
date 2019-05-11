@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.main-menu li {
+	display: inline-block;
+	margin-left: -5px;
+	width: 8em;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+}
+
+.main-menu a {
+	text-decoration: none;
+	display: block;
+}
+
+.main-menu a:hover {
+	color: white;
+	background-color: #CC2EFA;
+}
+.sub-menu {
+	display: none;
+	position: absolute;
+}
+
+.main-menu li:hover .sub-menu {
+	display: block;
+}
+
+.title {
+	font-weight: bold;
+}
