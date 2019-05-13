@@ -43,39 +43,57 @@ h3 {
 /*------------------Header-------------------*/
 #logo img {
 	height: 80px;
-	position: absolute;
-	top: 10%;
-	left: 0;
 }
 
-.active {
-	color: #8A0808;
+#logo {
+	width: 105px;
 }
 
 .menu {
-	height: 100px;
+	display: flex;
 	background-color: #5FB404;
-	width: 1100px;
-	position: fixed;
-	top: 0;
-	z-index: 30;
+	align-items: center;
+	justify-content: space-between;
+	height: 90px;
+	margin: auto;
 }
 
-.menu li {
-	display: inline-block;
-	margin-right: -5px;
-	width: 10em;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
+.left-menu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.left-menu nav ul {
+	list-style: none;
+	margin: 0 0 0 50px;
+	padding: 0;
+	display: flex;
+}
+
+nav ul a {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px;
+	color: white;
+}
+
+nav a:hover:not(.active) {
+	color: #8A0808;
+}
+
+nav ul li {
+	margin-left: 25px;
+}
+
+.right-menu {
+	flex: 20%;
 }
 
 .search-zone {
-	width: 20%;
-	padding: 10px;
-	position: absolute;
-	right: 0;
-	top: 50px;
+	padding: 30px 15px;
+	padding-left: 60px;
 }
 
 .search-zone input[type="text"]{
@@ -90,27 +108,8 @@ h3 {
     background-color:white;
 }
 
-nav ul {
-	position: absolute;
-	left: 170px;
-	top: 60px;
-}
-
-nav a {
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: 700;
-	padding: 10px;
-	color: white;
-}
-
-nav a:hover:not(.active) {
-	color: #8A0808;
-}
-
 /*-------------------section------------------------*/
 .container {
-	margin: 100px auto;
 	display: flex;
 }
 
@@ -134,7 +133,7 @@ nav a:hover:not(.active) {
 	padding: 20px;
 }
 
-.left li:hover {
+.left li:hover:not(.active) {
 	background: #ff4d00;
 }
 
@@ -142,10 +141,6 @@ nav a:hover:not(.active) {
 	position: relative;
 }
 
-/*----------Fixed vertical-menu-------*
-.left .card {
-	position: fixed;
-}*/
 /*----------Fixed sub-menu1-------*/
 .card .sub-menu1 {
 	display: none;
@@ -156,6 +151,10 @@ nav a:hover:not(.active) {
 
 .card li:hover .sub-menu1 {
 	display: block;
+}
+
+.active {
+	background: #ff4d00 !important;
 }
 
 /*----------Fixed sub-menu2-------*/
@@ -202,7 +201,7 @@ article {
 	text-align: justify;
 }
 
-/*----------Rgiht CSS-----------*/
+/*----------Right CSS-----------*/
 .right {
 	flex: 27%;
 	padding-left: 10px;
