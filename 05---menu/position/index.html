@@ -8,23 +8,28 @@
 <body>
 	<div class="wrapper">
 		<header class="menu">
-			<a id="logo" href="index.html">
-				<img src="image/logo.png" title="Home" alt="logo Pokémon">
-			</a>
-			<nav class="nav">
-				<ul>
-					<li><a href="#" class="active">Home</a></li>
-					<li><a href="#">Pokédex</a></li>
-					<li><a href="#">Pokémon TV</a></li>
-					<li><a href="#">Minigames</a></li>
-					<li><a href="#">Video Game</a></li>
-				</ul>
-			</nav>
+			<div class="left-menu">
+				<a id="logo" href="index.html">
+					<img src="image/logo.png" title="Home" alt="logo Pokémon">
+				</a>
 
-			<div class="search-zone">
-				<form>
-					<input type="text" placeholder="Search...">
-				</form>
+				<nav class="nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Pokédex</a></li>
+						<li><a href="#">Pokémon TV</a></li>
+						<li><a href="#">Minigames</a></li>
+						<li><a href="#">Video Game</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="right-menu">
+				<div class="search-zone">
+					<form>
+						<input type="text" placeholder="Search...">
+					</form>
+				</div>
 			</div>
 		</header>
 
@@ -85,7 +90,7 @@
 					<li><a href="#">Fairy</a></li>
 
 					<h2>Top</h2> <hr>
-					<li><a href="#">Legend</a>
+					<li class="active"><a href="#">Legend</a>
 						<ul class="sub-menu1">
 							<li><a href="#">Multi-type</a>
 								<ul class="sub-menu2">
@@ -224,7 +229,7 @@
 		</div>
 
 		<footer class="footer">
-			 &copy; Copyright 2019 Nguyen Huu Duc - Reference: tinanime.com
+			&copy; Copyright 2019 Nguyen Huu Duc - Reference: tinanime.com
 		</footer>
 	</div>
 </body>
