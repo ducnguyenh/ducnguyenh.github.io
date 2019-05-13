@@ -142,6 +142,10 @@ nav a:hover:not(.active) {
 	position: relative;
 }
 
+/*----------Fixed vertical-menu-------*
+.left .card {
+	position: fixed;
+}*/
 /*----------Fixed sub-menu1-------*/
 .card .sub-menu1 {
 	display: none;
