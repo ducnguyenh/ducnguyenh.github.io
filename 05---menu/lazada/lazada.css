@@ -7,22 +7,27 @@ body {
 	margin: 0;
 	padding: 50px;
 	font-family: Roboto,sans-serif;
+	background: rgb(182, 246, 254);
 }
 
 ul {
 	list-style-type: none;
-	width: 200px;
+	width: 260px;
 	margin: 0;
 	padding: 0;
 }
 
+.main-menu, .sub-menu1, .sub-menu2 {
+	background: white;
+}
 .main-menu li a {
 	text-decoration: none;
 	padding: 15px;
 	font-size: 18px;
 	display: block;
-	width: 200px;
+	width: 260px;
 	border: 1px solid white;
+	color: #757575;
 }
 
 .main-menu li {
@@ -30,19 +35,18 @@ ul {
 }
 
 .main-menu li:hover {
-	background: lightblue;
+	background: #eceff1;
 }
 
 .main-menu .sub-menu1 {
 	position: absolute;
-	left: 200px;
+	left: 260px;
 	top: 0;
 	display: none;
 }
 
 .main-menu li:hover .sub-menu1 {
 	display: block;
-	color: white;
 }
 
 .sub-menu1 li {
@@ -52,7 +56,7 @@ ul {
 .sub-menu1 .sub-menu2 {
 	position: absolute;
 	top: 0;
-	left: 200px;
+	left: 260px;
 	display: none;
 }
 
@@ -60,6 +64,11 @@ ul {
 	display: block;
 }
 
+.main-menu a:hover::after{
+	content: " > ";
+	float: right;
+}
+
 .main-menu a:hover {
-	color: white;
+	color: #1a9cb7;
 }
