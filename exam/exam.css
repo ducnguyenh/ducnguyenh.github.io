@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #f1f1f1;
+	margin: 0;
+}
+
+h2 {
+	margin: 0;
+	padding-top: 10px;
+	color: #0404B4;
+}
+
+.wrap {
+	max-width: 1100px;
+	margin: auto;
+}
+
+/*add a card effect for articles*/
+.card {
+	background-color: white;
+	margin-top: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flex-container > div {
+  margin: 15px;
+}
+
+/*fixed size image*/
+img {
+	max-width: 304px;
+    
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;  
+}
+
+img:hover {
+	transform: scale(1.2);
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+}
