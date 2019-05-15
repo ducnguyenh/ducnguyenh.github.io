@@ -21,11 +21,13 @@ a {
 
 p {
 	font-size: 18px;
+	color: blue;
 }
 
 .title p {
 	font-size: 23px;
 	font-weight: 700;
+	color: white;
 }
 
 .wrap {
@@ -82,3 +84,6 @@ img {
 	transition: all 0.3s ease-in-out;
 }
 
+.animal:hover a {
+	text-decoration: underline;
+}
