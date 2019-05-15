@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	padding: 50px;
-	font-family: Roboto,sans-serif;
+	/*font-family: Roboto,sans-serif;*/
 	background: rgb(182, 246, 254);
 }
 
@@ -64,11 +64,13 @@ ul {
 	display: block;
 }
 
-.main-menu a:hover::after{
-	content: " > ";
+.main-menu a:hover::after {
+	font-family: "Font Awesome 5 Free";
+	content: "\f105";
 	float: right;
 }
 
 .main-menu a:hover {
 	color: #1a9cb7;
+
 }
