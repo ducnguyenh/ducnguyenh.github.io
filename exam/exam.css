@@ -21,7 +21,6 @@ h2 {
 /*add a card effect for articles*/
 .card {
 	background-color: white;
-	margin-top: 10px;
 }
 
 .flex-container {
@@ -37,14 +36,38 @@ h2 {
 /*fixed size image*/
 img {
 	max-width: 304px;
-    
-    overflow: hidden;
     transition: all 0.3s ease-in-out;  
 }
 
-img:hover {
-	transform: scale(1.2);
+.title {
+	width: 304px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    bottom:50px;
+    text-align: center;
+    color: white;
+    padding:30px;
+    box-sizing: border-box;
+    opacity: 0;
 }
+
+.animal {
+	position: relative;
+	overflow: hidden;
+}
+.animal:hover .title {
+	opacity: 1;
+	transform: translateY(50px);
+	transition: all 0.3s ease-in-out;
+}
+
+.animal:hover img {
+	transform: scale(1.2);
+	transition: all 0.3s ease-in-out;
+}
+
+
 
 a {
 	text-decoration: none;
