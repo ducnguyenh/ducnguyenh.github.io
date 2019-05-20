@@ -33,10 +33,10 @@ function traineeList(list) {
 }
 
 //Bài 5. Cho 1 mảng các số. Viết function tạo ra 1 mảng mới với các số là số dư tương ứng khi chia các số trong mảng cũ cho 2.
-function newArray(list) {
+function newArray(firstList) {
     var fakeArray = [];
-    for (var i in list) {
-        fakeArray.push(i % 2);
+    for (var i in firstList) {
+        fakeArray.push(firstList[i] % 2);
     }
     return fakeArray;
 }
