@@ -5,29 +5,29 @@ function checkNumber(parameter1, parameter2) {
             "Both " + parameter1 + " and " + parameter2 + " are numbers"
         );
         if (parameter1 > parameter2) {
-            console.log(parameter1 + " is max number");
+            return parameter1 + " is max number";
         } else if (parameter1 < parameter2) {
-            console.log(parameter2 + " is max number");
+            return parameter2 + " is max number";
         } else {
-            console.log(parameter1 + " is max number");
+            return parameter1 + " is max number";
         }
     } else if (typeof parameter1 == "number") {
-        console.log(parameter1 + " is a number and max number");
-        console.log('"' + parameter2 + '"' + " is not a number");
+        console.log("'" + parameter2 + "'" + " is not a number");
+        return parameter1 + " is a number and max number";
     } else if (typeof parameter2 == "number") {
-        console.log(parameter2 + " is a number and max number");
-        console.log('"' + parameter1 + '"' + " is not a number");
+        console.log("'" + parameter1 + "'" + " is not a number");
+        return parameter2 + " is a number and max number";
     } else {
-        console.log(
+        return (
             "Both " +
-                '"' +
-                parameter1 +
-                '"' +
-                " and " +
-                '"' +
-                parameter2 +
-                '"' +
-                " are not numbers"
+            "'" +
+            parameter1 +
+            "'" +
+            " and " +
+            "'" +
+            parameter2 +
+            "'" +
+            " are not numbers"
         );
     }
 }
@@ -54,4 +54,34 @@ function afterArray(beforeList) {
     return fakeArray.sort(function(a, b) {
         return b - a;
     });
+}
+
+//Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào. Nếu hợp lệ thông báo "Pass", nếu không hợp lệ thông báo "Fail".
+var user = {
+    username: "Nguyen Huu Duc",
+    password: "Duc@28041996",
+    confirm: "Duc@28041996"
+};
+
+console.log("user = ", user);
+
+function checkLogin(user) {
+    let result1 = "Pass";
+    let result2 = "Fail";
+    if (user.username == "") {
+        console.log("Username field must not empty");
+        return result2;
+    } else if (user.username.length > 20) {
+        console.log("Username must less than 20 character");
+        return result2;
+    } else if (user.password.length < 6 || user.password.length > 32) {
+        console.log("Password length from 6 to 32 character");
+        return result2;
+    } else if (user.confirm != user.password) {
+        console.log("Confirm field must match password");
+        return result2;
+    } else {
+        console.log("Login infomation is valid.");
+        return result1;
+    }
 }
