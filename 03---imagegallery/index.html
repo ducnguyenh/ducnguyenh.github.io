@@ -1,120 +1,250 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Image Gallery</title>
+	<title>Menu and Image Gallery </title>
 	<meta charset="utf-8" />
+	<link rel="shortcut icon" type="image/png" href="image/favicon-32x32.png"/>
 	<link rel="stylesheet" type="text/css" href="ex3.css">
 </head>
 <body>
-	<div class="wrap">
-		<nav>
-			<div class="menu">
-				<a href="index.html">
-					<img id="logo" src="image/logo.png" title="Home" alt="logo Pokémon">
+	<div class="wrapper">
+		<header class="menu">
+			<div class="left-menu">
+				<a id="logo" href="index.html">
+					<img src="image/logo.png" title="Home" alt="logo Pokémon">
 				</a>
-				<a href="#" class="active">Home</a>
-				<a href="#">Pokédex</a>
-				<a href="#">Pokémon TV</a>
-				<a href="#">Minigames</a>
-				<a href="#">Video Game</a>
+
+				<nav class="nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Pokédex</a></li>
+						<li><a href="#">Pokémon TV</a></li>
+						<li><a href="#">Minigames</a></li>
+						<li><a href="#">Video Game</a></li>
+					</ul>
+				</nav>
 			</div>
 
-			<div class="search-zone">
-				<form>
-					<input type="text" placeholder="Search...">
-				</form>
+			<div class="right-menu">
+				<div class="search-zone">
+					<form>
+						<input type="text" placeholder="Search...">
+					</form>
+				</div>
 			</div>
-		</nav>
-		<div class="row-content">
+		</header>
+
+		<div class="container">
 			<div class="left">
 				<div class="card">
-					<h2>Category</h2> <hr>
-					<li>Normal</li>
-					<li>Fire</li>
-					<li>Water</li>
-					<li>Grass</li>
-					<li>Fighting</li>
-					<li>Flying</li>
-					<li>Poison</li>
-					<li>Ghost</li>
-					<li>Steel</li>
-					<li>Electric</li>
-					<li>Psychic</li>
-					<li>Ground</li>
-					<li>Rock</li>
-					<li>Bug</li>
-					<li>Ice</li>
-					<li>Dark</li>
-					<li>Fairy</li>
+					<h2>Type</h2> <hr>
+					<li><a href="#">Normal</a>
+						<ul class="sub-menu1">
+							<li><a href="#">Steel</a></li>
+							<li><a href="#">Grass</a></li>
+							<li><a href="#">Water</a>
+								<ul class="sub-menu2">
+									<li><a href="#">Gekkoga</a></li>
+									<li><a href="#">Kaioga</a></li>
+									<li><a href="#">Zenigame</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Fire</a>
+								<ul class="sub-menu2">
+									<li><a href="#">Lizardon</a></li>
+									<li><a href="#">Fokko</a></li>
+									<li><a href="#">Victini</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Ground</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="#">Fighting</a></li>
+					<li><a href="#">Flying</a></li>
+					<li><a href="#">Poison</a>
+						<ul class="sub-menu1">
+							<li><a href="#">Gengar</a></li>
+							<li><a href="#">Nidoking</a></li>
+							<li><a href="#">Venusaur</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Ghost</a></li>
+					<li><a href="#">Electric</a>
+						<ul class="sub-menu1">
+							<li><a href="#">Pikachu</a></li>
+							<li><a href="#">Thunders</a></li>
+							<li><a href="#">Denryu</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Psychic</a>
+						<ul class="sub-menu1">
+							<li><a href="#">Mew</a></li>
+							<li><a href="#">Mewtwo</a></li>
+							<li><a href="#">Alakazam</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Rock</a></li>
+					<li><a href="#">Bug</a></li>
+					<li><a href="#">Ice</a></li>
+					<li><a href="#">Dark</a></li>
+					<li><a href="#">Fairy</a></li>
 
 					<h2>Top</h2> <hr>
-					<li>Evolution</li>
-					<li>Attack</li>
-					<li>Defensive</li>
-					<li>Battle</li>
+					<li class="active"><a href="#">Legend</a>
+						<ul class="sub-menu1">
+							<li><a href="#">Multi-type</a>
+								<ul class="sub-menu2">
+									<li><a href="#">Arceus</a></li>
+									<li><a href="#">Rayquaza</a></li>
+									<li><a href="#">Lugia</a></li>
+								</ul>
+							</li>
+
+							<li><a href="#">Time</a>
+								<ul class="sub-menu2">
+									<li><a href="#">Dialga</a></li>
+								</ul>
+							</li>
+
+							<li><a href="#">Space</a>
+								<ul class="sub-menu2">
+									<li><a href="#">Giratina</a></li>
+								</ul>
+							</li>
+
+							<li><a href="#">Psychic</a>
+								<ul class="sub-menu2">
+									<li><a href="#">Mew</a></li>
+									<li><a href="#">Mewtwo</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Evolution</a></li>
+					<li><a href="#">Attack</a></li>
+					<li><a href="#">Defensive</a></li>
+					<li><a href="#">Battle</a></li>
 				</div>
 			</div>
 
 			<div class="middle">
 				<div class="card">
-					<h2>Top 10 Strongest Pokemon</h2> <hr>
+					<h1 id="title">Top 10 Strongest Pokemon</h1> <hr>
 					<div class="flex-container">
 						<div class="pokemon">
-							<img src="image/arceus.jpg" title="Arceus" alt="pokemon Arceus">
-							<p>1. Arceus </p>
+							<a href="detail.html#arceus">
+								<img src="image/arceus.jpg" title="Arceus" alt="pokemon Arceus">
+								<div class="shadow">
+									<p>1. Arceus </p>
+								</div>
+								<p>1. Arceus </p>
+							</a>
 						</div>
 
 						<div class="pokemon">
-							<img src="image/mewtwo.jpg" title="Mewtwo" alt="pokemon Mewtwo">
-							<p>2. Mewtwo </p>
+							<a href="detail.html#mewtwo">
+								<img src="image/mewtwo.jpg" title="Mewtwo" alt="pokemon Mewtwo">
+								<div class="shadow">
+									<p>2. Mewtwo </p>
+								</div>
+								<p>2. Mewtwo </p>
+							</a>
 						</div>
 
 						<div class="pokemon">
-							<img src="image/rayquaza.jpg" title="Rayquaza" alt="pokemon Rayquaza">
-							<p>3. Rayquaza</p>
+							<a href="detail.html#rayquaza">
+								<img src="image/rayquaza.jpg" title="Rayquaza" alt="pokemon Rayquaza">
+								<div class="shadow">
+									<p>3. Rayquaza</p>
+								</div>
+								<p>3. Rayquaza</p>
+							</a>
 						</div>
 
 						<div class="pokemon">
-							<img src="image/darkrai.jpg" title="Darkrai" alt="pokemon Darkrai">
-							<p>4. Darkrai</p>
+							<a href="detail.html#darkrai">
+								<img src="image/darkrai.jpg" title="Darkrai" alt="pokemon Darkrai">
+								<div class="shadow">
+									<p>4. Darkrai</p>
+								</div>
+								<p>4. Darkrai</p>
+							</a>
 						</div>
 
 						<div class="pokemon">
-							<img src="image/kyogre.jpg" title="Kyogre" alt="pokemon Kyogre">
-							<p>5. Kyogre</p>
+							<a href="detail.html#kyogre">
+								<img src="image/kyogre.jpg" title="Kyogre" alt="pokemon Kyogre">
+								<div class="shadow">
+									<p>5. Kyogre</p>
+								</div>
+								<p>5. Kyogre</p>
+							</a>
 						</div>
 
 						<div class="pokemon">
-							<img src="image/goudon.jpg" title="Goudon" alt="pokemon Goudon">
-							<p>6. Goudon</p>
+							<a href="detail.html#goudon">
+								<img src="image/goudon.jpg" title="Goudon" alt="pokemon Goudon">
+								<div class="shadow">
+									<p>6. Goudon</p>
+								</div>
+								<p>6. Goudon</p>
+							</a>
 						</div>
 
 						<div class="pokemon">
-							<img src="image/deoxys.jpg" title="Deoxys" alt="pokemon Deoxys">
-							<p>7. Deoxys</p>
+							<a href="detail.html#deoxys">
+								<img src="image/deoxys.jpg" title="Deoxys" alt="pokemon Deoxys">
+								<div class="shadow">
+									<p>7. Deoxys</p>
+								</div>
+								<p>7. Deoxys</p>
+							</a>
 						</div>
 
 						<div class="pokemon">
-							<img src="image/xerneas.jpg" title="Xernear" alt="pokemon Xernear">
-							<p>8. Xernear</p>
+							<a href="detail.html#xerneas">
+								<img src="image/xerneas.jpg" title="Xernear" alt="pokemon Xernear">
+								<div class="shadow">
+									<p>8. Xernear</p>
+								</div>
+								<p>8. Xernear</p>
+							</a>
 						</div>
 
 						<div class="pokemon">
-							<img src="image/dialga.jpg" title="Dialga" alt="pokemon Dialga">
-							<p>9. Dialga</p>
+							<a href="detail.html#dialga">
+								<img src="image/dialga.jpg" title="Dialga" alt="pokemon Dialga">
+								<div class="shadow">
+									<p>9. Dialga</p>
+								</div>
+								<p>9. Dialga</p>
+							</a>
 						</div>
 
 						<div class="pokemon">
-							<img src="image/kyurem-white.jpg" title="Kyurem-White" alt="pokemon Kyurem-White">
-							<p>10. Kyurem-White</p>
+							<a href="detail.html#kyurem-white">
+								<img src="image/kyurem-white.jpg" title="Kyurem-White" alt="pokemon Kyurem-White">
+								<div class="shadow">
+									<p>10. Kyurem-White</p>
+								</div>
+								<p>10. Kyurem-White</p>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>	
-	</div>
-	<div class="footer">
-		<h3>Nguyen Huu Duc &copy; 2019</h3>
+		</div>
+
+		<div class="back-to-top">
+			<a href="index.html#title">
+				<img src="image/pikachu.png" title="Back to top" alt="Pokéball go home">
+			</a>
+		</div>
+
+		<footer class="footer">
+			&copy; Copyright 2019 Nguyen Huu Duc - Reference: tinanime.com
+		</footer>
 	</div>
 </body>
 </html>
