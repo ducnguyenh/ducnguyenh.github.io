@@ -1,0 +1,275 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Open Sans,sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*-------head---------*/
+h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 23px;
+    padding: 10px 0 0px 0;
+}
+
+.left h2 {
+	padding-top: 10px;
+	text-align: center;
+	font-size: 23px;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: auto;
+}
+
+/*------------------Header-------------------*/
+#logo img {
+	height: 80px;
+}
+
+#logo {
+	width: 105px;
+}
+
+.menu {
+	display: flex;
+	background-color: #5FB404;
+	align-items: center;
+	justify-content: space-between;
+	height: 90px;
+	margin: auto;
+}
+
+.left-menu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.left-menu nav ul {
+	list-style: none;
+	margin: 0 0 0 50px;
+	padding: 0;
+	display: flex;
+}
+
+nav ul a {
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px;
+	color: white;
+}
+
+nav a:hover:not(.active) {
+	color: #8A0808;
+}
+
+nav ul li {
+	margin-left: 25px;
+}
+
+.right-menu {
+	flex: 10%;
+}
+
+.search-zone {
+	padding: 30px 15px;
+	padding-left: 33px;
+}
+
+.search-zone input[type="text"]{
+    width:100%;
+    border:1px solid gray;
+    outline: none;
+    border-radius:1em;
+    background-color:#e0e0e0;
+    padding: 4px;
+}
+
+.search-zone input[type="text"]:focus{
+    background-color:white;
+}
+
+/*-------------------section------------------------*/
+.container {
+	display: flex;
+}
+
+/*----------left CSS-----------*/
+.left {
+	flex: 9%;
+	padding-right: 20px;
+}
+
+.left li {
+	display: block;
+	background: #5FB404;
+	border: 1px solid white;
+	list-style-type: none;
+}
+
+.left li a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 20px;
+}
+
+.left li:hover:not(.active) {
+	background: #ff4d00;
+}
+
+.card li {
+	position: relative;
+}
+
+/*----------Fixed sub-menu1-------*/
+.card .sub-menu1 {
+	display: none;
+	position: absolute;
+	left: 122px;
+	top: -1px;
+}
+
+.card li:hover .sub-menu1 {
+	display: block;
+}
+
+.active {
+	background: #ff4d00 !important;
+}
+
+/*----------Fixed sub-menu2-------*/
+.sub-menu1 li {
+	position: relative;
+	z-index: 30;
+}
+
+.sub-menu1 .sub-menu2 {
+	display: none;
+	position: absolute;
+	top: -1px;
+	left: 122px;
+}
+
+.card li:hover .sub-menu1 li:hover .sub-menu2 {
+	display: block;
+}
+
+.card ul {
+	width: 123px;
+}
+
+/*----------Middle CSS-----------*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flex-container > div {
+  margin: 15px;
+  text-align: center;
+}
+
+.middle {
+	flex: 88%;
+	margin: 0 10px 0 0;
+}
+
+/*add a card effect for articles*/
+.card {
+	background-color: white;
+	margin-top: 10px;
+}
+
+p {
+	font-weight: bold;
+	padding: 10px;
+	color: blue;
+}
+
+.shadow p {
+	font-size: 23px;
+	font-weight: 700;
+	color: white;
+}
+
+.pokemon img {
+	border-radius: 16px;
+	max-width: 285px;
+	height: 189px;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;  
+}
+
+.shadow {
+	width: 285px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    bottom:50px;
+    text-align: center;
+    color: white;
+    padding:30px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.pokemon {
+	position: relative;
+	overflow: hidden;
+}
+
+.pokemon:hover .shadow {
+	opacity: 1;
+	transform: translateY(50px);
+	transition: all 0.3s ease-in-out;
+}
+
+.pokemon:hover img {
+	transform: scale(1.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.pokemon:hover a {
+	text-decoration: underline;
+}
+
+.section-shadow-border {
+    height: 1px;
+    margin: auto;
+    background: #ccc; 
+}
+
+/*------Back to top Icon--------*/
+.back-to-top img {
+	width: 60px;
+	height: 100%;
+}
+
+.back-to-top {
+	position: fixed;
+	top: 88%;
+	left: 90%;
+	z-index: 30;
+}
+
+footer {
+	background: #ebebeb;
+	text-align: center;
+	line-height: 60px;
+	height: 60px;
+}
