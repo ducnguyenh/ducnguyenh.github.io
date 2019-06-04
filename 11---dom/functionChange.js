@@ -11,9 +11,9 @@ function changeBgColor(color) {
 }
 
 // 3.function copyContent(paragraph1, paragraph2): Thay đổi nội dung của đoạn văn paragraph1 thành giống nội dung của đoạn văn paragraph2 (tham số truyền vào có thể là id của 2 đoạn văn).
-function copyContent(paragraph1, paragraph2) {
-    var contentP2 = document.getElementById(paragraph2);
-    var contentP1 = document.getElementById(paragraph1);
+function copyContent(para1, para2) {
+    var contentP2 = document.getElementById(para2);
+    var contentP1 = document.getElementById(para1);
     contentP1.innerText = contentP2.innerText;
 }
 
