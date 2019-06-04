@@ -37,8 +37,8 @@ function increaseFontSize(paragraph) {
 // 6.function decreaseFontSize(paragraph): Giảm kích thước font chữ của đoạn văn mong muốn (paragraph, tham số truyền vào có thể là id đoạn văn) xuống 1 pixels so với kích thước hiện tại, kích thước giảm xuống không vượt quá 10 pixels.
 function decreaseFontSize(paragraph) {
     var para = document.getElementById(paragraph);
-    var deletePx = parseInt(para.style.fontSize.replace('px', ''));
-    if (deletePx >= 10) {
-        para.style.fontSize = deletePx - 1 + 'px';
+    var deletePx = window.getComputedStyle(para).getPropertyValue('font-size').replace('px', '');
+    if (parseInt(deletePx) >= 10) {
+        para.style.fontSize = parseInt(deletePx) - 1 + 'px';
     };
 }
