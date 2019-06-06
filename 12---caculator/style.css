@@ -9,9 +9,16 @@ body {
 }
 
 .container {
-    max-width: 650px;
+    position: relative;
+    max-width: 465px;
     margin: 0 auto;
     background: rgb(226, 240, 188);
+    background: linear-gradient(to bottom, #fff 0, rgb(141, 179, 131) 100%);
+    box-shadow: 2px 2px 0 rgb(12, 11, 0);
+    border-color: #c0c0c0 #7491a5 #0089e4 #c0c0c0;
+    border-width: 1px;
+    border-radius: 20px;
+    border: 1px solid #cdd5e6;
 }
 /*------------------Screen--------------------*/
 .result {
@@ -44,24 +51,66 @@ button {
     margin: 5px;
     font-weight: 600;
     font-size: 18px;
-    background: linear-gradient(to bottom, #fff 0, #dfe1e5 100%);
-    box-shadow: 1px 1px 0 rgba(17, 0, 0, 0.75);
+    background: linear-gradient(to bottom, #fff 0, #c8cecc 100%);
+    box-shadow: 2px 2px 0 rgba(55, 61, 1, 0.75);
     border-color: #c0c0c0 #7491a5 #0089e4 #c0c0c0;
     border-width: 1px;
     border-radius: 5px;
     border: 1px solid #cdd5e6;
     height: 50px;
-    color: #414f5b;
+    color: #3b4752;
     cursor: pointer;
 }
 
 .button-number {
-    background: linear-gradient(to bottom, #fff 0, #ffffffa6 100%);
+    background: linear-gradient(to bottom, #fff 0, #f7f7f6dc 100%);
     font-size: 23px;
 }
 
 .button-equal {
     width: 170px;
-    background: #4d8bf1;
+    background: #0089e4;
     color: white;
+}
+
+.button-reset {
+    background: #e74c3c;
+    color: white;
+}
+
+.button-delete {
+    background: #5c7cb1;
+    color: white;
+}
+
+.logo img {
+    width: 120px;
+    margin-top: 15px;
+}
+
+p {
+    margin: 0 0 10px 0;
+    color: rgb(199, 10, 10);
+}
+
+#stamps {
+    text-align: center;
+}
+
+#vendor {
+    width: 100px;
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#model {
+    width: 130px;
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    font-size: 23px;
+    font-weight: 600;
 }
