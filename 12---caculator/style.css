@@ -12,13 +12,11 @@ body {
     position: relative;
     max-width: 465px;
     margin: 0 auto;
-    background: rgb(226, 240, 188);
     background: linear-gradient(to bottom, #fff 0, rgb(141, 179, 131) 100%);
-    box-shadow: 2px 2px 0 rgb(12, 11, 0);
+    box-shadow: 8px 8px 6px rgb(59, 56, 13);
     border-color: #c0c0c0 #7491a5 #0089e4 #c0c0c0;
-    border-width: 1px;
-    border-radius: 20px;
-    border: 1px solid #cdd5e6;
+    border-radius: 25px;
+    border: 1px solid #8d98af;
 }
 /*------------------Screen--------------------*/
 .result {
@@ -52,13 +50,13 @@ button {
     font-weight: 600;
     font-size: 18px;
     background: linear-gradient(to bottom, #fff 0, #c8cecc 100%);
-    box-shadow: 2px 2px 0 rgba(55, 61, 1, 0.75);
+    box-shadow: 3px 3px 0 rgba(55, 61, 1, 0.75);
     border-color: #c0c0c0 #7491a5 #0089e4 #c0c0c0;
     border-width: 1px;
     border-radius: 5px;
     border: 1px solid #cdd5e6;
     height: 50px;
-    color: #3b4752;
+    color: #2d343b;
     cursor: pointer;
 }
 
@@ -82,7 +80,7 @@ button {
     background: #5c7cb1;
     color: white;
 }
-
+/*------------------Button--------------------*/
 .logo img {
     width: 120px;
     margin-top: 15px;
@@ -100,7 +98,7 @@ p {
 #vendor {
     width: 100px;
     position: absolute;
-    top: 4%;
+    top: 3.5%;
     left: 3%;
     font-size: 30px;
     font-weight: 600;
@@ -109,8 +107,8 @@ p {
 #model {
     width: 130px;
     position: absolute;
-    top: 5%;
-    left: 70%;
-    font-size: 23px;
+    top: 4.8%;
+    right: 3%;
+    font-size: 21px;
     font-weight: 600;
 }
