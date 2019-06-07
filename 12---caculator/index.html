@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="style.css" />
+        <!--<link rel="stylesheet" href="style.css" />-->
+        <link id="color-theme" rel="stylesheet" href="theme1.css">
         <title>Caculator</title>
     </head>
     <body>
@@ -84,8 +85,13 @@
                     <button class="button-number pi">&pi;</button>
                     <button class="button-equal">=</button>
                 </div>
+                <div></div>
             </div>
         </div>
-        <script src="function.js" class=""></script>
+        <div class="option-theme">
+            <input onclick="changeColorTheme('theme1.css')" type="radio" name="theme" id="theme1"> <label for="theme1">theme1</label>
+            <input onclick="changeColorTheme('theme2.css')" type="radio" name="theme" id="theme2"> <label for="theme2">theme2</label>
+        </div>
+        <script src="function.js"></script>
     </body>
 </html>
