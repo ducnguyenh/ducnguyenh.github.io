@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background: #faf1f1;
+}
+
+.container {
+    position: relative;
+    max-width: 465px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #fff 0, rgb(146, 150, 149) 100%);
+    box-shadow: 8px 8px 6px rgb(116, 67, 22);
+    border-color: #807f7f #3da6ec #09568a #382e2e;
+    border-radius: 25px;
+    border: 1px solid #8d98af;
+}
+/*------------------Screen--------------------*/
+.result {
+    display: flex;
+    justify-content: space-around;
+}
+
+.calculator-screen {
+    margin: 5px;
+    padding-right: 5px;
+    width: 100%;
+    font-size: 50px;
+    height: 80px;
+    background-color: white;
+    color: black;
+    text-align: right;
+}
+
+/*------------------Button--------------------*/
+.buttons-all div {
+    display: flex;
+    margin: 5px;
+    flex: 1;
+    justify-content: space-around;
+    text-align: center;
+}
+
+button {
+    width: 80px;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #fff 0, #7a7673 100%);
+    box-shadow: 3px 3px 0 rgba(58, 59, 47, 0.75);
+    border-color: #554e4e #4b5963 #0368ac #816666;
+    border-width: 1px;
+    border-radius: 5px;
+    border: 1px solid #727c94;
+    height: 50px;
+    color: #105252;
+    cursor: pointer;
+}
+
+.button-number {
+    background: linear-gradient(to bottom, #fff 0, #e5e5cfdc 100%);
+    font-size: 23px;
+}
+
+.button-equal {
+    width: 170px;
+    background: #47a1dd;
+    color: white;
+}
+
+.button-reset {
+    background: #df7367;
+    color: white;
+}
+
+.button-delete {
+    background: #394e6e;
+    color: white;
+}
+/*------------------Button--------------------*/
+.logo img {
+    width: 120px;
+    margin-top: 15px;
+}
+
+p {
+    margin: 0 0 10px 0;
+    color: rgb(199, 10, 10);
+}
+
+#stamps {
+    text-align: center;
+}
+
+#vendor {
+    width: 100px;
+    position: absolute;
+    top: 3.5%;
+    left: 3%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#model {
+    width: 130px;
+    position: absolute;
+    top: 4.8%;
+    right: 3%;
+    font-size: 21px;
+    font-weight: 600;
+}
