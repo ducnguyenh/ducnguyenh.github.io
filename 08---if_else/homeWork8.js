@@ -33,16 +33,22 @@ function checkNumber(parameter1, parameter2) {
 }
 
 //Bài 2. Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên dương (số Integer > 0), sau đó tính giai thừa và in ra kết quả.
+// function countFactorial(n) {
+//     if (n == 0 || n == 1) {
+//         return 1;
+//     } else if (Number.isInteger(n) == true && n > 0) {
+//         return countFactorial(n - 1) * n;
+//     } else {
+//         return false;
+//     }
+// }
 function countFactorial(n) {
-    if (n == 0 || n == 1) {
-        return 1;
-    } else if (Number.isInteger(n) == true && n > 0) {
-        return countFactorial(n - 1) * n;
-    } else {
-        return false;
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result = result * i;
     }
+    return result;
 }
-
 //Bài 3. Cho 1 mảng các số bất kỳ. Tạo ra 1 mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên và sắp xếp theo thứ tự giảm dần.
 function afterArray(beforeList) {
     var fakeArray = [];
@@ -51,7 +57,7 @@ function afterArray(beforeList) {
             fakeArray.push(beforeList[i]);
         }
     }
-    return fakeArray.sort(function(a, b) {
+    return fakeArray.sort(function (a, b) {
         return b - a;
     });
 }
