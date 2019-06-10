@@ -5,8 +5,8 @@ function changeColorTheme(href) {
 }
 
 //function display screen
-var hisValue = document.getElementById('history-value');
-var outValue = document.getElementById('output-value');
+var hisValue = document.getElementById('historyValue');
+var outValue = document.getElementById('outputValue');
 
 function getHistory() {
     return hisValue.innerText;
@@ -53,8 +53,7 @@ for (let i = 0; i < operator.length; i++) {
                 onScreen = onScreen.substr(0, onScreen.length - 1);
                 printOutput(onScreen)
             }
-        }
-        else {
+        } else {
             let output = getOutput();
             let history = getHistory();
             if (output == "" && history != "") {
@@ -66,6 +65,7 @@ for (let i = 0; i < operator.length; i++) {
                 output = output == "" ?
                     output : reverseNumberFormat(output);
                 history = history + output;
+
                 if (this.id == "=") {
                     var result = eval(history);
                     printOutput(result);
@@ -93,46 +93,47 @@ for (let i = 0; i < number.length; i++) {
     });
 }
 
-// //function
-// function sinClick() {
-//     screenDisplay.value = Math.sin(screenDisplay.value)
-// }
-// //printScreen
-// var screenDisplay = document.getElementById('result');
-// let keyValue,
-//     cal = '';
+//function Math;
+//var mathArray = ['E', 'PI', 'log', 'log10', 'sin', 'cos', 'tan', 'sqrt']
+function mathClicked(parameter) {
+    if (parameter == 'E' || parameter == 'PI') {
+        outValue.innerText = eval('Math.' + parameter)
+    } else {
+        let calMath = eval('Math.' + parameter + "(" + outValue.innerText + ")")
+        outValue.innerText = calMath;
+    }
+}
 
-// let displayMathProblem = (cal) => {
-//     screenDisplay.value = cal;
-//     console.log(cal);
-// };
+//function factorial
+function calFactorial() {
+    let result = 1;
+    let n = Number(getOutput())
+    if (n == 0) {
+        outValue.innerText = 1;
+    } else if (Number.isInteger(n) == true && n > 0) {
+        for (let i = 1; i <= n; i++) {
+            result = result * i;
+        };
+        outValue.innerText = result;
+    } else {
+        outValue.innerText = 'Syntax Error';
+    }
+}
 
-// let displayWarning = () => {
-//     screenDisplay.value = 'Syntax Error';
-// }
+//function percent
+function calPercent() {
+    outValue.innerText = Number(getOutput()) / 100;
+}
 
-// $('button.button').on('click', (event) => {
-//     keyValue = $(event.target).text();
-//     if (keyValue === "AC") {
-//         cal = "";
-//         displayMathProblem(cal);
-//     } else if (keyValue === "DEL") {
-//         cal = cal.slice(0, -1);
-//         displayMathProblem(cal);
-//     } else if (keyValue === "=") {
-//         try {
+//function x^2, x^3
+function calPower2() {
+    outValue.innerText = eval(Number(getOutput()) + '**2');
+}
+function calPower3() {
+    outValue.innerText = eval(Number(getOutput()) + '**3');
+}
 
-//             cal = eval(cal);
-//             displayMathProblem(cal);
-//             cal = "";
-//         } catch (ex) {
-//             displayWarning(ex);
-//         }
-//     } else {
-//         cal += keyValue;
-//         displayMathProblem(cal);
-//     }
-// });
-
-
-
+//function convert to radian
+function calRadian() {
+    outValue.innerText = Number(getOutput()) * Math.PI / 180;
+}
