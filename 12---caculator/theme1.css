@@ -6,7 +6,6 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     color: #333;
-    background: #cfd8df;
 }
 
 .container {
@@ -17,9 +16,36 @@ body {
     box-shadow: 8px 8px 6px rgb(59, 56, 13);
     border-color: #c0c0c0 #7491a5 #0089e4 #c0c0c0;
     border-radius: 25px;
-    border: 1px solid #616877;
+    border: 1px solid #8d98af;
 }
 /*------------------Screen--------------------*/
+#result {
+    height: 100px;
+    background: darkcyan;
+    margin: 0 10px;
+}
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 15px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: #c0b6b6;
+}
+
+#output {
+    text-align: right;
+    height: 60px;
+    line-height: 60px;
+    margin: 10px 10px;
+    font-size: 45px;
+    color: white;
+}
+
+p {
+    margin: 0;
+}
 .screen {
     display: flex;
     justify-content: space-around;
@@ -66,18 +92,18 @@ button {
     font-size: 23px;
 }
 
-.button.equal {
+.operator.equal {
     width: 170px;
     background: #0089e4;
     color: white;
 }
 
-.button.reset {
+#clear {
     background: #e74c3c;
     color: white;
 }
 
-.button.delete {
+#delete {
     background: #5c7cb1;
     color: white;
 }
@@ -87,9 +113,10 @@ button {
     margin-top: 15px;
 }
 
-p {
+#stamps h3 {
     margin: 0 0 10px 0;
     color: rgb(199, 10, 10);
+    font-weight: 100;
 }
 
 #stamps {
