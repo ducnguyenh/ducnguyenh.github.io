@@ -20,7 +20,7 @@ body {
     border: 1px solid #8d98af;
 }
 /*------------------Screen--------------------*/
-.result {
+.screen {
     display: flex;
     justify-content: space-around;
 }
@@ -51,7 +51,7 @@ button {
     font-weight: 600;
     font-size: 18px;
     background: linear-gradient(to bottom, #fff 0, #7a7673 100%);
-    box-shadow: 3px 3px 0 rgba(58, 59, 47, 0.75);
+    box-shadow: 3px 3px 0 rgba(65, 66, 55, 0.75);
     border-color: #554e4e #4b5963 #0368ac #816666;
     border-width: 1px;
     border-radius: 5px;
