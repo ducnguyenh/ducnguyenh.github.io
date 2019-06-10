@@ -17,10 +17,10 @@ body {
     box-shadow: 8px 8px 6px rgb(59, 56, 13);
     border-color: #c0c0c0 #7491a5 #0089e4 #c0c0c0;
     border-radius: 25px;
-    border: 1px solid #8d98af;
+    border: 1px solid #616877;
 }
 /*------------------Screen--------------------*/
-.result {
+.screen {
     display: flex;
     justify-content: space-around;
 }
@@ -61,23 +61,23 @@ button {
     cursor: pointer;
 }
 
-.button-number {
+.button.number {
     background: linear-gradient(to bottom, #fff 0, #f7f7f6dc 100%);
     font-size: 23px;
 }
 
-.button-equal {
+.button.equal {
     width: 170px;
     background: #0089e4;
     color: white;
 }
 
-.button-reset {
+.button.reset {
     background: #e74c3c;
     color: white;
 }
 
-.button-delete {
+.button.delete {
     background: #5c7cb1;
     color: white;
 }
