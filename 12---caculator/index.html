@@ -8,7 +8,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 
-        <!-- <link id="color-theme" rel="stylesheet" href="theme1.css"> -->
+        <link id="color-theme" rel="stylesheet" href="theme1.css">
         <title>Caculator</title>
     </head>
     <body>
@@ -28,39 +28,39 @@
             </div> -->
             <div id="result">
                 <div id="history">
-                    <p id="history-value"></p>
+                    <p id="historyValue"></p>
                 </div>
                 <div id="output">
-                    <p id="output-value"></p>
+                    <p id="outputValue"></p>
                 </div>
             </div>
             <div class="line" style="height: 1px;margin: 10px 10px 0 10px; background: rgb(145, 107, 107);"></div>
             <div class="buttons-all">
                 <!--line 1-->
                 <div>
-                    <button id="exp" class="button exp" >exp(</button>
-                    <button id="rad" class="button rad-deg">Rad</button>
-                    <button id="deg" class="button rad-deg">Deg</button>
-                    <button id="n!" class="button factorial">n!</button>
-                    <button id="%" class="operator">%</button>
+                    <button id="e" class="math e" onclick="mathClicked('E')" >e</button>
+                    <button id="rad" class="math rad-deg" onclick="calRadian()" >Rad</button>
+                    <button id="deg" class="math rad-deg">Deg</button>
+                    <button id="n!" class="math factorial" onclick="calFactorial()" >n!</button>
+                    <button id="%" class="math" onclick="calPercent()" >%</button>
                 </div>
 
                 <!--line 2-->
                 <div>
-                    <button id="e" class="number e">e</button>
-                    <button id="sqrt(x)" class="button square root">&radic;x</button>
-                    <button id="x^y" class="button power">^</sup></button>
-                    <button id="log" class="button logarit">log<!--<sub>10</sub>--></button>
-                    <button id="ln" class="button logarit nepe">ln</button>
+                    <button id="x^2" class="math power2" onclick="calPower2()" >x<sup>2</sup></button>
+                    <button id="x^3" class="math power3" onclick="calPower3()" >x<sup>3</sup></button>
+                    <button id="sqrt(x)" class="math square" onclick="mathClicked('sqrt')" >&radic;x</button>
+                    <button id="log" class="math logarit" onclick="mathClicked('log10')" >log<sub>10</sub></sub></button>
+                    <button id="ln" class="math logarit natural" onclick="mathClicked('log')">ln</button>
                 </div>
 
                 <!--line 3-->
                 <div>
-                    <button id="sin" class="button sin">sin<!--<sup class="inv">-1</sup>--></button>
-                    <button id="cos" class="button cos">cos<!--<sup class="inv">-1</sup>--></button>
-                    <button id="tan" class="button tan">tan<!--<sup class="inv">-1</sup>--></button>
-                    <button id="(" class="button open bracket">(</button>
-                    <button id=")" class="button close bracket">)</button>
+                    <button id="sin" class="math sin" onclick="mathClicked('sin')" >sin<!--<sup class="inv">-1</sup>--></button>
+                    <button id="cos" class="math cos" onclick="mathClicked('cos')" >cos<!--<sup class="inv">-1</sup>--></button>
+                    <button id="tan" class="math tan" onclick="mathClicked('tan')" >tan<!--<sup class="inv">-1</sup>--></button>
+                    <button id="(" class="operator">(</button>
+                    <button id=")" class="operator">)</button>
                 </div>
 
                 <!--line 4-->
@@ -93,8 +93,8 @@
                 <!--line 7-->
                 <div>
                     <button id="0" class="number">0</button>
-                    <button id="." class="button dot">.</button>
-                    <button id="&pi;" class="number pi">&pi;</button>
+                    <button id="." class="operator">.</button>
+                    <button id="pi" class="math pi" onclick="mathClicked('PI')" >&pi;</button>
                     <button id="=" class="operator equal">=</button>
                 </div>
                 <div></div>
