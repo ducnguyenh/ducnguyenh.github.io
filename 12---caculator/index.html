@@ -4,8 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <!--<link rel="stylesheet" href="style.css" />-->
-        <link id="color-theme" rel="stylesheet" href="theme1.css">
+        <link rel="stylesheet" href="style.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+        <!-- <link id="color-theme" rel="stylesheet" href="theme1.css"> -->
         <title>Caculator</title>
     </head>
     <body>
@@ -15,75 +18,84 @@
 
                 <div id="stamps">
                     <img src="brand.jpg" alt="anti-counterfeiting stamp" />
-                    <p>CLASSWIZ</p>
+                    <h3>CLASSWIZ</h3>
                 <div>
 
                 <div id="model">fx-580VN X</div>
             </div>
-            <div class="result">
-                <input type="text" class="calculator-screen" value="0" />
+            <!-- <div id="calculator">
+
+            </div> -->
+            <div id="result">
+                <div id="history">
+                    <p id="history-value"></p>
+                </div>
+                <div id="output">
+                    <p id="output-value"></p>
+                </div>
             </div>
+            <div class="line" style="height: 1px;margin: 10px 10px 0 10px; background: rgb(145, 107, 107);"></div>
             <div class="buttons-all">
                 <!--line 1-->
                 <div>
-                    <button class="button exp">exp</button>
-                    <button class="button rad-deg">Rad</button>
-                    <button class="button rad-deg">Deg</button>
-                    <button class="button factorial">n!</button>
-                    <button class="button percent">%</button>
+                    <button id="exp" class="button exp" >exp(</button>
+                    <button id="rad" class="button rad-deg">Rad</button>
+                    <button id="deg" class="button rad-deg">Deg</button>
+                    <button id="n!" class="button factorial">n!</button>
+                    <button id="%" class="operator">%</button>
                 </div>
 
                 <!--line 2-->
                 <div>
-                    <button class="button-number e">e</button>
-                    <button class="button square root">&radic;x</button>
-                    <button class="button power">x<sup>y</sup></button>
-                    <button class="button logarit">log<sub>10</sub></button>
-                    <button class="button logarit nepe">ln</button>
+                    <button id="e" class="number e">e</button>
+                    <button id="sqrt(x)" class="button square root">&radic;x</button>
+                    <button id="x^y" class="button power">^</sup></button>
+                    <button id="log" class="button logarit">log<!--<sub>10</sub>--></button>
+                    <button id="ln" class="button logarit nepe">ln</button>
                 </div>
 
                 <!--line 3-->
                 <div>
-                    <button class="button sin">sin</button>
-                    <button class="button cos">cos</button>
-                    <button class="button tan">tan</button>
-                    <button class="button open bracket">(</button>
-                    <button class="button close bracket">)</button>
+                    <button id="sin" class="button sin">sin<!--<sup class="inv">-1</sup>--></button>
+                    <button id="cos" class="button cos">cos<!--<sup class="inv">-1</sup>--></button>
+                    <button id="tan" class="button tan">tan<!--<sup class="inv">-1</sup>--></button>
+                    <button id="(" class="button open bracket">(</button>
+                    <button id=")" class="button close bracket">)</button>
                 </div>
 
                 <!--line 4-->
                 <div>
-                    <button class="button-number">7</button>
-                    <button class="button-number">8</button>
-                    <button class="button-number">9</button>
-                    <button class="button-delete">DEL</button>
-                    <button class="button-reset">AC</button>
+                    <button id="7" class="number">7</button>
+                    <button id="8" class="number">8</button>
+                    <button id="9" class="number">9</button>
+                    <button id="delete" class="operator">DEL</button>
+                    <button id="clear" class="operator">AC</button>
                 </div>
 
                 <!--line 5-->
                 <div>
-                    <button class="button-number">4</button>
-                    <button class="button-number">5</button>
-                    <button class="button-number">6</button>
-                    <button class="button multiply">×</button>
-                    <button class="button division">÷</button>
+                    <button id="4" class="number">4</button>
+                    <button id="5" class="number">5</button>
+                    <button id="6" class="number">6</button>
+                    <button id="*" class="operator">&times;</button>
+                    <button id="/" class="operator">&#247;</button>
                 </div>
 
                 <!--line 6-->
                 <div>
-                    <button class="button-number">1</button>
-                    <button class="button-number">2</button>
-                    <button class="button-number">3</button>
-                    <button class="button addition">+</button>
-                    <button class="button subtraction">−</button>
+                    <button id="1" class="number">1</button>
+                    <button id="2" class="number">2</button>
+                    <button id="3" class="number">3</button>
+                    <button id="+" class="operator">+</button>
+                    <button id="-" class="operator">-</button>
                 </div>
 
                 <!--line 7-->
                 <div>
-                    <button class="button-number">0</button>
-                    <button class="button dot">.</button>
-                    <button class="button-number pi">&pi;</button>
-                    <button class="button-equal">=</button>
+                    <button id="0" class="number">0</button>
+                    <button id="." class="button dot">.</button>
+                    <button id="&pi;" class="number pi">&pi;</button>
+                    <button id="=" class="operator equal">=</button>
                 </div>
                 <div></div>
             </div>
