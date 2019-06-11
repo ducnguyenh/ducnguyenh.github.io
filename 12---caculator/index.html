@@ -4,10 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
+        <!-- <link rel="stylesheet" href="style.css" /> -->
         <link id="color-theme" rel="stylesheet" href="theme1.css">
         <title>Caculator</title>
     </head>
@@ -21,7 +18,7 @@
                     <h3>CLASSWIZ</h3>
                 <div>
 
-                <div id="model">fx-580VN X</div>
+                <div id="model">fx-580VNX</div>
             </div>
             <!-- <div id="calculator">
             </div> -->
@@ -33,76 +30,77 @@
                     <p id="outputValue"></p>
                 </div>
             </div>
-            <div class="line" style="height: 1px;margin: 10px 10px 0 10px; background: rgb(145, 107, 107);"></div>
-            <div class="buttons-all">
+            <div class="line"></div>
+            <div class="keyboard">
                 <!--line 1-->
                 <div>
-                    <button id="e" class="math e" onclick="mathClicked('E')" >e</button>
-                    <button id="rad" class="math rad-deg" onclick="calRadian()" >Rad</button>
-                    <button id="deg" class="math rad-deg">Deg</button>
-                    <button id="n!" class="math factorial" onclick="calFactorial()" >n!</button>
-                    <button id="%" class="math" onclick="calPercent()" >%</button>
+                    <button id="e" class="top math e" onclick="mathClicked('E')" >e</button>
+                    <button id="rad" class="top math rad-deg" onclick="calRadian()" >Rad</button>
+                    <button id="-" class="top operator">(–)</button>
+                    <button id="n!" class="top math factorial" onclick="calFactorial()" >n!</button>
+                    <button id="%" class="top math" onclick="calPercent()" >%</button>
                 </div>
 
                 <!--line 2-->
                 <div>
-                    <button id="x^2" class="math power2" onclick="calPower2()" >x<sup>2</sup></button>
-                    <button id="x^3" class="math power3" onclick="calPower3()" >x<sup>3</sup></button>
-                    <button id="sqrt(x)" class="math square" onclick="mathClicked('sqrt')" >&radic;x</button>
-                    <button id="log" class="math logarit" onclick="mathClicked('log10')" >log<sub>10</sub></sub></button>
-                    <button id="ln" class="math logarit natural" onclick="mathClicked('log')">ln</button>
+                    <button id="x^2" class="top math power2" onclick="calPower2()" >x<sup>2</sup></button>
+                    <button id="x^3" class="top math power3" onclick="calPower3()" >x<sup>3</sup></button>
+                    <button id="sqrt(x)" class="top math square" onclick="mathClicked('sqrt')" >&radic;x</button>
+                    <button id="log" class="top math logarit" onclick="mathClicked('log10')" >log<sub>10</sub></sub></button>
+                    <button id="ln" class="top math logarit natural" onclick="mathClicked('log')">ln</button>
                 </div>
 
                 <!--line 3-->
                 <div>
-                    <button id="sin" class="math sin" onclick="mathClicked('sin')" >sin<!--<sup class="inv">-1</sup>--></button>
-                    <button id="cos" class="math cos" onclick="mathClicked('cos')" >cos<!--<sup class="inv">-1</sup>--></button>
-                    <button id="tan" class="math tan" onclick="mathClicked('tan')" >tan<!--<sup class="inv">-1</sup>--></button>
-                    <button id="(" class="operator">(</button>
-                    <button id=")" class="operator">)</button>
+                    <button id="sin" class="top math sin" onclick="mathClicked('sin')" >sin<!--<sup class="inv">-1</sup>--></button>
+                    <button id="cos" class="top math cos" onclick="mathClicked('cos')" >cos<!--<sup class="inv">-1</sup>--></button>
+                    <button id="tan" class="top math tan" onclick="mathClicked('tan')" >tan<!--<sup class="inv">-1</sup>--></button>
+                    <button id="(" class="top operator">(</button>
+                    <button id=")" class="top operator">)</button>
                 </div>
 
                 <!--line 4-->
                 <div>
-                    <button id="7" class="number">7</button>
-                    <button id="8" class="number">8</button>
-                    <button id="9" class="number">9</button>
+                    <button id="7" class="below number">7</button>
+                    <button id="8" class="below number">8</button>
+                    <button id="9" class="below number">9</button>
                     <button id="delete" class="operator">DEL</button>
                     <button id="clear" class="operator">AC</button>
                 </div>
 
                 <!--line 5-->
                 <div>
-                    <button id="4" class="number">4</button>
-                    <button id="5" class="number">5</button>
-                    <button id="6" class="number">6</button>
-                    <button id="*" class="operator">&times;</button>
-                    <button id="/" class="operator">&#247;</button>
+                    <button id="4" class="below number">4</button>
+                    <button id="5" class="below number">5</button>
+                    <button id="6" class="below number">6</button>
+                    <button id="*" class="below operator">&times;</button>
+                    <button id="/" class="below operator">&#247;</button>
                 </div>
 
                 <!--line 6-->
                 <div>
-                    <button id="1" class="number">1</button>
-                    <button id="2" class="number">2</button>
-                    <button id="3" class="number">3</button>
-                    <button id="+" class="operator">+</button>
-                    <button id="-" class="operator">-</button>
+                    <button id="1" class="below number">1</button>
+                    <button id="2" class="below number">2</button>
+                    <button id="3" class="below number">3</button>
+                    <button id="+" class="below operator">+</button>
+                    <button id="-" class="below operator">-</button>
                 </div>
 
                 <!--line 7-->
                 <div>
-                    <button id="0" class="number">0</button>
-                    <button id="." class="operator">.</button>
-                    <button id="pi" class="math pi" onclick="mathClicked('PI')" >&pi;</button>
-                    <button id="=" class="operator equal">=</button>
+                    <button id="0" class="below number">0</button>
+                    <button id="." class="below operator">.</button>
+                    <button id="pi" class="below math pi" onclick="mathClicked('PI')" >&pi;</button>
+                    <button id="=" class="below operator equal">=</button>
                 </div>
-                <div></div>
             </div>
         </div>
-        <div class="option-theme">
-            <input onclick="changeColorTheme('theme1.css')" type="radio" name="theme" id="theme1"> <label for="theme1">theme1</label>
-            <input onclick="changeColorTheme('theme2.css')" type="radio" name="theme" id="theme2"> <label for="theme2">theme2</label>
+
+        <div class="option-theme" style="text-align: center">
+            <input onclick="changeColorTheme('theme1.css')" type="radio" name="theme" id="theme1"> <label for="theme1">Light</label>
+            <input onclick="changeColorTheme('theme2.css')" type="radio" name="theme" id="theme2"> <label for="theme2">Dark</label>
         </div>
         <script src="function.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </body>
 </html>
