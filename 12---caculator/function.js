@@ -1,12 +1,12 @@
 //change theme
-var themeBackground = document.getElementById('color-theme');
+let themeBackground = document.getElementById('color-theme');
 function changeColorTheme(href) {
     themeBackground.setAttribute("href", href)
 }
 
 //function display screen
-var hisValue = document.getElementById('historyValue');
-var outValue = document.getElementById('outputValue');
+let hisValue = document.getElementById('historyValue');
+let outValue = document.getElementById('outputValue');
 
 function getHistory() {
     return hisValue.innerText;
@@ -40,7 +40,7 @@ function reverseNumberFormat(element) {
 }
 
 //click operator
-var operator = document.getElementsByClassName("operator");
+let operator = document.getElementsByClassName("operator");
 for (let i = 0; i < operator.length; i++) {
     operator[i].addEventListener('click', function () {
         if (this.id == "clear") {
@@ -67,7 +67,7 @@ for (let i = 0; i < operator.length; i++) {
                 history = history + output;
 
                 if (this.id == "=") {
-                    var result = eval(history);
+                    let result = eval(history);
                     printOutput(result);
                     printHistory("");
                 }
