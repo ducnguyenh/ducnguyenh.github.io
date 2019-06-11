@@ -72,9 +72,10 @@ body {
     text-align: right;
     height: 60px;
     line-height: 60px;
-    margin: 10px 10px;
+    margin: 10px 14px 0 10px;
     font-size: 45px;
     color: white;
+    overflow: hidden;
 }
 p {
     margin: 0;
