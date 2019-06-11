@@ -101,13 +101,20 @@ button {
     font-weight: 600;
     font-size: 15px;
     background: linear-gradient(to bottom, #fff 0, #82a599 100%);
-    box-shadow: 3px 3px 0 rgba(52, 53, 47, 0.75);
-    border-color: #c0c0c0 #7491a5 #0089e4 #c0c0c0;
+    box-shadow: 3px 3px 0 rgb(52, 53, 47, 0.75);
+    /* border-color: #c0c0c0 #7491a5 #33373a #c0c0c0; */
+    outline: none;
     border-radius: 5px;
     border: 1px solid #565758;
     height: 50px;
     color: #2d343b;
     cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 10px 10px 18px -6px rgba(209, 60, 177, 0.5);
+    background: #dde0e4;
+    z-index: 1000;
 }
 
 .top {
