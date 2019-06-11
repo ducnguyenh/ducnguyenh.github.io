@@ -67,7 +67,7 @@ for (let i = 0; i < operator.length; i++) {
                 history = history + output;
 
                 if (this.id == "=") {
-                    let result = eval(history);
+                    let result = eval(history.replace(/×/g, '*').replace(/÷/g, '/'));
                     printOutput(result);
                     printHistory("");
                 }
