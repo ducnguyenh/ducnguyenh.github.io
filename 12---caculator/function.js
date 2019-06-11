@@ -32,7 +32,7 @@ function getFormattedNumber(element) {
     if (element == '-') {
         return "";
     }
-    return Number(element).toLocaleString("en");
+    return Number(element).toLocaleString();
 }
 //covert to format number
 function reverseNumberFormat(element) {
