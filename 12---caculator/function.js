@@ -17,7 +17,7 @@ function printHistory(element) {
 }
 
 function getOutput() {
-    return outValue.innerText;
+    return outValue.innerText.substring(0, 14);
 }
 
 function printOutput(element) {
