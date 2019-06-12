@@ -97,10 +97,10 @@ for (let i = 0; i < number.length; i++) {
 //var mathArray = ['E', 'PI', 'log', 'log10', 'sin', 'cos', 'tan', 'sqrt']
 function mathClicked(parameter) {
     if (parameter == 'E' || parameter == 'PI') {
-        outValue.innerText = eval('Math.' + parameter)
+        printOutput(eval('Math.' + parameter))
     } else {
         let calMath = eval('Math.' + parameter + "(" + outValue.innerText + ")")
-        outValue.innerText = calMath;
+        printOutput(calMath);
     }
 }
 
@@ -109,31 +109,31 @@ function calFactorial() {
     let result = 1;
     let n = Number(getOutput())
     if (n == 0) {
-        outValue.innerText = 1;
+        printOutput(1);
     } else if (Number.isInteger(n) == true && n > 0) {
         for (let i = 1; i <= n; i++) {
             result = result * i;
         };
-        outValue.innerText = result;
+        printOutput(result);
     } else {
-        outValue.innerText = 'Syntax Error';
+        printOutput('Syntax Error');
     }
 }
 
 //function percent
 function calPercent() {
-    outValue.innerText = Number(getOutput()) / 100;
+    printOutput(Number(getOutput()) / 100);
 }
 
 //function x^2, x^3
 function calPower2() {
-    outValue.innerText = eval(Number(getOutput()) + '**2');
+    printOutput(eval(Number(getOutput()) + '**2'));
 }
 function calPower3() {
-    outValue.innerText = eval(Number(getOutput()) + '**3');
+    printOutput(eval(Number(getOutput()) + '**3'));
 }
 
 //function convert to radian
 function calRadian() {
-    outValue.innerText = Number(getOutput()) * Math.PI / 180;
+    printOutput(Number(getOutput()) * Math.PI / 180);
 }
