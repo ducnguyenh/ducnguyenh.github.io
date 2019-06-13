@@ -57,6 +57,7 @@ body {
     height: 100px;
     background: darkcyan;
     margin: 0 10px;
+    border-radius: 10px;
 }
 
 #history {
