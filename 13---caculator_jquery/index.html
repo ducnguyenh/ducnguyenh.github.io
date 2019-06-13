@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/2.6.0/math.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link id="color-theme" rel="stylesheet" href="theme1.css">
+    <title>Caculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- logo -->
+        <div class="logo">
+            <div id="vendor">CASIO</div>
+            <div id="stamps">
+                <img src="brand.jpg" alt="anti-counterfeiting stamp" />
+                <h3>CLASSWIZ</h3>
+            </div>
+
+            <div>
+                <div id="model">fx-580VNX</div>
+            </div>
+        </div>
+        <!-- screen -->
+        <div class="output">
+            <div class="history"></div>
+            <div class="result">
+                <span id='screentext' class="screentext animated"></span>
+                <span class="suggest"></span>
+            </div>
+
+        </div>
+        <div class="line"></div>
+
+        <!-- keyboard -->
+        <div class="keyboard">
+            <!--line 1-->
+            <div>
+                <button id="Inv" class="top invert">Inv</button>
+                <button id="rad" class="top rad" key='rad' char='rad'>Rad</button>
+                <button class="top number" key="pi">&pi;</button>
+                <button class="top operator" key='E' char='E'>Exp</button>
+                <button id="n!" class="top operator factorial" key='!' char='!'>n!</button>
+                <button id="%" class="top percent" key='%' char='%'>%</button>
+            </div>
+
+            <!--line 2-->
+            <div>
+                <button class="top math" key1='sin(' key2="asin(">sin<sup class="inv">-1</sup></button>
+                <button class="top math" key1='cos(' key2="acos(">cos<sup class="inv">-1</sup></button>
+                <button class="top math" key1='tan(' key2="atan(">tan<sup class="inv">-1</sup></button>
+                <button class="top math" key1='sqrt('>&radic;</button>
+                <button class="top operator" key='^2' char='²'>x<sup>2</sup></button>
+                <button class="top operator" key='^3' char='³'>x<sup>3</sup></button>
+            </div>
+
+            <!--line 3-->
+            <div>
+                <button class="top number" key="e">e</button>
+                <button class="top operator" key='^' char='^'>x<sup>y</sup></button>
+                <button class="top bracket" key="(">(</button>
+                <button class="top bracket" key=")">)</button>
+                <button class="top math" key1='log10('>log<sub>10</sub></sub></button>
+                <button class="top math" key1='log('>ln</button>
+            </div>
+
+            <!--line 4-->
+            <div>
+                <button class="below number" key="7">7</button>
+                <button class="below number" key="8">8</button>
+                <button class="below number" key="9">9</button>
+                <button class="del">DEL</button>
+                <button class="all clear">AC</button>
+            </div>
+
+            <!--line 5-->
+            <div>
+                <button class="below number" key="4">4</button>
+                <button class="below number" key="5">5</button>
+                <button class="below number" key="6">6</button>
+                <button class="below operator" key='*' char='×'>&times;</button>
+                <button class="below operator" key='/' char='÷'>&#247;</button>
+            </div>
+
+            <!--line 6-->
+            <div>
+                <button class="below number" key="1">1</button>
+                <button class="below number" key="2">2</button>
+                <button class="below number" key="3">3</button>
+                <button class="below operator" key='+' char='+'>+</button>
+                <button class="below operator" key='-' char='-'>-</button>
+            </div>
+
+            <!--line 7-->
+            <div>
+                <button class="below number" key="0">0</button>
+                <button class="below number" key=".">.</button>
+                <button class="below answer">Ans</button>
+                <button class="below equal">=</button>
+            </div>
+            <div></div>
+        </div>
+
+    </div>
+
+    <div class="option-theme" style="text-align: center; margin-top: 20px">
+        <input class="theme1" type="radio" name="theme" id="theme1"> <label for="theme1">Light</label>
+        <input class="theme2" type="radio" name="theme" id="theme2"> <label for="theme2">Dark</label>
+    </div>
+    <script src="function.js"></script>
+</body>
+
+</html>
