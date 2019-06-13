@@ -280,7 +280,7 @@ $(function () {
             let element = Number($('.screentext').html()) / 100;
             let temp = $('.screentext').html() + $('.percent').attr('key');
             $('.history').html(temp + ' =');
-            writeToScreen('write', element.substr(0, 10));
+            writeToScreen('write', element);
         }
     )
 
