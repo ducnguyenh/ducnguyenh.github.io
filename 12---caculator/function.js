@@ -1,5 +1,5 @@
 $(function () {
-    //change theme
+    //--------------------change theme--------------------------------
     $('.theme1').click(
         function () {
             $('#color-theme').attr('href', 'theme1.css')
@@ -11,7 +11,7 @@ $(function () {
             $('#color-theme').attr('href', 'theme2.css')
         }
     )
-
+    //--------------------variable declared--------------------------------
     let expression = '';
     let expressionArray = [];
     let screenArray = [];
@@ -20,7 +20,7 @@ $(function () {
     let ans = null;
     let error = false;
     let inverted = false;
-
+    //--------------------default screen--------------------------------
     function original() {
         expression = '';
         expressionArray = [];
@@ -35,7 +35,7 @@ $(function () {
         $('.suggest').html('');
     }
 
-    //ham inver chuyen doi sin => 1/sin
+    //--------------------function for screen--------------------------------
     function toInverted() {
         $('.math .inv').toggle();
         inverted = inverted ? false : true;
@@ -79,7 +79,7 @@ $(function () {
         expression = expression.slice(0, -count);
     }
 
-    // calculator history 
+    // --------------------calculator history --------------------------------
     $('.equal').click(
         function () {
             if (ansOnScreen) {
@@ -117,14 +117,40 @@ $(function () {
         }
     );
 
-    // clear the screen ----------------------------------------------------------
+    // --------------------clear the screen --------------------------------
     $('.clear').click(
         function () {
             original();
         }
     );
 
-    // add a number to the screen ------------------------------------------------
+    // --------------------invert functions (Inv)---------------------
+    $('.invert').click(
+        function () {
+            toInverted();
+        }
+    );
+
+    // --------------------delete 1 symbol---------------------
+    $('.del').click(
+        function () {
+            if (inverted) {
+                toInverted();
+            }
+
+            if (ansOnScreen) {
+                writeToScreen('write', '');
+                ansOnScreen = false;
+            }
+
+            if (expressionArray.length) {
+                removeFromExpression();
+                writeToScreen('delete', '');
+            }
+        }
+    );
+
+    // -------------------add a number to the screen -----------------------
     $('.number').click(
         function () {
             let key = $(this).attr('key');
@@ -144,7 +170,7 @@ $(function () {
         }
     );
 
-    // add an operator to the screen if there's no other operator ----------------
+    // -----------add an operator to the screen if there's no other operator ----------
     $('.operator').click(
         function () {
             let key = $(this).attr('key');
@@ -180,7 +206,7 @@ $(function () {
         }
     );
 
-    // add a bracket both to screen and to a global let ----------------------
+    //------------add a bracket both to screen and to a global let ----------------
     $('.bracket').click(
         function () {
             let key = $(this).attr('key');
@@ -203,12 +229,10 @@ $(function () {
                 bracket > 0 ? bracket-- : bracket = 0;
                 adjustbracket(bracket);
             }
-
         }
-
     );
 
-    // add a function, change bracket ----------------------------------------
+    // --------------------add a function, change bracket ------------------------
     $('.math').click(
         function () {
             let key1 = $(this).attr('key1');
@@ -233,11 +257,10 @@ $(function () {
             if (inverted) {
                 toInverted();
             }
-
         }
     );
 
-    // append the old history to the expression-----------------------------------------
+    // --------------------append the old history to the expression---------------------
     $('.answer').click(
         function () {
             if (ansOnScreen) {
@@ -248,47 +271,20 @@ $(function () {
                 addToExpression(ans.toString());
                 writeToScreen('append', 'Ans');
             }
-
         }
     );
 
-    // invert trig functions 
-    $('.invert').click(
-        function () {
-            toInverted();
-        }
-    );
-
-    // delete 1 symbol
-    $('.del').click(
-        function () {
-            if (inverted) {
-                toInverted();
-            }
-            if (ansOnScreen) {
-                writeToScreen('write', '');
-                ansOnScreen = false;
-            }
-
-            if (expressionArray.length) {
-                removeFromExpression();
-                writeToScreen('delete', '');
-            }
-
-        }
-    );
-
-    //function percent
+    // --------------------percent---------------------
     $('.percent').click(
         function () {
             let element = Number($('.screentext').html()) / 100;
             let temp = $('.screentext').html() + $('.percent').attr('key');
             $('.history').html(temp + ' =');
-            writeToScreen('write', element);
+            writeToScreen('write', element.substr);
         }
     )
 
-    //function convert to radian
+    // -------------------- convert to radian--------------------
     $('.rad').click(
         function () {
             let element = Number($('.screentext').html()) * Math.PI / 180;
