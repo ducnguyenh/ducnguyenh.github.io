@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/2.6.0/math.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <link id="color-theme" rel="stylesheet" href="theme1.css">
     <title>Caculator</title>
@@ -13,103 +14,105 @@
 
 <body>
     <div class="container">
+        <!-- logo -->
         <div class="logo">
             <div id="vendor">CASIO</div>
-
             <div id="stamps">
                 <img src="brand.jpg" alt="anti-counterfeiting stamp" />
                 <h3>CLASSWIZ</h3>
-                <div>
-
-                    <div id="model">fx-580VNX</div>
-                </div>
-                <!-- <div id="calculator">
-            </div> -->
-                <div id="result">
-                    <div id="history">
-                        <p id="historyValue"></p>
-                    </div>
-                    <div id="output">
-                        <p id="outputValue"></p>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="keyboard">
-                    <!--line 1-->
-                    <div>
-                        <button id="e" class="top math e" onclick="mathClicked('E')">e</button>
-                        <button id="rad" class="top math rad-deg" onclick="calRadian()">Rad</button>
-                        <button id="-" class="top operator">(–)</button>
-                        <button id="n!" class="top math factorial" onclick="calFactorial()">n!</button>
-                        <button id="%" class="top math" onclick="calPercent()">%</button>
-                    </div>
-
-                    <!--line 2-->
-                    <div>
-                        <button id="x^2" class="top math power2" onclick="calPower2()">x<sup>2</sup></button>
-                        <button id="x^3" class="top math power3" onclick="calPower3()">x<sup>3</sup></button>
-                        <button id="sqrt(x)" class="top math square" onclick="mathClicked('sqrt')">&radic;x</button>
-                        <button id="log" class="top math logarit"
-                            onclick="mathClicked('log10')">log<sub>10</sub></sub></button>
-                        <button id="ln" class="top math logarit natural" onclick="mathClicked('log')">ln</button>
-                    </div>
-
-                    <!--line 3-->
-                    <div>
-                        <button id="sin" class="top math sin" onclick="mathClicked('sin')">sin
-                            <!--<sup class="inv">-1</sup>--></button>
-                        <button id="cos" class="top math cos" onclick="mathClicked('cos')">cos
-                            <!--<sup class="inv">-1</sup>--></button>
-                        <button id="tan" class="top math tan" onclick="mathClicked('tan')">tan
-                            <!--<sup class="inv">-1</sup>--></button>
-                        <button id="(" class="top operator">(</button>
-                        <button id=")" class="top operator">)</button>
-                    </div>
-
-                    <!--line 4-->
-                    <div>
-                        <button id="7" class="below number">7</button>
-                        <button id="8" class="below number">8</button>
-                        <button id="9" class="below number">9</button>
-                        <button id="delete" class="operator">DEL</button>
-                        <button id="clear" class="operator">AC</button>
-                    </div>
-
-                    <!--line 5-->
-                    <div>
-                        <button id="4" class="below number">4</button>
-                        <button id="5" class="below number">5</button>
-                        <button id="6" class="below number">6</button>
-                        <button id="×" class="below operator">&times;</button>
-                        <button id="÷" class="below operator">&#247;</button>
-                    </div>
-
-                    <!--line 6-->
-                    <div>
-                        <button id="1" class="below number">1</button>
-                        <button id="2" class="below number">2</button>
-                        <button id="3" class="below number">3</button>
-                        <button id="+" class="below operator">+</button>
-                        <button id="-" class="below operator">-</button>
-                    </div>
-
-                    <!--line 7-->
-                    <div>
-                        <button id="0" class="below number">0</button>
-                        <button id="." class="below operator">.</button>
-                        <button id="pi" class="below math pi" onclick="mathClicked('PI')">&pi;</button>
-                        <button id="=" class="below operator equal">=</button>
-                    </div>
-                </div>
             </div>
 
-            <div class="option-theme" style="text-align: center">
-                <input onclick="changeColorTheme('theme1.css')" type="radio" name="theme" id="theme1"> <label
-                    for="theme1">Light</label>
-                <input onclick="changeColorTheme('theme2.css')" type="radio" name="theme" id="theme2"> <label
-                    for="theme2">Dark</label>
+            <div>
+                <div id="model">fx-580VNX</div>
             </div>
-            <script src="function.js"></script>
+        </div>
+        <!-- screen -->
+        <div class="output">
+            <div class="history"></div>
+            <div class="result">
+                <span id='screentext' class="screentext animated"></span>
+                <span class="suggest"></span>
+            </div>
+
+        </div>
+        <div class="line"></div>
+
+        <!-- keyboard -->
+        <div class="keyboard">
+            <!--line 1-->
+            <div>
+                <button id="Inv" class="top invert">Inv</button>
+                <button id="rad" class="top rad" key='rad' char='rad'>Rad</button>
+                <button class="top number" key="pi">&pi;</button>
+                <button class="top operator" key='E' char='E'>Exp</button>
+                <button id="n!" class="top operator factorial" key='!' char='!'>n!</button>
+                <button id="%" class="top percent" key='%' char='%'>%</button>
+            </div>
+
+            <!--line 2-->
+            <div>
+                <button class="top math" key1='sin(' key2="asin(">sin<sup class="inv">-1</sup></button>
+                <button class="top math" key1='cos(' key2="acos(">cos<sup class="inv">-1</sup></button>
+                <button class="top math" key1='tan(' key2="atan(">tan<sup class="inv">-1</sup></button>
+                <button class="top math" key1='sqrt('>&radic;</button>
+                <button class="top operator" key='^2' char='²'>x<sup>2</sup></button>
+                <button class="top operator" key='^3' char='³'>x<sup>3</sup></button>
+            </div>
+
+            <!--line 3-->
+            <div>
+                <button class="top number" key="e">e</button>
+                <button class="top operator" key='^' char='^'>x<sup>y</sup></button>
+                <button class="top bracket" key="(">(</button>
+                <button class="top bracket" key=")">)</button>
+                <button class="top math" key1='log10('>log<sub>10</sub></sub></button>
+                <button class="top math" key1='log('>ln</button>
+            </div>
+
+            <!--line 4-->
+            <div>
+                <button class="below number" key="7">7</button>
+                <button class="below number" key="8">8</button>
+                <button class="below number" key="9">9</button>
+                <button class="del">DEL</button>
+                <button class="all clear">AC</button>
+            </div>
+
+            <!--line 5-->
+            <div>
+                <button class="below number" key="4">4</button>
+                <button class="below number" key="5">5</button>
+                <button class="below number" key="6">6</button>
+                <button class="below operator" key='*' char='×'>&times;</button>
+                <button class="below operator" key='/' char='÷'>&#247;</button>
+            </div>
+
+            <!--line 6-->
+            <div>
+                <button class="below number" key="1">1</button>
+                <button class="below number" key="2">2</button>
+                <button class="below number" key="3">3</button>
+                <button class="below operator" key='+' char='+'>+</button>
+                <button class="below operator" key='-' char='-'>-</button>
+            </div>
+
+            <!--line 7-->
+            <div>
+                <button class="below number" key="0">0</button>
+                <button class="below number" key=".">.</button>
+                <button class="below answer">Ans</button>
+                <button class="below equal">=</button>
+            </div>
+            <div></div>
+        </div>
+
+    </div>
+
+    <div class="option-theme" style="text-align: center; margin-top: 20px">
+        <input class="theme1" type="radio" name="theme" id="theme1"> <label for="theme1">Light</label>
+        <input class="theme2" type="radio" name="theme" id="theme2"> <label for="theme2">Dark</label>
+    </div>
+    <script src="function.js"></script>
 </body>
 
 </html>
