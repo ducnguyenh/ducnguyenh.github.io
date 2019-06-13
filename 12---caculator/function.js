@@ -1,139 +1,300 @@
-//change theme
-let themeBackground = document.getElementById('color-theme');
-function changeColorTheme(href) {
-    themeBackground.setAttribute("href", href)
-}
-
-//function display screen
-let hisValue = document.getElementById('historyValue');
-let outValue = document.getElementById('outputValue');
-
-function getHistory() {
-    return hisValue.innerText;
-}
-
-function printHistory(element) {
-    hisValue.innerText = element;
-}
-
-function getOutput() {
-    return outValue.innerText.substring(0, 14);
-}
-
-function printOutput(element) {
-    if (element === "") {
-        outValue.innerText = element;
-    } else {
-        outValue.innerText = getFormattedNumber(element);
-    }
-}
-//format number (100,000)
-function getFormattedNumber(element) {
-    if (element == '-') {
-        return "";
-    }
-    return Number(element).toLocaleString();
-}
-//covert to format number
-function reverseNumberFormat(element) {
-    return Number(element.replace(/,/g, ''));
-}
-
-//click operator
-let operator = document.getElementsByClassName("operator");
-for (let i = 0; i < operator.length; i++) {
-    operator[i].addEventListener('click', function () {
-        if (this.id == "clear") {
-            printHistory("");
-            printOutput("");
+$(function () {
+    //change theme
+    $('.theme1').click(
+        function () {
+            $('#color-theme').attr('href', 'theme1.css')
         }
-        else if (this.id == "delete") {
-            let onScreen = reverseNumberFormat(getOutput()).toString();
-            if (onScreen) {
-                onScreen = onScreen.substr(0, onScreen.length - 1);
-                printOutput(onScreen)
-            }
-        } else {
-            let output = getOutput();
-            let history = getHistory();
-            if (output == "" && history != "") {
-                if (isNaN(history[history.length - 1])) {
-                    history = history.substr(0, history.length - 1);
-                }
-            }
-            if (output != "" || history != "") {
-                output = output == "" ?
-                    output : reverseNumberFormat(output);
-                history = history + output;
+    )
 
-                if (this.id == "=") {
-                    let result = eval(history.replace(/×/g, '*').replace(/÷/g, '/'));
-                    printOutput(result);
-                    printHistory("");
-                }
-                else {
-                    history = history + this.id;
-                    printHistory(history);
-                    printOutput("");
-                }
+    $('.theme2').click(
+        function () {
+            $('#color-theme').attr('href', 'theme2.css')
+        }
+    )
+
+    let expression = '';
+    let expressionArray = [];
+    let screenArray = [];
+    let bracket = 0;
+    let ansOnScreen = false;
+    let ans = null;
+    let error = false;
+    let inverted = false;
+
+    function original() {
+        expression = '';
+        expressionArray = [];
+        screenArray = [];
+        bracket = 0;
+        ansOnScreen = false;
+        ans = null;
+        error = false;
+        inverted = false;
+        $('.history').html('');
+        $('.screentext').html('');
+        $('.suggest').html('');
+    }
+
+    //ham inver chuyen doi sin => 1/sin
+    function toInverted() {
+        $('.math .inv').toggle();
+        inverted = inverted ? false : true;
+    }
+
+    function adjustbracket(num) {
+        $('.suggest').html(')'.repeat(num));
+    }
+
+    function writeToScreen(mode, text) {
+        if (mode == 'append') {
+            if (error) {
+                screenArray = [];
+            }
+            error = false;
+            screenArray.push(text);
+        } else if (mode == 'write') {
+            screenArray = [text];
+        } else if (mode == 'delete') {
+            let popped = screenArray.pop();
+            if (/[(]$/g.test(popped)) {
+                bracket > 0 ? bracket-- : bracket = 0;
+                adjustbracket(bracket);
             }
         }
-    });
-}
 
-//click number
-var number = document.getElementsByClassName("number");
-for (let i = 0; i < number.length; i++) {
-    number[i].addEventListener('click', function () {
-        let output = reverseNumberFormat(getOutput());
-        if (output != NaN) {
-            output = output + this.id;
-            printOutput(output);
+        $('.screentext').html(screenArray.join(''));
+
+        if (inverted) {
+            toInverted();
         }
-    });
-}
-
-//function Math;
-//var mathArray = ['E', 'PI', 'log', 'log10', 'sin', 'cos', 'tan', 'sqrt']
-function mathClicked(parameter) {
-    if (parameter == 'E' || parameter == 'PI') {
-        outValue.innerText = eval('Math.' + parameter)
-    } else {
-        outValue.innerText = eval('Math.' + parameter + "(" + outValue.innerText + ")");
     }
-}
 
-//function factorial
-function calFactorial() {
-    let result = 1;
-    let n = Number(getOutput())
-    if (n == 0) {
-        outValue.innerText = 1;
-    } else if (Number.isInteger(n) == true && n > 0) {
-        for (let i = 1; i <= n; i++) {
-            result = result * i;
-        };
-        outValue.innerText = result;
-    } else {
-        outValue.innerText = 'Syntax Error';
+    function addToExpression(text) {
+        expressionArray.push(text);
+        expression += text;
     }
-}
 
-//function percent
-let factorX = Number(getOutput());
-function calPercent() {
-    outValue.innerText = Number(getOutput()) / 100;
-}
+    function removeFromExpression() {
+        let count = expressionArray.pop().length;
+        expression = expression.slice(0, -count);
+    }
 
-//function x^2, x^3
-function calPower2() {
-    outValue.innerText = eval(Number(getOutput()) + '**2');
-}
-function calPower3() {
-    outValue.innerText = eval(Number(getOutput()) + '**3');
-}
+    // calculator history 
+    $('.equal').click(
+        function () {
+            if (ansOnScreen) {
+                expressionArray = [ans];
+            }
 
-//function convert to radian
-function calRadian() {
-    outValue.innerText = Number(getOutput()) * Math.PI / 180;
-}
+            addToExpression(')'.repeat(bracket));
+
+            try {
+                math.eval(expressionArray.join('')).toPrecision(11);
+            } catch (e) {
+                error = true;
+            }
+
+            if (error) {
+                original();
+                error = true;
+                writeToScreen('write', 'Syntax Error');
+            } else {
+                $('.history').html($('.screentext').html().replace(/Ans/, ans) + ')'.repeat(bracket) + ' =');
+                ans = math.eval(expressionArray.join('')).toPrecision(11);
+                writeToScreen('write', ans.toString().replace(/(\.0+$)|(0+$)/g, ''));
+                $('.suggest').html('');
+
+                let el = $('#screentext');
+                let newone = el.clone(true);
+                el.before(newone);
+                $(".animated:last").remove();
+
+                ansOnScreen = true;
+            }
+            bracket = 0;
+            expression = '';
+            expressionArray = [];
+        }
+    );
+
+    // clear the screen ----------------------------------------------------------
+    $('.clear').click(
+        function () {
+            original();
+        }
+    );
+
+    // add a number to the screen ------------------------------------------------
+    $('.number').click(
+        function () {
+            let key = $(this).attr('key');
+
+            if (inverted) {
+                toInverted();
+            }
+
+            if (ansOnScreen) {
+                $('.history').html('Ans = ' + $('.screentext').html());
+                writeToScreen('write', '');
+                ansOnScreen = false;
+            }
+
+            addToExpression(key);
+            writeToScreen('append', $(this).html());
+        }
+    );
+
+    // add an operator to the screen if there's no other operator ----------------
+    $('.operator').click(
+        function () {
+            let key = $(this).attr('key');
+            let char = $(this).attr('char');
+            if (inverted) {
+                toInverted();
+            }
+
+            if (ansOnScreen) {
+                $('.history').html('Ans = ' + $('.screentext').html());
+                writeToScreen('write', 'Ans');
+                expression = ans;
+                expressionArray = [ans];
+                bracket = 0;
+                $('.suggest').html('');
+                ansOnScreen = false;
+            }
+
+            if ((/[/]$|[*]$/g.test(expression) && (key == '/' || key == '*'))) {
+                writeToScreen('write', $('.screentext').html().replace(/[÷]$|[×]$/g, char));
+                removeFromExpression();
+                addToExpression(key);
+            } else if (/[+]$|[-]$/g.test(expression) && (key == '+' || key == '-')) {
+                writeToScreen('write', $('.screentext').html().replace(/[+]$|[-]$/g, char));
+                removeFromExpression();
+                addToExpression(key);
+            } else {
+                writeToScreen('append', char);
+                addToExpression(key);
+            }
+
+            ansOnScreen = false;
+        }
+    );
+
+    // add a bracket both to screen and to a global let ----------------------
+    $('.bracket').click(
+        function () {
+            let key = $(this).attr('key');
+            if (inverted) {
+                toInverted();
+            }
+
+            if (ansOnScreen) {
+                writeToScreen('write', '');
+                ansOnScreen = false;
+            }
+
+            addToExpression(key);
+            writeToScreen('append', key);
+
+            if (key == '(') {
+                bracket++;
+                adjustbracket(bracket);
+            } else if (key == ')') {
+                bracket > 0 ? bracket-- : bracket = 0;
+                adjustbracket(bracket);
+            }
+
+        }
+
+    );
+
+    // add a function, change bracket ----------------------------------------
+    $('.math').click(
+        function () {
+            let key1 = $(this).attr('key1');
+            let key2 = $(this).attr('key2');
+
+            if (ansOnScreen) {
+                writeToScreen('write', '');
+                ansOnScreen = false;
+            }
+
+            if (!inverted) {
+                addToExpression(key1);
+            } else {
+                addToExpression(key2);
+            }
+
+            writeToScreen('append', $(this).html() + '(');
+
+            bracket++;
+            adjustbracket(bracket);
+
+            if (inverted) {
+                toInverted();
+            }
+
+        }
+    );
+
+    // append the old history to the expression-----------------------------------------
+    $('.answer').click(
+        function () {
+            if (ansOnScreen) {
+                writeToScreen('write', '');
+                ansOnScreen = false;
+            }
+            if (!/[Ans]$|[0-9]$|[π]$|[e]$/g.test($('.screentext').html())) {
+                addToExpression(ans.toString());
+                writeToScreen('append', 'Ans');
+            }
+
+        }
+    );
+
+    // invert trig functions 
+    $('.invert').click(
+        function () {
+            toInverted();
+        }
+    );
+
+    // delete 1 symbol
+    $('.del').click(
+        function () {
+            if (inverted) {
+                toInverted();
+            }
+            if (ansOnScreen) {
+                writeToScreen('write', '');
+                ansOnScreen = false;
+            }
+
+            if (expressionArray.length) {
+                removeFromExpression();
+                writeToScreen('delete', '');
+            }
+
+        }
+    );
+
+    //function percent
+    $('.percent').click(
+        function () {
+            let element = Number($('.screentext').html()) / 100;
+            let temp = $('.screentext').html() + $('.percent').attr('key');
+            $('.history').html(temp + ' =');
+            writeToScreen('write', element);
+        }
+    )
+
+    //function convert to radian
+    $('.rad').click(
+        function () {
+            let element = Number($('.screentext').html()) * Math.PI / 180;
+            let temp = 'Rad(' + $('.screentext').html() + ')';
+            $('.history').html(temp + ' =');
+            writeToScreen('write', element.toPrecision(10));
+        }
+    )
+});
