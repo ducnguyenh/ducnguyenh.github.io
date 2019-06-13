@@ -2,13 +2,13 @@ $(function () {
     //change theme
     $('.theme1').click(
         function () {
-            $('#color-theme').attr('href', 'theme1')
+            $('#color-theme').attr('href', 'theme1.css')
         }
     )
 
     $('.theme2').click(
         function () {
-            $('#color-theme').attr('href', 'theme2')
+            $('#color-theme').attr('href', 'theme2.css')
         }
     )
 
