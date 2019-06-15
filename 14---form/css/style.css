@@ -52,7 +52,7 @@ p {
 .main-container form {
     max-width: 500px;
     margin: 0 5vw;
-    background: rgba(113, 149, 177, 0.336);
+    background: rgba(53, 128, 185, 0.336);
     padding: 3vw;
     box-sizing: border-box;
     display: flex;
@@ -79,12 +79,17 @@ p {
 
 label[for="male"],
 label[for="female"] {
-    margin: 0 20px 0 0;
+    margin: 0;
     font-size: 15px;
 }
 
-input#male {
+input[type="radio"] {
+    width: 19px;
+    height: 19px;
+    margin: 8px;
+    vertical-align: middle;
     margin-left: 35px;
+    background-color: red;
 }
 
 .form-group input[type="text"],
@@ -111,7 +116,7 @@ input#male {
     margin-top: 30px;
     outline: none;
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
     letter-spacing: 2px;
     transition: 0.5s all;
@@ -119,7 +124,7 @@ input#male {
 }
 
 .main-container button:hover {
-    background: rgb(180, 153, 153);
+    background: rgb(143, 74, 74);
     transition: 0.5s all;
 }
 
@@ -155,7 +160,7 @@ select.no-error {
 }
 
 div.error-field {
-    color: rgb(255, 8, 0);
+    color: rgb(168, 4, 4);
     font-size: small;
     letter-spacing: 1px;
     margin-top: 5px;
