@@ -89,7 +89,6 @@ input[type="radio"] {
     margin: 8px;
     vertical-align: middle;
     margin-left: 35px;
-    background-color: red;
 }
 
 .form-group input[type="text"],
