@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background: url(images/background1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 100%;
+    font-family: "Cuprum", sans-serif;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*-- title --*/
+h1 {
+    font-size: 3.5em;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    font-style: italic;
+    margin: 2vw 1vw 2.5vw;
+    font-weight: 600;
+}
+
+h1 span {
+    color: #c705bd;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/*-- content --*/
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container form {
+    max-width: 500px;
+    margin: 0 5vw;
+    background: rgba(113, 149, 177, 0.336);
+    padding: 3vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border-right: 6px solid #0cbf86;
+    border-radius: 30px; */
+    box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.27);
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+    flex-basis: 100%;
+}
+
+.main-container label {
+    font-size: 18px;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+label[for="male"],
+label[for="female"] {
+    margin: 0 20px 0 0;
+    font-size: 15px;
+}
+
+input#male {
+    margin-left: 35px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="mobile"] {
+    width: 100%;
+    color: #fff;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 12px 13px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #fff;
+    background: rgba(14, 14, 14, 0.54);
+}
+
+.main-container button {
+    color: #fff;
+    background: #0cbf86;
+    border: none;
+    padding: 13px 0;
+    margin-top: 30px;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.5s all;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.49);
+}
+
+.main-container button:hover {
+    background: rgb(180, 153, 153);
+    transition: 0.5s all;
+}
+
+/*--placeholder-color--*/
+::-webkit-input-placeholder {
+    color: #d4d4d4;
+}
+
+/*-- footer--*/
+.footer {
+    margin: 3vw 0.3vw 2vw;
+}
+
+.footer p {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* validate style */
+input:not([type="file"]).error,
+textarea.error,
+select.error {
+    border: 1px solid red !important;
+}
+
+input:not([type="file"]).no-error,
+textarea.no-error,
+select.no-error {
+    border: 1px solid green !important;
+}
+
+div.error-field {
+    color: rgb(255, 8, 0);
+    font-size: small;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/*--responsive--*/
+@media (max-width: 1920px) {
+    h1 {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-container button {
+        margin-top: 10px;
+    }
+    h1 {
+        font-size: 6.5vw;
+        margin: 4vw 1vw 4.5vw;
+    }
+}
+
+@media (max-width: 667px) {
+    .footer p {
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 568px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .footer p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 440px) {
+    h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 384px) {
+    h1 {
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+    .main-container label {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .main-container button {
+        margin-top: 0;
+    }
+    .footer p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.8em;
+        margin: 5vw 1vw 5.5vw;
+    }
+    .form-group {
+        margin-bottom: 1.2em;
+    }
+}
