@@ -40,7 +40,7 @@ $(function () {
         $('.infoPerson').css('display', 'none');
     });
 
-    $('#sign-up').attr("action", "success.html");
+    $('#sign-up').attr("action", "https://ducnguyenh.github.io/14---form/success.html");
 })
 
 
