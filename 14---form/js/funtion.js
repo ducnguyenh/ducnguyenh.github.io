@@ -1,13 +1,48 @@
-$('.btn .btn-primary').on('click', function () {
-    console.log($('#inputText').val(),
-        $('#inputEmail').val(),
-        $('#mobile').val(),
-        $('input[name=gender]:checked', '#sign-up').val(),
-        $('#datepicker').val(),
-        $('#inputAddress').val(),
-        $('#inputPassword').val()),
-        $('#confirmPassword').val()
-});
+$(function () {
+
+    function getName() {
+        return 'Name: ' + $('#inputText').val();
+    }
+
+    function getEmail() {
+        return 'Email: ' + $('#inputEmail').val();
+    }
+
+    function getMobile() {
+        return 'Mobile: ' + $('#mobile').val();
+    }
+
+    function getGender() {
+        return 'Gender: ' + $('input[name="gender"]:checked').val();
+    }
+
+    function getBirthday() {
+        return 'Birthday: ' + $('#datepicker').val();
+    }
+
+    function getAddress() {
+        return 'Address: ' + $('#inputAddress').val();
+    }
+
+    function getPassword() {
+        return 'Password: ' + $('#inputPassword').val();
+    }
+
+    $('.close').click(function () {
+        $('.infoPerson').css('display', 'none');
+    })
+
+    $('.accept').click(function () {
+        $('#');
+    });
+
+    $('.cancel').click(function () {
+        $('.infoPerson').css('display', 'none');
+    });
+
+    $('#sign-up').attr("action", "success.html");
+})
+
 
 
 
