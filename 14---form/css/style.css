@@ -108,7 +108,7 @@ input[type="radio"] {
     background: rgba(14, 14, 14, 0.54);
 }
 
-.main-container button {
+button.btn.btn-primary {
     color: #fff;
     background: #0cbf86;
     border: none;
@@ -126,6 +126,22 @@ input[type="radio"] {
 .main-container button:hover {
     background: rgb(143, 74, 74);
     transition: 0.5s all;
+}
+
+/* --show/hide password-- */
+i.fa {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: 0px;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.password {
+    position: relative;
+    display: block;
+    vertical-align: baseline;
 }
 
 /*--placeholder-color--*/
