@@ -4,9 +4,9 @@ $(function () {
         $('.infoPerson').css('display', 'none');
     })
 
-    $('.accept').click(function () {
-        $('#');
-    });
+    // $('.accept').click(function () {
+    //     $('#');
+    // });
 
     $('.cancel').click(function () {
         $('.infoPerson').css('display', 'none');
@@ -14,6 +14,7 @@ $(function () {
 
     $('#sign-up').attr("action", "success.html");
 
+    //get infoPerson
     function getRecylingUrl() {
         let process1 = $(location).attr("href");
         let process2 = process1.slice(process1.indexOf('?') + 1);
@@ -26,8 +27,20 @@ $(function () {
         }
         return result;
     }
+    $('.print-screen').html(getRecylingUrl());
 
-    $('.print-screen').html(getRecylingUrl())
+    //show/hide password
+    $('#eye-open').click(function () {
+        $('#inputPassword').attr('type', 'password');
+        $(this).hide();
+        $('#eye-close').show();
+    });
+
+    $('#eye-close').click(function () {
+        $('#inputPassword').attr('type', 'text');
+        $(this).hide();
+        $('#eye-open').show();
+    });
 
 })
 
