@@ -76,9 +76,6 @@ function fibonacci1(num) {
 //Cach 2: chuoi bat dau = 1
 function fibonacci2(num) {
     let a = 0, b = 1, temp;
-    // if (num == 0 || num == 1) {
-    //     return 1;
-    // }
     while (num >= 0) {
         temp = b;
         b = a + b;
@@ -223,7 +220,9 @@ function findLongestWordLength(arr) {
     return fakeArray;
 }
 // ● Bài 4: Cho 2 số nguyên dương n và m. Tạo ra 1 mảng 2 chiều n x m là các số nguyên liên tiếp (tính từ 1) theo kiểu ziczac. Ví dụ với n = 3 và m = 3 thì kết quả là mảng 2 chiều như sau[ [1, 2, 3], [6, 5, 4], [7, 8, 9] ].
+// function ziczacArr(n, m) {
 
+// }
 // Xử lý object
 // ● Bài 1: Cho 1 object. Viết hàm kiểm tra xem object đó có phải là object rỗng hay không (không có thuộc tính nào). Kết quả trả về true hoặc false.
 function checkObject(obj) {
@@ -289,7 +288,24 @@ function linearEquation(a, b) {
     }
 }
 // ● Bài 2: Cho 3 số a, b và c. Viết hàm giải phương trình bậc 2 dạng ax² + bx + c = 0.
-
+function quadraticEquation(a, b, c) {
+    let delta = b * b - 4 * a * c;
+    if (a == 0) {
+        return linearEquation(b, c);
+    } else if (a == 0 && b == 0) {
+        return "Impossible equation";
+    } else if (a == 0 && b == 0 && c == 0) {
+        return "Countless experimental equations";
+    } else {
+        if (delta == 0) {
+            return ("Double root: x1 = x2 = ", -b / (2 * a));
+        } else if (delta < 0) {
+            return "Impossible equation";
+        } else {
+            return `Two root x1 = ${-b + Math.sqrt(delta) / (2 * a)}, x2 = ${-b - Math.sqrt(delta) / (2 * a)}`;
+        }
+    }
+}
 // ● Bài 3: Viết hàm có 2 tham số, tham số đầu tiên là 1 chuỗi thời gian t dạng ''giờ:phút:giây'', tham số thứ 2 là 1 số x <= 1000. Kết quả trả về là 1 chuỗi biểu thị thời gian sau x giây kể từ thời điểm t. Ví dụ với t = ''9:20:56'' và x = 7 thì kết quả là ''9:21:3''.
 // cach1:
 function convertToSecond(timeStr, x) {
@@ -311,10 +327,19 @@ function convertToSecond2(timeStr, x) {
 }
 
 // ● Bài 4: Một con ốc sên leo từ đáy giếng lên miệng giếng, biết ban ngày leo được x mét, ban đêm lại bị tụt xuống y mét, hỏi sau bao nhiêu ngày thì ốc sên sẽ lên được đến miệng giếng. Viết hàm giải bài toán trên với 3 tham số h là chiều cao của giếng, x và y như mô tả trên.
-
+function moveSnail(x, y, h) {
+    if (x == h) {
+        return 1;
+    } else {
+        if ((h - y) % (x - y) == 0) {
+            return (h - y) / (x - y);
+        } else {
+            return (h - y) / (x - y) + 1;
+        }
+    }
+}
 
 // ● Bài 5: Cho 1 số nguyên, hãy viết hàm sắp xếp lại các chữ số trong số nguyên đó sao cho ra 1 số nhỏ nhất có thể (không tính số 0 đầu tiên). Ví dụ với tham số 53751 thì kết quả là 13557.
-
 function sortElement(num) {
 
     function frankenSplice(arr1, arr2, n) {
