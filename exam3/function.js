@@ -1,4 +1,4 @@
-//Xử lý số
+//-------------------------------Xử lý số--------------------------------//
 // Bài 1: Viết hàm tính thể tích hình cầu, với tham số truyền vào là bán kính của hình cầu.
 function calSphereVolume(radius) {
     return 4 * Math.PI * Math.pow(radius, 3) / 3;
@@ -111,7 +111,7 @@ function sumEvenFib3(num) {
 }
 
 
-// Xử lý chuỗi
+// -------------------------------Xử lý chuỗi-------------------------------//
 // ● Bài 1: Chuyển 1 chuỗi gồm nhiều từ thành chuỗi mới viết hoa các chữ cái đầu tiên của mỗi từ. Ví dụ:''HELLO world'' => ''Hello World''.
 function convertToTitle(str) {
     let newArray = str.toLowerCase().split(' ');
@@ -146,7 +146,7 @@ function checkPalindrome(str) {
     return str === str.split("").reverse().join("");
 }
 
-// Xử lý mảng
+// -------------------------Xử lý mảng------------------------------------//
 // ● Bài 1: Viết hàm loại bỏ các giá trị sai trong 1 mảng. Các giá trị sai bao gồm: false, null, undefined,NaN, 0, ''''.
 //cach 1:
 function removeFalse(arr) {
@@ -223,7 +223,8 @@ function findLongestWordLength(arr) {
 // function ziczacArr(n, m) {
 
 // }
-// Xử lý object
+
+// -----------------------------Xử lý object--------------------------------//
 // ● Bài 1: Cho 1 object. Viết hàm kiểm tra xem object đó có phải là object rỗng hay không (không có thuộc tính nào). Kết quả trả về true hoặc false.
 function checkObject(obj) {
     if (Object.keys(obj) == []) {
@@ -276,7 +277,7 @@ function averageAge(arr) {
     return average / arr.length;
 }
 
-//Tổng hợp
+//-----------------------------Tổng hợp------------------------------------//
 // ● Bài 1: Cho 2 số a và b. Viết hàm giải phương trình bậc nhất dạng ax + b = 0.
 function linearEquation(a, b) {
     if (a == 0 && b == 0) {
