@@ -227,10 +227,10 @@ function findLongestWordLength(arr) {
 // -----------------------------Xử lý object--------------------------------//
 // ● Bài 1: Cho 1 object. Viết hàm kiểm tra xem object đó có phải là object rỗng hay không (không có thuộc tính nào). Kết quả trả về true hoặc false.
 function checkObject(obj) {
-    if (Object.keys(obj) == []) {
-        return false;
+    if (Object.keys(obj).length === 0 && obj.constructor === Object) {
+        return true;
     }
-    return true;
+    return false;
 }
 
 // ● Bài 2: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Huy'', gender: ''Male'', age: 20 }. Viết hàm sắp xếp lại mảng trên theo tên học viên (không phân biệt hoa thường).
