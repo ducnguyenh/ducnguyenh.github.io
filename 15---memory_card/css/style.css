@@ -6,7 +6,7 @@
 
 body {
     overflow-y: scroll;
-    background: url(/images/backGround1.jpg) repeat;
+    background: url(/15---memory_card/images/backGround1.jpg) repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -18,7 +18,6 @@ body {
     padding: 15px;
     max-width: 1200px;
     height: 100%;
-    /* border: 2px solid lime; */
 }
 
 /* click and reset */
