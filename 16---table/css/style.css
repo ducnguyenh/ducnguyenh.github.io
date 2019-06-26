@@ -60,6 +60,7 @@ tr.odd:hover {
     transform: scale(1);
     background: rgb(233, 223, 223);
     box-shadow: 1px 1px 1px 1px rgb(98, 205, 238);
+    cursor: pointer;
 }
 
 tr.even {
