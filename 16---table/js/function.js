@@ -111,7 +111,6 @@ $(function () {
                 } else {
                     row.append($('<t' + (rowIndex == 0 ? 'h' : 'd') + '/>').text(c))
                 }
-
             });
 
             //add class for td
@@ -125,4 +124,5 @@ $(function () {
     }
 
     makeTable($(document.body), dataTable);
+    
 })
