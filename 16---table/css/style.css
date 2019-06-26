@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 25px;
+    font-size: 23px;
+}
+
+table,
+tr,
+td,
+th {
+    border: 1px solid blue;
+    border-collapse: collapse;
+    margin: auto;
+    padding: 0 25px;
+}
+
+table {
+    background: white;
+}
+
+/* first row */
+tr.firstRow th {
+    background: rgb(98, 205, 238);
+    text-align: center;
+    padding: 15px 25px;
+}
+
+.poster {
+    text-align: center;
+}
+img {
+    border-radius: 50%;
+    width: 38px;
+}
+
+/* child row */
+tr.even:hover,
+tr.odd:hover {
+    transform: scale(1);
+    background: rgb(238, 234, 234);
+}
+
+tr.even {
+    background: rgb(237, 245, 243);
+}
+
+/* top column css */
+tr td:first-child {
+    text-align: center;
+    padding: 15px;
+}
+
+tr th:first-child {
+    padding: 15px;
+}
