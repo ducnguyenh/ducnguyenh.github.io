@@ -120,9 +120,10 @@ $(function () {
 
             table.append(row);
         });
-        return container.append(table);
+        container.append(table);
+        return table.insertAfter('h1');
     }
 
     makeTable($(document.body), dataTable);
-    
+
 })
