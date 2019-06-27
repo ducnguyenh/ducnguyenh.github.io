@@ -47,11 +47,11 @@ tr.firstRow th {
 img {
     border-radius: 50%;
     width: 38px;
+    transition: transform 0.5s;
 }
 
 img:hover {
     transform: scale(2);
-    transition: transform 0.5s;
 }
 
 /* child row */
