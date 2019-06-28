@@ -19,16 +19,16 @@ h1 {
 }
 
 table,
+tbody,
 tr,
-td,
-th {
+td {
     border: 1px solid lightblue;
     border-collapse: collapse;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 25px;
 }
 
-table.containerTable {
+table {
     border: 3px solid rgb(110, 171, 241);
     background: white;
 }
@@ -37,7 +37,9 @@ table.containerTable {
 tr.firstRow th {
     background: rgb(98, 205, 238);
     text-align: center;
-    padding: 15px 25px;
+    padding: 15px 15px;
+    border: 1px solid lightblue;
+    border-collapse: collapse;
 }
 
 .poster {
@@ -69,13 +71,13 @@ tr.even {
 /* top column css */
 tr td:first-child {
     text-align: center;
-    padding: 15px;
-}
-
-tr th:first-child {
-    padding: 15px;
 }
 
 tr td:nth-child(5) {
     text-align: center;
+}
+
+i {
+    float: right;
+    padding-left: 15px;
 }
