@@ -42,6 +42,25 @@ tr.firstRow th {
     border-collapse: collapse;
 }
 
+tr td:nth-child(5) {
+    text-align: center;
+}
+
+i {
+    float: right;
+    padding-left: 15px;
+}
+
+th:nth-child(1):hover,
+th:nth-child(2):hover,
+th:nth-child(4):hover,
+th:nth-child(5):hover,
+th:nth-child(6):hover,
+th:nth-child(7):hover {
+    cursor: pointer;
+}
+
+/* image */
 .poster {
     text-align: center;
 }
@@ -71,13 +90,4 @@ tr.even {
 /* top column css */
 tr td:first-child {
     text-align: center;
-}
-
-tr td:nth-child(5) {
-    text-align: center;
-}
-
-i {
-    float: right;
-    padding-left: 15px;
 }
