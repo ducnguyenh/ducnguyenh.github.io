@@ -1,15 +1,6 @@
 $(function () {
     let dataTable = [
         {
-            top: 'top',
-            filmName: 'Film Name',
-            thumbnail: 'Poster',
-            worldwideGross: 'Worldwide Gross',
-            release: 'Release',
-            director: 'Director',
-            studio: 'Studio'
-        },
-        {
             top: 1,
             filmName: 'Avatar',
             thumbnail: 'https://upload.wikimedia.org/wikipedia/vi/b/b0/Avatar-Teaser-Poster.jpg',
@@ -56,7 +47,7 @@ $(function () {
         },
         {
             top: 6,
-            filmName: '	Jurassic World',
+            filmName: 'Jurassic World',
             thumbnail: 'https://upload.wikimedia.org/wikipedia/vi/0/01/JurassicWorldPoster.jpg',
             worldwideGross: '$1,671,713,208',
             release: 2015,
@@ -76,14 +67,14 @@ $(function () {
             top: 8,
             filmName: 'Fast & Furious 7',
             thumbnail: 'https://upload.wikimedia.org/wikipedia/vi/b/b8/Furious_7_poster.jpg',
-            worldwideGross: '$1.511.726.205',
+            worldwideGross: '$1,511,726,205',
             release: 2015,
             director: 'James Wan',
             studio: 'Universal'
         },
         {
             top: 9,
-            filmName: '	Avengers: Age Of Ultron',
+            filmName: 'Avengers: Age Of Ultron',
             thumbnail: 'https://upload.wikimedia.org/wikipedia/vi/f/f8/Avengers_-_Age_of_Utron_Poster.jpg',
             worldwideGross: '$1,405,413,868',
             release: 2015,
@@ -100,30 +91,194 @@ $(function () {
             studio: 'Marvel'
         }];
 
-    function makeTable(container, data) {
-        let table = $('<table/>').addClass('containerTable');
+    function makeTable(data) {
+        let tbody = $('<tbody/>').addClass('containerTbody');
         $.each(data, function (rowIndex, r) {
             let row = $('<tr/>');
             $.each(r, function (colIndex, c) {
-
-                if (colIndex == 'thumbnail' && rowIndex != 0) {
+                if (colIndex == 'thumbnail') {
                     row.append($('<td/>').addClass('poster').append('<img src = ' + c + '>'));
                 } else {
-                    row.append($('<t' + (rowIndex == 0 ? 'h' : 'd') + '/>').text(c))
+                    row.append($('<td/>').text(c))
                 }
             });
 
             //add class for td
-            rowIndex == 0 ? row.addClass('firstRow')
-                : rowIndex % 2 == 0 ? row.addClass('even')
-                    : row.addClass('odd')
+            rowIndex % 2 == 0 ? row.addClass('even') : row.addClass('odd')
 
-            table.append(row);
+            tbody.append(row);
         });
-        container.append(table);
-        return table.insertAfter('h1');
+        return tbody.insertAfter('thead');
     }
 
-    makeTable($(document.body), dataTable);
+    //sort for string [filmName, director, studio]
+    function increaseSortByStr(data, properties) {
+        function compare(a, b) {
+            if (a[properties].toLowerCase() < b[properties].toLowerCase()) {
+                return -1;
+            }
+            if (a[properties].toLowerCase() > b[properties].toLowerCase()) {
+                return 1;
+            }
+            return 0;
+        }
+        return data.sort(compare)
+    };
 
-})
+    function decreaseSortByStr(data, properties) {
+        function compare(a, b) {
+            if (a[properties].toLowerCase() < b[properties].toLowerCase()) {
+                return 1;
+            }
+            if (a[properties].toLowerCase() > b[properties].toLowerCase()) {
+                return -1;
+            }
+            return 0;
+        }
+        return data.sort(compare)
+    };
+
+    //sort for number [top, worldwideGross, release]
+    function increaseSortByNumber(data, prop) {
+        function compare(a, b) {
+            if (typeof a[prop] === 'string' & typeof b[prop] === 'string') {
+                if (Number(a[prop].replace(/[^0-9]+/g, "")) < Number(b[prop].replace(/[^0-9]+/g, ""))) {
+                    return -1;
+                }
+                if (Number(a[prop].replace(/[^0-9]+/g, "")) > Number(b[prop].replace(/[^0-9]+/g, ""))) {
+                    return 1;
+                }
+                return 0;
+            } else {
+                return a[prop] - b[prop];
+            }
+        }
+        return data.sort(compare);
+    }
+
+    function decreaseSortByNumber(data, prop) {
+        function compare(a, b) {
+            if (typeof a[prop] === 'string') {
+                if (Number(a[prop].replace(/[^0-9]+/g, "")) < Number(b[prop].replace(/[^0-9]+/g, ""))) {
+                    return 1;
+                }
+                if (Number(a[prop].replace(/[^0-9]+/g, "")) > Number(b[prop].replace(/[^0-9]+/g, ""))) {
+                    return -1;
+                }
+                return 0;
+            } else {
+                return b[prop] - a[prop];
+            }
+        }
+        return data.sort(compare);
+    }
+
+    makeTable(dataTable);
+
+    //sort top
+    $('tr th:first-child').click(function () {
+        if ($('tr th:first-child').attr('class') == 'desc') {
+            increaseSortByNumber(dataTable, 'top');
+            $('tr th:first-child').attr('class', 'asc');
+            $('#top').attr('class', 'fa fa-sort-numeric-asc');
+            $('.containerTbody').remove();
+
+        } else if (($('tr th:first-child').attr('class') == 'asc')) {
+            decreaseSortByNumber(dataTable, 'top');
+            $('tr th:first-child').attr('class', 'desc');
+            $('#top').attr('class', 'fa fa-sort-numeric-desc');
+            $('.containerTbody').remove();
+        };
+        makeTable(dataTable);
+    })
+
+    //sort gross
+    $('tr th:nth-child(4)').click(function () {
+        if ($('tr th:nth-child(4)').attr('class') == 'desc') {
+            increaseSortByNumber(dataTable, 'worldwideGross');
+            $('tr th:nth-child(4)').attr('class', 'asc');
+            $('#gross').attr('class', 'fa fa-sort-numeric-asc');
+            $('.containerTbody').remove();
+
+        } else if (($('tr th:nth-child(4)').attr('class') == 'asc')) {
+            decreaseSortByNumber(dataTable, 'worldwideGross');
+            $('tr th:nth-child(4)').attr('class', 'desc');
+            $('#gross').attr('class', 'fa fa-sort-numeric-desc');
+            $('.containerTbody').remove();
+        };
+        makeTable(dataTable);
+    })
+
+    //sort release
+    $('tr th:nth-child(5)').click(function () {
+        if ($('tr th:nth-child(5)').attr('class') == 'desc') {
+            increaseSortByNumber(dataTable, 'release');
+            $('tr th:nth-child(5)').attr('class', 'asc');
+            $('#release').attr('class', 'fa fa-sort-numeric-asc');
+            $('.containerTbody').remove();
+
+        } else if (($('tr th:nth-child(5)').attr('class') == 'asc')) {
+            decreaseSortByNumber(dataTable, 'release');
+            $('tr th:nth-child(5)').attr('class', 'desc');
+            $('#release').attr('class', 'fa fa-sort-numeric-desc');
+            $('.containerTbody').remove();
+        };
+        makeTable(dataTable);
+    })
+
+    //sort film name
+    $('tr th:nth-child(2)').click(function () {
+        if ($('tr th:nth-child(2)').attr('class') == 'desc') {
+            increaseSortByStr(dataTable, 'filmName');
+            $('tr th:nth-child(2)').attr('class', 'asc');
+            $('#film').attr('class', 'fa fa-sort-alpha-asc');
+            $('.containerTbody').remove();
+
+        } else if (($('tr th:nth-child(2)').attr('class') == 'asc')) {
+            decreaseSortByStr(dataTable, 'filmName');
+            $('tr th:nth-child(2)').attr('class', 'desc');
+            $('#film').attr('class', 'fa fa-sort-alpha-desc');
+            $('.containerTbody').remove();
+        };
+        makeTable(dataTable);
+    })
+
+    //sort director
+    $('tr th:nth-child(6)').click(function () {
+        if ($('tr th:nth-child(6)').attr('class') == 'desc') {
+            increaseSortByStr(dataTable, 'director');
+            $('tr th:nth-child(6)').attr('class', 'asc');
+            $('#director').attr('class', 'fa fa-sort-alpha-asc');
+            $('.containerTbody').remove();
+
+        } else if (($('tr th:nth-child(6)').attr('class') == 'asc')) {
+            decreaseSortByStr(dataTable, 'director');
+            $('tr th:nth-child(6)').attr('class', 'desc');
+            $('#director').attr('class', 'fa fa-sort-alpha-desc');
+            $('.containerTbody').remove();
+        };
+        makeTable(dataTable);
+    })
+
+    //sort director
+    $('tr th:nth-child(7)').click(function () {
+        if ($('tr th:nth-child(7)').attr('class') == 'desc') {
+            increaseSortByStr(dataTable, 'studio');
+            $('tr th:nth-child(7)').attr('class', 'asc');
+            $('#studio').attr('class', 'fa fa-sort-alpha-asc');
+            $('.containerTbody').remove();
+
+        } else if (($('tr th:nth-child(7)').attr('class') == 'asc')) {
+            decreaseSortByStr(dataTable, 'studio');
+            $('tr th:nth-child(7)').attr('class', 'desc');
+            $('#studio').attr('class', 'fa fa-sort-alpha-desc');
+            $('.containerTbody').remove();
+        };
+        makeTable(dataTable);
+        if (!$('tr th:nth-child(7)').attr('class')) {
+            $('tr th > i').attr('class', '')
+        };
+    })
+
+});
+
