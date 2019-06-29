@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="image/favicon-32x32.png" />
+    <link rel="stylesheet" type="text/css" href="/17---reponsiveBootstrap/css/style.css">
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <header class="container">
+        <div id="banner">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="image/logo.png" title="Home" alt="logo Pokémon">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pokédex</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pokémon TV</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Minigames</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Video Game</a></li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row flex-xl-nowrap">
+            <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+                <h2 class="">Type
+                    <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3 collapsed" type="button"
+                        data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav"
+                        aria-expanded="false" aria-label="Toggle docs navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img"
+                            focusable="false">
+                            <title>Menu</title>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                                d="M4 7h22M4 15h22M4 23h22"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <hr>
+
+                <nav class="bd-links collapse show" id="bd-docs-nav" style="">
+                    <div class="card">
+                        <li><a href="#">Normal</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Steel</a></li>
+                                <li><a href="#">Grass</a></li>
+                                <li><a href="#">Water</a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="#">Gekkoga</a></li>
+                                        <li><a href="#">Kaioga</a></li>
+                                        <li><a href="#">Zenigame</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Fire</a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="#">Lizardon</a></li>
+                                        <li><a href="#">Fokko</a></li>
+                                        <li><a href="#">Victini</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Ground</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Fighting</a></li>
+                        <li><a href="#">Flying</a></li>
+                        <li><a href="#">Poison</a>
+                            <ul class="dropdown-submenu">
+                                <li><a href="#">Gengar</a></li>
+                                <li><a href="#">Nidoking</a></li>
+                                <li><a href="#">Venusaur</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Ghost</a></li>
+                        <li><a href="#">Electric</a>
+                            <ul class="dropdown-submenu">
+                                <li><a href="#">Pikachu</a></li>
+                                <li><a href="#">Thunders</a></li>
+                                <li><a href="#">Denryu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Psychic</a>
+                            <ul class="dropdown-submenu">
+                                <li><a href="#">Mew</a></li>
+                                <li><a href="#">Mewtwo</a></li>
+                                <li><a href="#">Alakazam</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Rock</a></li>
+                        <li><a href="#">Bug</a></li>
+                        <li><a href="#">Ice</a></li>
+                        <li><a href="#">Dark</a></li>
+                        <li><a href="#">Fairy</a></li>
+
+                        <h2>Top</h2>
+                        <hr>
+                        <li class="active"><a href="#">Legend</a>
+                            <ul class="dropdown-submenu">
+                                <li><a href="#">Multi-type</a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="#">Arceus</a></li>
+                                        <li><a href="#">Rayquaza</a></li>
+                                        <li><a href="#">Lugia</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Time</a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="#">Dialga</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Space</a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="#">Giratina</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Psychic</a>
+                                    <ul class="dropdown-submenu">
+                                        <li><a href="#">Mew</a></li>
+                                        <li><a href="#">Mewtwo</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Evolution</a></li>
+                        <li><a href="#">Attack</a></li>
+                        <li><a href="#">Defensive</a></li>
+                        <li><a href="#">Battle</a></li>
+                    </div>
+                    <div class="bd-toc-item">
+                        <a class="bd-toc-link" href="#">
+                            Normal
+                        </a>
+
+                        <ul class="nav bd-sidenav">
+                            <li><a href="#">Steel</a></li>
+                            <li><a href="#">Grass</a></li>
+                            <li><a href="#">Water</a></li>
+                            <li><a href="#">Fire</a>
+                        </ul>
+                    </div>
+                    <div class="bd-toc-item">
+                        <a class="bd-toc-link" href="/docs/4.3/layout/overview/">
+                            Layout
+                        </a>
+
+                        <ul class="nav bd-sidenav">
+                            <li>
+                                <a href="/docs/4.3/layout/overview/">
+                                    Overview
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bd-toc-item">
+                        <a class="bd-toc-link" href="/docs/4.3/content/reboot/">
+                            Content
+                        </a>
+
+                        <ul class="nav bd-sidenav">
+                            <li>
+                                <a href="/docs/4.3/content/reboot/">
+                                    Reboot
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/docs/4.3/content/typography/">
+                                    Typography
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bd-toc-item">
+                        <a class="bd-toc-link" href="/docs/4.3/components/alerts/">
+                            Components
+                        </a>
+
+                        <ul class="nav bd-sidenav">
+                            <li>
+                                <a href="/docs/4.3/components/alerts/">
+                                    Alerts
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+            <main class="col-12 col-md-9 col-xl-10 py-md-3 pl-md-5 bd-content" role="main">
+                <h1 class="bd-title" id="content">Top 10 Strongest Pokemon</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4 pokemon">
+                        <a href="pageDetail.html#arceus">
+                            <img class="img-responsive" src="/17---reponsiveBootstrap/image/arceus.jpg" title="Arceus"
+                                alt="pokemon Arceus">
+                            <div class="shadow">
+                                <p>1. Arceus </p>
+                            </div>
+                            <p>1. Arceus </p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 pokemon">
+                        <a href="pageDetail.html#mewtwo">
+                            <img class="img-responsive" src="/17---reponsiveBootstrap/image/mewtwo.jpg" title="Mewtwo"
+                                alt="pokemon Mewtwo">
+                            <div class="shadow">
+                                <p>2. Mewtwo </p>
+                            </div>
+                            <p>2. Mewtwo </p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 pokemon">
+                        <a href="pageDetail.html#rayquaza">
+                            <img class="img-responsive" src="/17---reponsiveBootstrap/image/rayquaza.jpg"
+                                title="Rayquaza" alt="pokemon Rayquaza">
+                            <div class="shadow">
+                                <p>3. Rayquaza</p>
+                            </div>
+                            <p>3. Rayquaza</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 pokemon">
+                        <a href="pageDetail.html#darkrai">
+                            <img class="img-responsive" src="/17---reponsiveBootstrap/image/darkrai.jpg" title="Darkrai"
+                                alt="pokemon Darkrai">
+                            <div class="shadow">
+                                <p>4. Darkrai</p>
+                            </div>
+                            <p>4. Darkrai</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 pokemon">
+                        <a href="pageDetail.html#kyogre">
+                            <img class="img-responsive" src="/17---reponsiveBootstrap/image/kyogre.jpg" title="Kyogre"
+                                alt="pokemon Kyogre">
+                            <div class="shadow">
+                                <p>5. Kyogre</p>
+                            </div>
+                            <p>5. Kyogre</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 pokemon">
+                        <a href="pageDetail.html#goudon">
+                            <img class="img-responsive" src="/17---reponsiveBootstrap/image/goudon.jpg" title="Goudon"
+                                alt="pokemon Goudon">
+                            <div class="shadow">
+                                <p>6. Goudon</p>
+                            </div>
+                            <p>6. Goudon</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 pokemon">
+                        <a href="pageDetail.html#deoxys">
+                            <img class="img-responsive" src="/17---reponsiveBootstrap/image/deoxys.jpg" title="Deoxys"
+                                alt="pokemon Deoxys">
+                            <div class="shadow">
+                                <p>7. Deoxys</p>
+                            </div>
+                            <p>7. Deoxys</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 pokemon">
+                        <a href="pageDetail.html#xerneas">
+                            <img class="img-responsive" src="/17---reponsiveBootstrap/image/xerneas.jpg" title="Xernear"
+                                alt="pokemon Xernear">
+                            <div class="shadow">
+                                <p>8. Xernear</p>
+                            </div>
+                            <p>8. Xernear</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 pokemon">
+                        <a href="pageDetail.html#dialga">
+                            <img class="img-responsive" src="/17---reponsiveBootstrap/image/dialga.jpg" title="Dialga"
+                                alt="pokemon Dialga">
+                            <div class="shadow">
+                                <p>9. Dialga</p>
+                            </div>
+                            <p>9. Dialga</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 pokemon">
+                        <a href="pageDetail.html#kyurem-white">
+                            <img class="img-responsive" src="/17---reponsiveBootstrap/image/kyurem-white.jpg"
+                                title="Kyurem-White" alt="pokemon Kyurem-White">
+                            <div class="shadow">
+                                <p>10. Kyurem-White</p>
+                            </div>
+                            <p>10. Kyurem-White</p>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </section>
+
+    <footer class="container card-footer text-muted">
+        &copy; Copyright 2019 Nguyen Huu Duc - Reference: tinanime.com
+    </footer>
+
+</body>
+
+</html>
