@@ -52,7 +52,7 @@ h2 > button {
 h2 {
     margin-bottom: 0;
     padding: 1rem 28px 0 28px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 25px;
 }
 
@@ -78,7 +78,7 @@ h2 {
     height: auto;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
-    border-radius: 16px;
+    /* border-radius: 10px; */
 }
 
 .shadow {
@@ -114,6 +114,15 @@ h2 {
 
 .pokemon:hover a {
     text-decoration: underline;
+}
+
+.li {
+    list-style-type: none;
+}
+
+#dropdownMenuLink,
+#dropdownMenuLink2 {
+    padding: 4px 24px;
 }
 
 /* ----------left CSS-----------*/
@@ -175,8 +184,7 @@ h2 {
 
 /* .card ul {
 	width: 123px;
-} */ */
-
+} */
 .card-footer {
     text-align: center;
 }
