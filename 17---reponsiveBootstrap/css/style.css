@@ -64,7 +64,7 @@ h2 > button {
 
 h2 {
     margin-bottom: 0;
-    padding: 1rem 28px 0 28px;
+    padding: 1rem 35px 0 30px;
     font-weight: 700;
     font-size: 25px;
 }
@@ -130,6 +130,13 @@ h2 {
 }
 
 /* top and type dropdown-menu */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+    content: "\f0dd";
+    font-size: 25px;
+    color: #16181b;
+}
+
 #dropdownMenuLink,
 #dropdownMenuLink2 {
     padding: 4px 24px;
