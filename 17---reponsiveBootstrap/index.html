@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/png" href="image/favicon-32x32.png" />
     <link rel="stylesheet" type="text/css" href="/17---reponsiveBootstrap/css/style.css">
+    <link rel="stylesheet" href="/17---reponsiveBootstrap/css/dropdownmenu.css">
     <title>Pokemon</title>
 </head>
 
@@ -50,9 +51,9 @@
         <div class="row flex-xl-nowrap">
             <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
                 <h2 class="">Type
-                    <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3 collapsed" type="button"
-                        data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav"
-                        aria-expanded="false" aria-label="Toggle docs navigation">
+                    <button class="btn btn-link d-md-none p-0 ml-3 collapsed" type="button" data-toggle="collapse"
+                        data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
+                        aria-label="Toggle docs navigation">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img"
                             focusable="false">
                             <title>Menu</title>
@@ -63,156 +64,136 @@
                 </h2>
                 <hr>
 
-                <nav class="bd-links collapse show" id="bd-docs-nav" style="">
+                <nav class="collapse show" id="bd-docs-nav" style="">
                     <div class="card">
-                        <li><a href="#">Normal</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Steel</a></li>
-                                <li><a href="#">Grass</a></li>
-                                <li><a href="#">Water</a>
-                                    <ul class="dropdown-submenu">
-                                        <li><a href="#">Gekkoga</a></li>
-                                        <li><a href="#">Kaioga</a></li>
-                                        <li><a href="#">Zenigame</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Fire</a>
-                                    <ul class="dropdown-submenu">
-                                        <li><a href="#">Lizardon</a></li>
-                                        <li><a href="#">Fokko</a></li>
-                                        <li><a href="#">Victini</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Ground</a></li>
-                            </ul>
-                        </li>
+                        <div class="dropdown">
+                            <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Normal
+                            </a>
 
-                        <li><a href="#">Fighting</a></li>
-                        <li><a href="#">Flying</a></li>
-                        <li><a href="#">Poison</a>
-                            <ul class="dropdown-submenu">
-                                <li><a href="#">Gengar</a></li>
-                                <li><a href="#">Nidoking</a></li>
-                                <li><a href="#">Venusaur</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Ghost</a></li>
-                        <li><a href="#">Electric</a>
-                            <ul class="dropdown-submenu">
-                                <li><a href="#">Pikachu</a></li>
-                                <li><a href="#">Thunders</a></li>
-                                <li><a href="#">Denryu</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Psychic</a>
-                            <ul class="dropdown-submenu">
-                                <li><a href="#">Mew</a></li>
-                                <li><a href="#">Mewtwo</a></li>
-                                <li><a href="#">Alakazam</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Rock</a></li>
-                        <li><a href="#">Bug</a></li>
-                        <li><a href="#">Ice</a></li>
-                        <li><a href="#">Dark</a></li>
-                        <li><a href="#">Fairy</a></li>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Steel</a>
+                                <a class="dropdown-item" href="#">Grass</a>
+                                <a class="dropdown-item" href="#">Water</a>
+                                <a class="dropdown-item" href="#">Fire</a>
+                                <a class="dropdown-item" href="#">Ground</a>
+                            </div>
+                        </div>
 
-                        <h2>Top</h2>
-                        <hr>
-                        <li class="active"><a href="#">Legend</a>
-                            <ul class="dropdown-submenu">
-                                <li><a href="#">Multi-type</a>
-                                    <ul class="dropdown-submenu">
-                                        <li><a href="#">Arceus</a></li>
-                                        <li><a href="#">Rayquaza</a></li>
-                                        <li><a href="#">Lugia</a></li>
-                                    </ul>
-                                </li>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Fighting
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Flying
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Poison
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Ghost
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Electric
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Psychic
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Rock
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Bug
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Ice
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Dark
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Fairy
+                            </a>
+                        </div>
 
-                                <li><a href="#">Time</a>
-                                    <ul class="dropdown-submenu">
-                                        <li><a href="#">Dialga</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="#">Space</a>
-                                    <ul class="dropdown-submenu">
-                                        <li><a href="#">Giratina</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="#">Psychic</a>
-                                    <ul class="dropdown-submenu">
-                                        <li><a href="#">Mew</a></li>
-                                        <li><a href="#">Mewtwo</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Evolution</a></li>
-                        <li><a href="#">Attack</a></li>
-                        <li><a href="#">Defensive</a></li>
-                        <li><a href="#">Battle</a></li>
                     </div>
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="#">
-                            Normal
-                        </a>
-
-                        <ul class="nav bd-sidenav">
-                            <li><a href="#">Steel</a></li>
-                            <li><a href="#">Grass</a></li>
-                            <li><a href="#">Water</a></li>
-                            <li><a href="#">Fire</a>
-                        </ul>
-                    </div>
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="/docs/4.3/layout/overview/">
-                            Layout
-                        </a>
-
-                        <ul class="nav bd-sidenav">
-                            <li>
-                                <a href="/docs/4.3/layout/overview/">
-                                    Overview
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="/docs/4.3/content/reboot/">
-                            Content
-                        </a>
-
-                        <ul class="nav bd-sidenav">
-                            <li>
-                                <a href="/docs/4.3/content/reboot/">
-                                    Reboot
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/docs/4.3/content/typography/">
-                                    Typography
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="bd-toc-item">
-                        <a class="bd-toc-link" href="/docs/4.3/components/alerts/">
-                            Components
-                        </a>
-
-                        <ul class="nav bd-sidenav">
-                            <li>
-                                <a href="/docs/4.3/components/alerts/">
-                                    Alerts
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
                 </nav>
+
+                <h2 class="">Top
+                    <button class="btn btn-link d-md-none p-0 ml-3 collapsed" type="button" data-toggle="collapse"
+                        data-target="#bd-docs-nav2" aria-controls="bd-docs-nav2" aria-expanded="false"
+                        aria-label="Toggle docs navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img"
+                            focusable="false">
+                            <title>Menu</title>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                                d="M4 7h22M4 15h22M4 23h22"></path>
+                        </svg>
+                    </button>
+
+                </h2>
+                <hr>
+                <nav class="collapse show" id="bd-docs-nav2" style="">
+                    <div class="card">
+                        <div class="dropdown">
+                            <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Legend
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="#">Multi-type</a>
+                                <a class="dropdown-item" href="#">Time</a>
+                                <a class="dropdown-item" href="#">Sapce</a>
+                                <a class="dropdown-item" href="#">Psychic</a>
+                            </div>
+                        </div>
+
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Evolution
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Attack
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Defensive
+                            </a>
+                        </div>
+                        <div class="bd-toc-item">
+                            <a class="dropdown-item" href="#Steel">
+                                Battle
+                            </a>
+                        </div>
+
+                    </div>
+                </nav>
+
             </div>
 
             <main class="col-12 col-md-9 col-xl-10 py-md-3 pl-md-5 bd-content" role="main">
@@ -336,7 +317,7 @@
     <footer class="container card-footer text-muted">
         &copy; Copyright 2019 Nguyen Huu Duc - Reference: tinanime.com
     </footer>
-
+    <!-- <script src="/17---reponsiveBootstrap/js/dropdownmenu.js"></script> -->
 </body>
 
 </html>
