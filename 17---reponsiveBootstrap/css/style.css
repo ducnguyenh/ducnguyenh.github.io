@@ -64,6 +64,8 @@ h2 {
 .pokemon p {
     text-align: center;
     padding: 2vh 0 3vh 0;
+    color: blue;
+    font-weight: 500;
 }
 .shadow p {
     font-size: 18px;
@@ -78,7 +80,6 @@ h2 {
     height: auto;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
-    /* border-radius: 10px; */
 }
 
 .shadow {
@@ -98,7 +99,6 @@ h2 {
     max-width: 100%;
     position: relative;
     overflow: hidden;
-    /* margin-left: 15px;  */
 }
 
 .pokemon:hover .shadow {
@@ -116,75 +116,25 @@ h2 {
     text-decoration: underline;
 }
 
-.li {
-    list-style-type: none;
-}
-
 #dropdownMenuLink,
 #dropdownMenuLink2 {
     padding: 4px 24px;
+    width: 100%;
+    text-align: initial;
+    font-size: 18px;
 }
 
-/* ----------left CSS-----------*/
-
-/* .bd-links li {
-	display: block;
-	background: #5FB404;
-	border: 1px solid white;
-	list-style-type: none;
+.dropdown-item {
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    color: #509903;
+    font-weight: 500;
+    font-size: 18px;
 }
 
-.bd-links li a {
-	color: white;
-	text-decoration: none;
-	font-size: 18px;
-	padding: 20px;
-}
-
-.bd-links li:hover:not(.active) {
-	background: #ff4d00;
-}
-
-.card li {
-	position: relative;
-}
-
-/*----------Fixed sub-menu1-------*
-.card .sub-menu1 {
-	display: none;
-	position: absolute;
-	/* left: 122px;
-	top: -1px; *
-}
-
-.card li:hover .sub-menu1 {
-	display: block;
-}
-
-.card .active {
-	background: #ff4d00 !important;
-}
-
-/*----------Fixed sub-menu2-------*
-.sub-menu1 li {
-	position: relative;
-	z-index: 30;
-}
-
-.sub-menu1 .sub-menu2 {
-	display: none;
-	position: absolute;
-	/* top: -1px;
-	left: 122px; *
-}
-
-.card li:hover .sub-menu1 li:hover .sub-menu2 {
-	display: block;
-}
-
-/* .card ul {
-	width: 123px;
-} */
+/* footer */
 .card-footer {
     text-align: center;
 }
