@@ -75,17 +75,14 @@ h2 {
 
 /* hover image */
 .pokemon p {
-    text-align: center;
     padding: 2vh 0 3vh 0;
-    color: blue;
-    font-weight: 500;
 }
 .shadow p {
     font-size: 18px;
     font-weight: 700;
     color: white;
     text-align: center;
-    padding-top: 35%;
+    padding-top: 32%;
 }
 
 .pokemon img {
@@ -100,7 +97,7 @@ h2 {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.52);
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     text-align: center;
     color: white;
     box-sizing: border-box;
@@ -121,7 +118,7 @@ h2 {
 }
 
 .pokemon:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: all 0.3s ease-in-out;
 }
 
