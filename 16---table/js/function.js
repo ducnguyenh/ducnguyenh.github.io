@@ -178,7 +178,7 @@ $(function () {
 
     //sort top
     $('tr th:first-child').click(function () {
-        $('tr th i').attr('class', "");
+        $('tr th i').attr('class', "fa fa-sort");
         if ($('tr th:first-child').attr('class') == 'desc') {
             increaseSortByNumber(dataTable, 'top');
             $('tr th:first-child').attr('class', 'asc');
@@ -197,7 +197,7 @@ $(function () {
 
     //sort gross
     $('tr th:nth-child(4)').click(function () {
-        $('tr th i').attr('class', "");
+        $('tr th i').attr('class', "fa fa-sort");
         if ($('tr th:nth-child(4)').attr('class') == 'desc') {
             increaseSortByNumber(dataTable, 'worldwideGross');
             $('tr th:nth-child(4)').attr('class', 'asc');
@@ -215,7 +215,7 @@ $(function () {
 
     //sort release
     $('tr th:nth-child(5)').click(function () {
-        $('tr th i').attr('class', "");
+        $('tr th i').attr('class', "fa fa-sort");
         if ($('tr th:nth-child(5)').attr('class') == 'desc') {
             increaseSortByNumber(dataTable, 'release');
             $('tr th:nth-child(5)').attr('class', 'asc');
@@ -233,7 +233,7 @@ $(function () {
 
     //sort film name
     $('tr th:nth-child(2)').click(function () {
-        $('tr th i').attr('class', "");
+        $('tr th i').attr('class', "fa fa-sort");
         if ($('tr th:nth-child(2)').attr('class') == 'desc') {
             increaseSortByStr(dataTable, 'filmName');
             $('tr th:nth-child(2)').attr('class', 'asc');
@@ -251,7 +251,7 @@ $(function () {
 
     //sort director
     $('tr th:nth-child(6)').click(function () {
-        $('tr th i').attr('class', "");
+        $('tr th i').attr('class', "fa fa-sort");
         if ($('tr th:nth-child(6)').attr('class') == 'desc') {
             increaseSortByStr(dataTable, 'director');
             $('tr th:nth-child(6)').attr('class', 'asc');
@@ -269,7 +269,7 @@ $(function () {
 
     //sort studio
     $('tr th:nth-child(7)').click(function () {
-        $('tr th i').attr('class', "");
+        $('tr th i').attr('class', "fa fa-sort");
         if ($('tr th:nth-child(7)').attr('class') == 'desc') {
             increaseSortByStr(dataTable, 'studio');
             $('tr th:nth-child(7)').attr('class', 'asc');
