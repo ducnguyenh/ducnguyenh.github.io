@@ -114,26 +114,14 @@ $(function () {
     //sort to string [filmName, director, studio]
     function increaseSortByStr(data, properties) {
         function compare(a, b) {
-            if (a[properties].toLowerCase() < b[properties].toLowerCase()) {
-                return -1;
-            }
-            if (a[properties].toLowerCase() > b[properties].toLowerCase()) {
-                return 1;
-            }
-            return 0;
+            return a[properties].localeCompare(b[properties]);
         }
         return data.sort(compare)
     };
 
     function decreaseSortByStr(data, properties) {
         function compare(a, b) {
-            if (a[properties].toLowerCase() < b[properties].toLowerCase()) {
-                return 1;
-            }
-            if (a[properties].toLowerCase() > b[properties].toLowerCase()) {
-                return -1;
-            }
-            return 0;
+            return b[properties].localeCompare(a[properties]);
         }
         return data.sort(compare)
     };
