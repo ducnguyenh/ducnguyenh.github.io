@@ -128,6 +128,7 @@ $(function () {
         xhttp.send();
     }
 
+    //make table
     function makeTable(data) {
         let tbody = $('<tbody/>').addClass('containerTbody');
         $.each(data, function (rowIndex, r) {
@@ -142,31 +143,27 @@ $(function () {
 
             //add class for td
             rowIndex % 2 == 0 ? row.addClass('even') : row.addClass('odd')
-
             tbody.append(row);
         });
         return tbody.insertAfter('thead');
     }
 
     //sort to string [filmName, director, studio]
-
     function increaseSortByStr(data, properties) {
-        function compare(a, b) {
+        data.sort(function (a, b) {
             return a[properties].localeCompare(b[properties]);
-        }
-        return data.sort(compare)
+        });
     }
 
     function decreaseSortByStr(data, properties) {
-        function compare(a, b) {
+        data.sort(function (a, b) {
             return b[properties].localeCompare(a[properties]);
-        }
-        return data.sort(compare)
+        });
     };
 
     //sort to number [top, worldwideGross, release]
     function increaseSortByNumber(data, prop) {
-        function compare(a, b) {
+        data.sort(function (a, b) {
             if (typeof a[prop] === 'string') {
                 if (Number(a[prop].replace(/[^0-9]+/g, "")) < Number(b[prop].replace(/[^0-9]+/g, ""))) {
                     return -1;
@@ -178,12 +175,11 @@ $(function () {
             } else {
                 return a[prop] - b[prop];
             }
-        }
-        return data.sort(compare);
+        });
     }
 
     function decreaseSortByNumber(data, prop) {
-        function compare(a, b) {
+        data.sort(function (a, b) {
             if (typeof a[prop] === 'string') {
                 if (Number(a[prop].replace(/[^0-9]+/g, "")) < Number(b[prop].replace(/[^0-9]+/g, ""))) {
                     return 1;
@@ -195,8 +191,7 @@ $(function () {
             } else {
                 return b[prop] - a[prop];
             }
-        }
-        return data.sort(compare);
+        });
     }
 
     //make data
