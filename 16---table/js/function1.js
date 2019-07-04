@@ -1,6 +1,6 @@
 $(function () {
     //get data from server and sort
-    function loadDoc() {
+    function loadData() {
         let _col1 = $('tr th:first-child');
         let _col2 = $('tr th:nth-child(2)');
         let _col4 = $('tr th:nth-child(4)');
@@ -127,6 +127,8 @@ $(function () {
         xhttp.open("GET", "https://ducnguyenh.github.io/16---table/js/data.json", true);
         xhttp.send();
     }
+    //print on screen
+    loadData();
 
     //make table
     function makeTable(data) {
@@ -193,8 +195,5 @@ $(function () {
             }
         });
     }
-
-    //make data
-    loadDoc();
 });
 
