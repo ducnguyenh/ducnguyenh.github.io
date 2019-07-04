@@ -2,7 +2,7 @@
     "dataTable": [{
         "top": 1,
         "filmName": "Avatar",
-        "thumbnail": "https: //upload.wikimedia.org/wikipedia/vi/b/b0/Avatar-Teaser-Poster.jpg",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/vi/b/b0/Avatar-Teaser-Poster.jpg",
         "worldwideGross": "$2,787,965,087",
         "release": 2009,
         "director": "James Cameron",
@@ -11,7 +11,7 @@
     {
         "top": 2,
         "filmName": "Avengers: Endgame",
-        "thumbnail": "https: //upload.wikimedia.org/wikipedia/vi/2/2d/Avengers_Endgame_bia_teaser.jpg",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/vi/2/2d/Avengers_Endgame_bia_teaser.jpg",
         "worldwideGross": "$2,750,760,348",
         "release": 2019,
         "director": "Anthony Russo & Joe Russo",
@@ -20,7 +20,7 @@
     {
         "top": 3,
         "filmName": "Titanic",
-        "thumbnail": "https: //upload.wikimedia.org/wikipedia/vi/a/ab/Titanic_3D_poster_Vietnam.jpg",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/vi/a/ab/Titanic_3D_poster_Vietnam.jpg",
         "worldwideGross": "$2,186,772,302",
         "release": 1997,
         "director": "James Cameron",
@@ -29,7 +29,7 @@
     {
         "top": 4,
         "filmName": "Star Wars: The Force Awakens",
-        "thumbnail": "https: //upload.wikimedia.org/wikipedia/vi/2/26/Star_Wars_The_Force_Awakens_7.jpg",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/vi/2/26/Star_Wars_The_Force_Awakens_7.jpg",
         "worldwideGross": "$2,068,223,624",
         "release": 2017,
         "director": "J. J. Abrams",
@@ -38,7 +38,7 @@
     {
         "top": 5,
         "filmName": "Avengers: Infinity War",
-        "thumbnail": "https: //upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg",
         "worldwideGross": "$2,046,909,636",
         "release": 2018,
         "director": "Anthony Russo & Joe Russo",
@@ -47,7 +47,7 @@
     {
         "top": 6,
         "filmName": "Jurassic World",
-        "thumbnail": "https: //upload.wikimedia.org/wikipedia/vi/0/01/JurassicWorldPoster.jpg",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/vi/0/01/JurassicWorldPoster.jpg",
         "worldwideGross": "$1,671,713,208",
         "release": 2015,
         "director": "Colin Trevorrow",
@@ -56,7 +56,7 @@
     {
         "top": 7,
         "filmName": "The Avengers",
-        "thumbnail": "https: //upload.wikimedia.org/wikipedia/vi/f/f9/TheAvengers2012Poster.jpg",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/vi/f/f9/TheAvengers2012Poster.jpg",
         "worldwideGross": "$1,518,812,988",
         "release": 2012,
         "director": "Joss Whedon",
@@ -65,7 +65,7 @@
     {
         "top": 8,
         "filmName": "Fast & Furious 7",
-        "thumbnail": "https: //upload.wikimedia.org/wikipedia/vi/b/b8/Furious_7_poster.jpg",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/vi/b/b8/Furious_7_poster.jpg",
         "worldwideGross": "$1,511,726,205",
         "release": 2015,
         "director": "James Wan",
@@ -74,7 +74,7 @@
     {
         "top": 9,
         "filmName": "Avengers: Age Of Ultron",
-        "thumbnail": "https: //upload.wikimedia.org/wikipedia/vi/f/f8/Avengers_-_Age_of_Utron_Poster.jpg",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/vi/f/f8/Avengers_-_Age_of_Utron_Poster.jpg",
         "worldwideGross": "$1,405,413,868",
         "release": 2015,
         "director": "Joss Whedon",
@@ -83,7 +83,7 @@
     {
         "top": 10,
         "filmName": "Black Panther",
-        "thumbnail": "https: //upload.wikimedia.org/wikipedia/vi/3/31/Chi%E1%BA%BFn_binh_b%C3%A1o_%C4%91en_2018.jpg",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/vi/3/31/Chi%E1%BA%BFn_binh_b%C3%A1o_%C4%91en_2018.jpg",
         "worldwideGross": "$1,346,630,283",
         "release": 2018,
         "director": "Ryan Coogler",
