@@ -1,5 +1,5 @@
 {
-    {
+    dataTable: [{
         "top": 1,
         "filmName": "Avatar",
         "thumbnail": "https: //upload.wikimedia.org/wikipedia/vi/b/b0/Avatar-Teaser-Poster.jpg",
@@ -88,5 +88,5 @@
         "release": 2018,
         "director": "Ryan Coogler",
         "studio": "Marvel"
-    }
+    }]
 }
