@@ -1,5 +1,4 @@
-{
-    "dataTable": [{
+[{
         "top": 1,
         "filmName": "Avatar",
         "thumbnail": "https://upload.wikimedia.org/wikipedia/vi/b/b0/Avatar-Teaser-Poster.jpg",
@@ -89,4 +88,4 @@
         "director": "Ryan Coogler",
         "studio": "Marvel"
     }]
-}
+
