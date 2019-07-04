@@ -1,22 +1,32 @@
 $(function () {
+    //get data from server and sort
     function loadDoc() {
+        let _col1 = $('tr th:first-child');
+        let _col2 = $('tr th:nth-child(2)');
+        let _col4 = $('tr th:nth-child(4)');
+        let _col5 = $('tr th:nth-child(5)');
+        let _col6 = $('tr th:nth-child(6)');
+        let _col7 = $('tr th:nth-child(7)');
+        let _iTag = $('tr th i');
+
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 let data = JSON.parse(this.responseText);
                 makeTable(data.dataTable);
 
-                $('tr th:first-child').click(function () {
-                    $('tr th i').attr('class', "fa fa-sort");
-                    if ($('tr th:first-child').attr('class') == 'desc') {
+                //sort top
+                _col1.click(function () {
+                    _iTag.attr('class', "fa fa-sort");
+                    if (_col1.attr('class') == 'desc') {
                         increaseSortByNumber(data.dataTable, 'top');
-                        $('tr th:first-child').attr('class', 'asc');
+                        _col1.attr('class', 'asc');
                         $('#top').attr('class', 'fa fa-sort-numeric-asc');
                         $('.containerTbody').remove();
 
-                    } else if (($('tr th:first-child').attr('class') == 'asc')) {
+                    } else if ((_col1.attr('class') == 'asc')) {
                         decreaseSortByNumber(data.dataTable, 'top');
-                        $('tr th:first-child').attr('class', 'desc');
+                        _col1.attr('class', 'desc');
                         $('#top').attr('class', 'fa fa-sort-numeric-desc');
                         $('.containerTbody').remove();
                     };
@@ -24,17 +34,17 @@ $(function () {
                 })
 
                 //sort gross
-                $('tr th:nth-child(4)').click(function () {
-                    $('tr th i').attr('class', "fa fa-sort");
-                    if ($('tr th:nth-child(4)').attr('class') == 'desc') {
+                _col4.click(function () {
+                    _iTag.attr('class', "fa fa-sort");
+                    if (_col4.attr('class') == 'desc') {
                         increaseSortByNumber(data.dataTable, 'worldwideGross');
-                        $('tr th:nth-child(4)').attr('class', 'asc');
+                        _col4.attr('class', 'asc');
                         $('#gross').attr('class', 'fa fa-sort-numeric-asc');
                         $('.containerTbody').remove();
 
-                    } else if (($('tr th:nth-child(4)').attr('class') == 'asc')) {
+                    } else if ((_col4.attr('class') == 'asc')) {
                         decreaseSortByNumber(data.dataTable, 'worldwideGross');
-                        $('tr th:nth-child(4)').attr('class', 'desc');
+                        _col4.attr('class', 'desc');
                         $('#gross').attr('class', 'fa fa-sort-numeric-desc');
                         $('.containerTbody').remove();
                     };
@@ -42,17 +52,17 @@ $(function () {
                 })
 
                 //sort release
-                $('tr th:nth-child(5)').click(function () {
-                    $('tr th i').attr('class', "fa fa-sort");
-                    if ($('tr th:nth-child(5)').attr('class') == 'desc') {
+                _col5.click(function () {
+                    _iTag.attr('class', "fa fa-sort");
+                    if (_col5.attr('class') == 'desc') {
                         increaseSortByNumber(data.dataTable, 'release');
-                        $('tr th:nth-child(5)').attr('class', 'asc');
+                        _col5.attr('class', 'asc');
                         $('#release').attr('class', 'fa fa-sort-numeric-asc');
                         $('.containerTbody').remove();
 
-                    } else if (($('tr th:nth-child(5)').attr('class') == 'asc')) {
+                    } else if ((_col5.attr('class') == 'asc')) {
                         decreaseSortByNumber(data.dataTable, 'release');
-                        $('tr th:nth-child(5)').attr('class', 'desc');
+                        _col5.attr('class', 'desc');
                         $('#release').attr('class', 'fa fa-sort-numeric-desc');
                         $('.containerTbody').remove();
                     };
@@ -60,17 +70,17 @@ $(function () {
                 })
 
                 //sort film name
-                $('tr th:nth-child(2)').click(function () {
-                    $('tr th i').attr('class', "fa fa-sort");
-                    if ($('tr th:nth-child(2)').attr('class') == 'desc') {
+                _col2.click(function () {
+                    _iTag.attr('class', "fa fa-sort");
+                    if (_col2.attr('class') == 'desc') {
                         increaseSortByStr(data.dataTable, 'filmName');
-                        $('tr th:nth-child(2)').attr('class', 'asc');
+                        _col2.attr('class', 'asc');
                         $('#film').attr('class', 'fa fa-sort-alpha-asc');
                         $('.containerTbody').remove();
 
-                    } else if (($('tr th:nth-child(2)').attr('class') == 'asc')) {
+                    } else if ((_col2.attr('class') == 'asc')) {
                         decreaseSortByStr(data.dataTable, 'filmName');
-                        $('tr th:nth-child(2)').attr('class', 'desc');
+                        _col2.attr('class', 'desc');
                         $('#film').attr('class', 'fa fa-sort-alpha-desc');
                         $('.containerTbody').remove();
                     };
@@ -78,17 +88,17 @@ $(function () {
                 })
 
                 //sort director
-                $('tr th:nth-child(6)').click(function () {
-                    $('tr th i').attr('class', "fa fa-sort");
-                    if ($('tr th:nth-child(6)').attr('class') == 'desc') {
+                _col6.click(function () {
+                    _iTag.attr('class', "fa fa-sort");
+                    if (_col6.attr('class') == 'desc') {
                         increaseSortByStr(data.dataTable, 'director');
-                        $('tr th:nth-child(6)').attr('class', 'asc');
+                        _col6.attr('class', 'asc');
                         $('#director').attr('class', 'fa fa-sort-alpha-asc');
                         $('.containerTbody').remove();
 
-                    } else if (($('tr th:nth-child(6)').attr('class') == 'asc')) {
+                    } else if ((_col6.attr('class') == 'asc')) {
                         decreaseSortByStr(data.dataTable, 'director');
-                        $('tr th:nth-child(6)').attr('class', 'desc');
+                        _col6.attr('class', 'desc');
                         $('#director').attr('class', 'fa fa-sort-alpha-desc');
                         $('.containerTbody').remove();
                     };
@@ -96,17 +106,17 @@ $(function () {
                 })
 
                 //sort studio
-                $('tr th:nth-child(7)').click(function () {
-                    $('tr th i').attr('class', "fa fa-sort");
-                    if ($('tr th:nth-child(7)').attr('class') == 'desc') {
+                _col7.click(function () {
+                    _iTag.attr('class', "fa fa-sort");
+                    if (_col7.attr('class') == 'desc') {
                         increaseSortByStr(data.dataTable, 'studio');
-                        $('tr th:nth-child(7)').attr('class', 'asc');
+                        _col7.attr('class', 'asc');
                         $('#studio').attr('class', 'fa fa-sort-alpha-asc');
                         $('.containerTbody').remove();
 
-                    } else if (($('tr th:nth-child(7)').attr('class') == 'asc')) {
+                    } else if ((_col7.attr('class') == 'asc')) {
                         decreaseSortByStr(data.dataTable, 'studio');
-                        $('tr th:nth-child(7)').attr('class', 'desc');
+                        _col7.attr('class', 'desc');
                         $('#studio').attr('class', 'fa fa-sort-alpha-desc');
                         $('.containerTbody').remove();
                     };
