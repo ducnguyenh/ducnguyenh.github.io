@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "playfair_display";
+    src: url("/18---psdToHtml/font/PlayfairDisplay-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "inconsolata";
+    src: url("/18---psdToHtml/font/Inconsolata-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("/18---psdToHtml/font/Ubuntu-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "playfair_display";
+    font-size: 14px;
+    color: #626262;
+}
+/* header container */
+header.container {
+    margin-bottom: 6.25rem;
+}
+
+.navbar {
+    text-transform: uppercase;
+    padding: 2.5rem 0;
+}
+
+.navbar > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-brand {
+    font-family: "inconsolata";
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+    /* font-family: "playfair_display"; */
+}
+
+h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "ubuntu";
+    margin-bottom: 1.5rem;
+}
+
+p.content {
+    margin-bottom: 3rem;
+}
+
+p.comment {
+    text-transform: uppercase;
+    font-family: "ubuntu";
+    margin-bottom: 8.2rem;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 7.5rem;
+}
+
+.thumbnail {
+    margin-bottom: 2rem;
+}
+
+/* div.descripttion {
+    max-width: 900px;
+    margin: auto;
+} */
+
+img {
+    width: 100%;
+}
+
+.row {
+    margin-bottom: 8rem;
+}
+
+section.container-fluid {
+    background: #f0f0f0;
+    margin-bottom: 6.5rem;
+    height: 18rem;
+}
+
+/* div.posts {
+    margin: auto;
+    width: 900px;
+} */
+
+.left.col-md-6.col-sm-6 {
+    padding-right: 30px;
+}
+
+.right.col-md-6.col-sm-6 {
+    padding-left: 30px;
+}
+
+.content {
+    text-align: justify;
+}
+
+footer {
+    background: #f0f0f0;
+    height: 6.25rem;
+}
+
+h2.signup {
+    text-align: center;
+    color: #333333;
+    padding-top: 4.75rem;
+    margin-bottom: 5rem;
+}
+
+p.signup {
+    /* text-align: center; */
+    margin-bottom: 0;
+    margin: auto;
+    width: 24rem;
+}
+
+#icon-send {
+    float: right;
+}
+
+hr {
+    width: 24rem;
+    background: black;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
