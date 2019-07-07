@@ -149,6 +149,57 @@ section.container-fluid {
     padding-right: 20px;
 }
 
+/* --comment-end-- */
+.comment-end {
+    margin-bottom: 93px;
+}
+
+.comment-end .row {
+    margin-bottom: 58px;
+}
+
+.comment-end .name {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.comment-end p {
+    text-transform: uppercase;
+    font-family: "ubuntu";
+    margin-bottom: 42px;
+}
+
+p.reply {
+    margin: 26px 0 0 0;
+}
+
+.comment-end .thumbnail {
+    height: 75px;
+    width: 75px;
+}
+
+.fakeimg {
+    border-radius: 50%;
+    text-align: center;
+    background: #cae5e0;
+    height: 100%;
+    line-height: 73px;
+    color: #ffffff;
+    font-family: "ubuntu";
+    font-size: 34px;
+}
+
+.input {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    height: 75px;
+    line-height: 75px;
+    padding-left: 34px;
+    font-family: "ubuntu";
+    text-transform: uppercase;
+    color: #c8c8c8;
+}
+
 /* --------------footer--------------- */
 footer {
     background: #f0f0f0;
