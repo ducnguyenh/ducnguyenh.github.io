@@ -1,0 +1,312 @@
+@font-face {
+    font-family: "playfair_display";
+    src: url("/18---psdToHtml/font/PlayfairDisplay-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "inconsolata";
+    src: url("/18---psdToHtml/font/Inconsolata-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("/18---psdToHtml/font/Ubuntu-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "playfair_display";
+    font-size: 14px;
+    color: #626262;
+    text-align: justify;
+}
+
+/* header container */
+header.container {
+    margin-bottom: 6.25rem;
+}
+
+.navbar {
+    text-transform: uppercase;
+    padding: 2.5rem 0;
+}
+
+.navbar-brand {
+    font-family: "inconsolata";
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.navbar > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 7.5rem;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* ---------------descripttion section--------------------- */
+section.container {
+    padding-left: 105px;
+    padding-right: 105px;
+}
+
+section .descripttion {
+    margin-bottom: 4rem;
+}
+
+/* --post class--*/
+.posts {
+    margin-bottom: 4.75rem;
+}
+
+/* --image-- */
+div.item {
+    margin-bottom: 3.875rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* --title-- */
+h2 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "ubuntu";
+    margin-bottom: 1.5rem;
+}
+
+p.italic {
+    padding: 55px 20px 29px 20px;
+    margin: 0;
+}
+
+p.content-last {
+    margin-bottom: 4rem;
+}
+
+/* --share-- */
+.share {
+    float: right;
+    color: #b4ad9e;
+}
+
+.share a {
+    color: #b4ad9e;
+    padding-right: 1rem;
+    font-size: 18px;
+}
+
+.share span {
+    font-family: "ubuntu";
+    padding-left: 23px;
+    font-size: 13px;
+}
+
+/* --------------addition-info---------------  */
+section.container-fluid {
+    background: #f0f0f0;
+    margin-bottom: 4.25rem;
+    height: 27.25rem;
+}
+
+#addition-info h2 {
+    font-size: 20px;
+    margin-top: 1.5rem;
+}
+
+#addition-info.container {
+    padding-left: 105px;
+    padding-right: 105px;
+    padding-top: 70px;
+}
+
+#addition-info h3 {
+    margin-bottom: 2.5rem;
+}
+
+.col-md-4.col-sm-4.col-xs-4 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* --------------footer--------------- */
+footer {
+    background: #f0f0f0;
+    height: 6.25rem;
+    height: 6.25rem;
+    line-height: 6.25rem;
+}
+
+footer > .container {
+    padding-left: 105px;
+}
+
+.right-footer {
+    float: right;
+    color: #000000;
+}
+
+.right-footer a {
+    padding-left: 18px;
+    color: #000000;
+}
+
+.left-footer a {
+    color: #000000;
+    padding-right: 23px;
+}
+
+/* -------------------------responsive---------------------- */
+/* @media only screen and (max-width: 576px) {
+    /* navbar *
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1rem;
+    }
+    /* header *
+    header.container {
+        margin-bottom: 3rem;
+    }
+    /* ------descripttion section------ *
+    section.container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    div.item {
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        font-size: 21px;
+        margin-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    /* --row and colum-- *
+    .row {
+        margin-bottom: 2rem;
+    }
+
+    .left.col-md-6.col-sm-12 {
+        padding-right: 15px;
+    }
+
+    .right.col-md-6.col-sm-12 {
+        padding-left: 15px;
+    }
+
+    /* footer *
+    footer > .container {
+        padding-left: 0;
+    }
+
+    .left-footer a {
+        padding-right: 10px;
+        font-size: 12px;
+    }
+
+    .right-footer a {
+        padding-left: 5px;
+    }
+
+    footer > .container {
+        padding: 0;
+    }
+
+    /* --------------addition-info---------------  *
+    section.container-fluid {
+        margin-bottom: 3rem;
+        height: 11rem;
+    }
+
+    h2.addition-info {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    p.addition-info {
+        width: 100%;
+    }
+
+    hr {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* navbar *
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1rem;
+    }
+
+    /* ------descripttion section------ *
+    section.container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    div.item {
+        margin-bottom: 3.5rem;
+    }
+
+    h2 {
+        font-size: 21px;
+        margin-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    /* --row and colum-- *
+    .row {
+        margin-bottom: 3rem;
+    }
+
+    .left.col-md-6.col-sm-12 {
+        padding-right: 15px;
+    }
+
+    .right.col-md-6.col-sm-12 {
+        padding-left: 15px;
+    }
+
+    /* --------------addition-info---------------  *
+    section.container-fluid {
+        margin-bottom: 3rem;
+        height: 11rem;
+    }
+
+    h2.addition-info {
+        text-align: center;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+} */
