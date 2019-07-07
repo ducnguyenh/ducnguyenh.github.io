@@ -149,9 +149,9 @@ section.container-fluid {
     padding-right: 20px;
 }
 
-/* --comment-end-- */
+/* --------------comment-end----------------- */
 .comment-end {
-    margin-bottom: 93px;
+    padding-bottom: 93px;
 }
 
 .comment-end .row {
@@ -189,7 +189,12 @@ p.reply {
     font-size: 34px;
 }
 
+.fakeimg.image {
+    background: #ededea;
+}
+
 .input {
+    width: 100%;
     border: 1px solid #e3e3e3;
     border-radius: 5px;
     height: 75px;
@@ -197,7 +202,14 @@ p.reply {
     padding-left: 34px;
     font-family: "ubuntu";
     text-transform: uppercase;
+}
+
+::placeholder {
     color: #c8c8c8;
+}
+
+.row.end {
+    margin-bottom: 34px;
 }
 
 /* --------------footer--------------- */
@@ -219,7 +231,7 @@ footer > .container {
 
 .right-footer a {
     padding-left: 18px;
-    color: #000000;
+    color: #626262;
 }
 
 .left-footer a {
