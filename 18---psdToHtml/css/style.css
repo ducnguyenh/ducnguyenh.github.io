@@ -1,0 +1,309 @@
+@font-face {
+    font-family: "playfair_display";
+    src: url("/18---psdToHtml/font/PlayfairDisplay-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "inconsolata";
+    src: url("/18---psdToHtml/font/Inconsolata-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("/18---psdToHtml/font/Ubuntu-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "playfair_display";
+    font-size: 14px;
+    color: #626262;
+}
+
+/* header container */
+header.container {
+    margin-bottom: 6.25rem;
+}
+
+.navbar {
+    text-transform: uppercase;
+    padding: 2.5rem 0;
+}
+
+.navbar-brand {
+    font-family: "inconsolata";
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.navbar > .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 7.5rem;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* ---------------descripttion section--------------------- */
+section.container {
+    padding-left: 105px;
+    padding-right: 105px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "ubuntu";
+    margin-bottom: 1.5rem;
+}
+
+p.content {
+    margin-bottom: 3rem;
+}
+
+p.comment {
+    text-transform: uppercase;
+    font-family: "ubuntu";
+    margin-bottom: 8.2rem;
+}
+
+/* --row and colum-- */
+.row {
+    margin-bottom: 8rem;
+}
+
+.left.col-md-6.col-sm-12 {
+    padding-right: 30px;
+}
+
+.right.col-md-6.col-sm-12 {
+    padding-left: 30px;
+}
+
+.content {
+    text-align: justify;
+}
+
+/* --image-- */
+.thumbnail {
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* --------------signup---------------  */
+section.container-fluid {
+    background: #f0f0f0;
+    margin-bottom: 6.5rem;
+    height: 18rem;
+}
+
+h2.signup {
+    text-align: center;
+    color: #333333;
+    padding-top: 4.75rem;
+    margin-bottom: 5rem;
+}
+
+p.signup {
+    margin-bottom: 0;
+    margin: auto;
+    width: 24rem;
+}
+
+#icon-send {
+    float: right;
+}
+
+hr {
+    width: 24rem;
+    background: black;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --------------footer--------------- */
+footer {
+    background: #f0f0f0;
+    height: 6.25rem;
+    height: 6.25rem;
+    line-height: 6.25rem;
+}
+
+footer > .container {
+    padding-left: 105px;
+}
+
+.right-footer {
+    float: right;
+    color: #000000;
+}
+
+.right-footer a {
+    padding-left: 18px;
+    color: #000000;
+}
+
+.left-footer a {
+    color: #000000;
+    padding-right: 23px;
+}
+
+/* -------------------------responsive---------------------- */
+@media only screen and (max-width: 576px) {
+    /* navbar */
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1rem;
+    }
+    /* header */
+    header.container {
+        margin-bottom: 3rem;
+    }
+    p.comment {
+        margin-bottom: 2rem;
+    }
+    /* ------descripttion section------ */
+    section.container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    div.item {
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        font-size: 21px;
+        margin-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    /* --row and colum-- */
+    .row {
+        margin-bottom: 2rem;
+    }
+
+    .left.col-md-6.col-sm-12 {
+        padding-right: 15px;
+    }
+
+    .right.col-md-6.col-sm-12 {
+        padding-left: 15px;
+    }
+
+    /* footer */
+    footer > .container {
+        padding-left: 0;
+    }
+
+    .left-footer a {
+        padding-right: 10px;
+        font-size: 12px;
+    }
+
+    .right-footer a {
+        padding-left: 5px;
+    }
+
+    footer > .container {
+        padding: 0;
+    }
+
+    /* --------------signup---------------  */
+    section.container-fluid {
+        margin-bottom: 3rem;
+        height: 11rem;
+    }
+
+    h2.signup {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    p.signup {
+        width: 100%;
+    }
+
+    hr {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* navbar */
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1rem;
+    }
+
+    /* ------descripttion section------ */
+    section.container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    div.item {
+        margin-bottom: 3.5rem;
+    }
+
+    h2 {
+        font-size: 21px;
+        margin-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    /* --row and colum-- */
+    .row {
+        margin-bottom: 3rem;
+    }
+
+    .left.col-md-6.col-sm-12 {
+        padding-right: 15px;
+    }
+
+    .right.col-md-6.col-sm-12 {
+        padding-left: 15px;
+    }
+
+    /* --------------signup---------------  */
+    section.container-fluid {
+        margin-bottom: 3rem;
+        height: 11rem;
+    }
+
+    h2.signup {
+        text-align: center;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
