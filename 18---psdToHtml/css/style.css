@@ -24,6 +24,7 @@ body {
     font-family: "playfair_display";
     font-size: 14px;
     color: #626262;
+    text-align: left;
 }
 
 /* header container */
@@ -96,10 +97,6 @@ p.comment {
 
 .right.col-md-6.col-sm-12 {
     padding-left: 30px;
-}
-
-.content {
-    text-align: justify;
 }
 
 /* --image-- */
