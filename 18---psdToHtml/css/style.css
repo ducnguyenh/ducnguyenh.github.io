@@ -185,8 +185,13 @@ footer > .container {
     div.signup {
         width: 100%;
     }
+
+    input[type="text"] {
+        width: 85%;
+    }
+
     p.comment {
-        margin-bottom: 2rem;
+        margin-bottom: 4.2rem;
     }
     /* ------descripttion section------ */
     section.container {
