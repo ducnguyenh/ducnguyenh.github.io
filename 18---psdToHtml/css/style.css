@@ -58,6 +58,9 @@ header.container {
 }
 
 /* ---------------descripttion section--------------------- */
+section a {
+    color: #626262;
+}
 section.container {
     padding-left: 105px;
     padding-right: 105px;
