@@ -63,7 +63,8 @@ section a {
 }
 
 section a:hover {
-    color: #3f3d3d;
+    color: #333131;
+    text-decoration: none;
 }
 section.container {
     padding-left: 105px;
