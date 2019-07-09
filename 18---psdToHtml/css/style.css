@@ -61,6 +61,10 @@ header.container {
 section a {
     color: #626262;
 }
+
+section a:hover {
+    color: #3f3d3d;
+}
 section.container {
     padding-left: 105px;
     padding-right: 105px;
