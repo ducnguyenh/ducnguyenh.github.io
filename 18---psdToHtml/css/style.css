@@ -181,6 +181,10 @@ footer > .container {
     header.container {
         margin-bottom: 3rem;
     }
+
+    div.signup {
+        width: 100%;
+    }
     p.comment {
         margin-bottom: 2rem;
     }
