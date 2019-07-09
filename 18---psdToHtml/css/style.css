@@ -122,22 +122,18 @@ h2.signup {
     margin-bottom: 5rem;
 }
 
-p.signup {
+div.signup {
     margin-bottom: 0;
     margin: auto;
     width: 24rem;
 }
 
-#icon-send {
-    float: right;
-}
-
-hr {
-    width: 24rem;
-    background: black;
-    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+input[type="text"] {
+    width: 90%;
+    border: 0px;
+    border-bottom: 1px solid #000000;
+    background: #f0f0f0;
+    outline: none;
 }
 
 /* --------------footer--------------- */
@@ -245,10 +241,6 @@ footer > .container {
     }
 
     p.signup {
-        width: 100%;
-    }
-
-    hr {
         width: 100%;
     }
 }
