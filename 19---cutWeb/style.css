@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Aileron Regular";
+    font-size: 16px;
+    color: #54565a;
+}
+
+/* ---------header------------ */
+header.container-fluid {
+    margin-bottom: 116px;
+}
+
+/* ---------introduct---------- */
+.introduct {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.introduct h2,
+.container.process h2,
+.process2 h2,
+.container-fluid.end h2 {
+    font-family: "Aileron Bold";
+    font-size: 34;
+    margin-bottom: 22px;
+    color: #2c2e30;
+}
+
+.introduct > p,
+.container.process > p {
+    padding-left: 144px;
+    padding-right: 144px;
+    margin-bottom: 79px;
+}
+
+.introduct h3,
+.container.process h3 {
+    font-size: 21px;
+    margin-top: 12px;
+    margin-bottom: 28px;
+    color: #2c2e30;
+    font-family: "Aileron Bold";
+}
+/* row */
+.introduct .row {
+    margin-bottom: 73px;
+}
+
+.introduct .right {
+    padding-top: 39px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.introduct .left {
+    /* float: left; */
+    padding-right: 50px;
+}
+
+.introduct .right h2 {
+    font-size: 28px;
+    margin-bottom: 39px;
+    color: #2c2e30;
+    font-family: "Aileron Bold";
+}
+
+.introduct .right li {
+    margin-bottom: 31px;
+}
+
+i {
+    font-family: Serif;
+}
+
+.author {
+    font-family: "Aileron SemiBold";
+    color: #2c2e30;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 27px;
+}
+/* icon */
+.introduct .icon {
+    height: 42px;
+}
+
+#browser-image {
+    width: 100%;
+}
+
+/* --------------container process--------------- */
+.container-fluid.second {
+    background: #f6f8f9;
+    padding-bottom: 170px;
+    margin-bottom: 170px;
+}
+
+.container.process {
+    text-align: center;
+}
+
+.icon2 {
+    width: 112px;
+}
+
+.container.process .left img {
+    float: right;
+}
+
+.container.process .right {
+    padding-left: 134px;
+    text-align: left;
+}
+
+/* -------------------process2--------------- */
+.process2 {
+    text-align: left;
+}
+
+.process2 .align-center {
+    text-align: center;
+}
+
+.align-center p {
+    padding-left: 285px;
+    padding-right: 285px;
+}
+
+.process2 .expert {
+    border: 1px solid rgb(224, 219, 219);
+}
+
+.expert p {
+    font-family: Serif;
+    font-style: italic;
+}
+
+.col-md-4.col-sm-12.col-xs-12 .expert {
+    margin-left: 8.5px;
+    margin-right: 8.5px;
+    padding: 8.5px 8.5px 8.5px 8.5px;
+    height: 100%;
+}
+
+.partner a {
+    padding-left: 100px;
+}
+
+.partner img {
+    height: 37px;
+}
+
+/*  */
+.container-fluid.end {
+    text-align: center;
+    color: white;
+    background: #2f5bea;
+}
+
+.container-fluid.end h2 {
+    color: white;
+}
+
+.container-fluid.end p {
+    padding-left: 287px;
+    padding-right: 287px;
+}
+@media only screen and (max-width: 576px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
