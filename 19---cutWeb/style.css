@@ -8,11 +8,31 @@ body {
     font-family: "Aileron Regular";
     font-size: 16px;
     color: #54565a;
+
+    /* background-image: url(images/HERO.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:#464646; */
+    
 }
+
+/* For mobile devices */
+/* @media only screen and (max-width: 767px) {
+  body {
+    background-image: url(images/HERO.png);
+  }
+} */
 
 /* ---------header------------ */
 header.container-fluid {
-    margin-bottom: 116px;
+    margin-bottom: 159px;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+    padding-left: 0;
+    margin-left: 0;
 }
 
 /* ---------introduct---------- */
@@ -99,11 +119,21 @@ hr {
 .container-fluid.second {
     background: #f6f8f9;
     padding-bottom: 170px;
+    padding-top: 144px;
     margin-bottom: 170px;
+}
+
+.container-fluid.second hr {
+    margin-top: 124px;
+    margin-bottom: 140px;
 }
 
 .container.process {
     text-align: center;
+}
+
+.container.process a {
+    padding-right: 11px;
 }
 
 .icon2 {
@@ -126,6 +156,8 @@ hr {
 
 .process2 .align-center {
     text-align: center;
+    margin-top: 35px;
+    margin-bottom: 105px;
 }
 
 .align-center p {
@@ -135,11 +167,22 @@ hr {
 
 .process2 .expert {
     border: 1px solid rgb(224, 219, 219);
+    border-radius: 10px;
 }
 
 .expert p {
     font-family: Serif;
     font-style: italic;
+    padding-bottom: 38px;
+}
+
+.expert {
+    position: relative;
+}
+
+.expert .author {
+    position: absolute;
+    bottom: 10px;
 }
 
 .col-md-4.col-sm-12.col-xs-12 .expert {
@@ -147,6 +190,10 @@ hr {
     margin-right: 8.5px;
     padding: 8.5px 8.5px 8.5px 8.5px;
     height: 100%;
+}
+
+.process2 .partner {
+    margin-bottom: 130px;
 }
 
 .partner a {
@@ -157,11 +204,13 @@ hr {
     height: 37px;
 }
 
-/*  */
+/* ------section container-fluid end----- */
 .container-fluid.end {
     text-align: center;
     color: white;
     background: #2f5bea;
+    padding-top: 111px;
+    padding-bottom: 133px;
 }
 
 .container-fluid.end h2 {
@@ -169,11 +218,125 @@ hr {
 }
 
 .container-fluid.end p {
-    padding-left: 287px;
-    padding-right: 287px;
+    padding-left: 285px;
+    padding-right: 285px;
+    font-size: 18px;
+}
+
+.container-fluid.end button {
+    padding: 18px 39px;
+    border-radius: 10px;
+    color: #2F5BEA;
+    background: white;
+    font-family: 'Aileron Bold';
+    outline: none;
+}
+
+/* ------------footer--------------- */
+footer.container {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+footer.container h3 {
+    font-size: 18px;
+    font-family: 'Aileron Bold';
+    color: #2C2E30;
+    margin-bottom: 20px;
+}
+
+footer .col-md-3.col-sm-6.col-xs-12.group {
+    padding-left: 95px;
+}
+
+footer a {
+    color: #54565A;
+}
+
+a:hover {
+    color: black;
 }
 @media only screen and (max-width: 576px) {
+    p,
+    .container-fluid.end p,
+     .align-center p,
+     .introduct > p,
+.container.process > p,
+.container.process .right,
+.introduct .right,
+.introduct .left {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    img.img-responsive {
+        width: 100%;
+    }
+
+    .container.process .right {
+        padding-top: 50px;
+    }
+
+    .author {
+    font-size: 15px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    p,
+    .container-fluid.end p,
+     .align-center p,
+     .introduct > p,
+.container.process > p,
+.container.process .right,
+.introduct .right,
+.introduct .left {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    img.img-responsive {
+        width: 100%;
+    }
+
+    .container.process .right {
+        padding-top: 50px;
+    }
 }
+
+/* 
+@media only screen and  (min-width: 1200px) {
+    header .container {
+        left: calc((100% - 1140px)/2);
+    }
+}
+
+@media only screen and  (min-width: 992px) {
+    header .container {
+        left: calc((100% - 960px)/2);
+    }
+}
+
+@media only screen and  (min-width: 768px){
+    header .container {
+        left: calc((100% - 720px)/2);
+    }
+}
+
+@media only screen and  (min-width: 576px){  
+header .container {
+        left: calc((100% - 540px)/2);
+    }
+} */
