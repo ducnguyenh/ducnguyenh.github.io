@@ -76,12 +76,16 @@ header.container-fluid {
     color: white;
     background: transparent;
     padding: 13px 22px;
-    text-align: right;
+    justify-content: flex-end;
     border-radius: 5px;
 }
 
 button.navbar-toggler {
     background: white;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
 }
 
 /* ---------introduct---------- */
