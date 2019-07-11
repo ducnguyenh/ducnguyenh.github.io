@@ -43,6 +43,8 @@ h1 {
     font-size: 16px;
     font-family: "Aileron Bold";
     text-transform: uppercase;
+    border: 0;
+    outline: none;
 }
 /* For mobile devices */
 /* @media only screen and (max-width: 767px) {
