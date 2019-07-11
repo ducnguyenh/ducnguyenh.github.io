@@ -15,9 +15,35 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color:#464646; */
-    
 }
 
+#bg-img {
+    background: url(images/HERO.png) no-repeat center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.main {
+    padding-top: 166px;
+    padding-bottom: 210px;
+}
+
+.main p {
+    font-size: 21px;
+}
+
+.main button {
+    background: #2f5bea;
+    padding: 18px 33px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-family: "Aileron Bold";
+    text-transform: uppercase;
+}
 /* For mobile devices */
 /* @media only screen and (max-width: 767px) {
   body {
@@ -26,6 +52,10 @@ body {
 } */
 
 /* ---------header------------ */
+.navbar-brand {
+    font-size: 26px;
+    font-family: "Aileron Bold";
+}
 header.container-fluid {
     margin-bottom: 159px;
 }
@@ -33,6 +63,25 @@ header.container-fluid {
 .navbar.navbar-expand-lg.navbar-light {
     padding-left: 0;
     margin-left: 0;
+    padding-top: 32px;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link,
+.main {
+    color: white;
+}
+
+.navbar-nav.right button {
+    color: white;
+    background: transparent;
+    padding: 13px 22px;
+    text-align: right;
+    border-radius: 5px;
+}
+
+button.navbar-toggler {
+    background: white;
 }
 
 /* ---------introduct---------- */
@@ -226,9 +275,9 @@ hr {
 .container-fluid.end button {
     padding: 18px 39px;
     border-radius: 10px;
-    color: #2F5BEA;
+    color: #2f5bea;
     background: white;
-    font-family: 'Aileron Bold';
+    font-family: "Aileron Bold";
     outline: none;
 }
 
@@ -240,8 +289,8 @@ footer.container {
 
 footer.container h3 {
     font-size: 18px;
-    font-family: 'Aileron Bold';
-    color: #2C2E30;
+    font-family: "Aileron Bold";
+    color: #2c2e30;
     margin-bottom: 20px;
 }
 
@@ -250,7 +299,7 @@ footer .col-md-3.col-sm-6.col-xs-12.group {
 }
 
 footer a {
-    color: #54565A;
+    color: #54565a;
 }
 
 a:hover {
@@ -259,12 +308,12 @@ a:hover {
 @media only screen and (max-width: 576px) {
     p,
     .container-fluid.end p,
-     .align-center p,
-     .introduct > p,
-.container.process > p,
-.container.process .right,
-.introduct .right,
-.introduct .left {
+    .align-center p,
+    .introduct > p,
+    .container.process > p,
+    .container.process .right,
+    .introduct .right,
+    .introduct .left {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -278,7 +327,7 @@ a:hover {
     }
 
     .author {
-    font-size: 15px;
+        font-size: 15px;
     }
 
     h1 {
@@ -297,12 +346,12 @@ a:hover {
 @media only screen and (max-width: 768px) {
     p,
     .container-fluid.end p,
-     .align-center p,
-     .introduct > p,
-.container.process > p,
-.container.process .right,
-.introduct .right,
-.introduct .left {
+    .align-center p,
+    .introduct > p,
+    .container.process > p,
+    .container.process .right,
+    .introduct .right,
+    .introduct .left {
         padding-left: 15px;
         padding-right: 15px;
     }
