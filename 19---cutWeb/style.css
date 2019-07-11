@@ -314,6 +314,10 @@ footer a {
     color: #54565a;
 }
 
+.navbar-light .navbar-brand:hover {
+    color: rgba(155, 148, 148, 0.7);
+}
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: rgba(155, 148, 148, 0.7);
 }
