@@ -88,6 +88,14 @@ button.navbar-toggler {
     justify-content: flex-end;
 }
 
+.navbar-nav.right {
+    padding-left: 206px;
+}
+
+.navbar-nav.mid a {
+    padding-left: 16px;
+}
+
 /* ---------introduct---------- */
 .introduct {
     margin: 0 auto;
@@ -306,8 +314,12 @@ footer a {
     color: #54565a;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(155, 148, 148, 0.7);
+}
+
 a:hover {
-    color: black;
+    color: rgb(133, 125, 125);
 }
 @media only screen and (max-width: 576px) {
     p,
