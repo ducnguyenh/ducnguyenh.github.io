@@ -258,11 +258,20 @@ a:hover {
     color: rgb(133, 125, 125);
     text-decoration: none;
 }
-@media only screen and (max-width: 576px) {
+
+@media only screen and (max-width: 768px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 37px;
+    }
+
+    .container.main {
+        padding-top: 105px;
+    }
+
     .mobile {
         position: absolute;
-        top: 90%;
-        left: 80%;
+        top: 65%;
+        left: 70%;
         transform: rotate(33deg);
     }
 
@@ -308,7 +317,7 @@ a:hover {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .mobile {
         position: absolute;
-        top: 75%;
+        top: 60%;
         left: 70%;
         transform: rotate(33deg);
     }
