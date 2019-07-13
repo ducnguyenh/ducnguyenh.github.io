@@ -282,11 +282,11 @@ a:hover {
     text-decoration: none;
     z-index: 1;
 }
-
-.main button:hover,
-.right button:hover,
-.end2 button:hover {
-    color: rgb(4, 131, 173);
+.container.main button:hover,
+.navbar-nav.right button:hover,
+.container-fluid.end2 button:hover {
+    background: #14632c;
+    color: white;
 }
 
 @media only screen and (max-width: 768px) {
