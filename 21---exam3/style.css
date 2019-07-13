@@ -124,7 +124,7 @@ button.navbar-toggler {
 
 .mobile {
     position: absolute;
-    top: 25%;
+    top: 22%;
     right: 7%;
     width: 300px;
     transform: rotate(33deg);
@@ -278,7 +278,7 @@ a:hover {
 
     .mobile {
         position: absolute;
-        top: 65%;
+        top: 50%;
         left: 70%;
         transform: rotate(33deg);
     }
@@ -325,7 +325,7 @@ a:hover {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .mobile {
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 70%;
         transform: rotate(33deg);
     }
