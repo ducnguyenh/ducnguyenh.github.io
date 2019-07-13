@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #969696;
+    font-weight: 500;
+}
+
+#bg-img {
+    background: url(images/Photo.png) no-repeat center;
+    background-size: cover;
+}
+
+#bg-img {
+    background: url(images/bg.png) no-repeat center;
+    background-size: cover;
+}
+
+/* ---------header------------ */
+.navbar-brand {
+    font-size: 28px;
+    padding-left: 37px;
+    padding-right: 37px;
+    font-weight: 28px;
+}
+header.container-fluid {
+    padding-bottom: 247px;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 21px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 27px;
+}
+
+.navbar-nav.right button {
+    color: white;
+    background: transparent;
+    padding: 13px 22px;
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+
+button.navbar-toggler {
+    background: white;
+}
+
+.navbar-nav.right {
+    justify-content: flex-end;
+}
+
+.navbar-nav.right button {
+    background: #fffe00;
+    font-size: 16px;
+    color: black;
+    margin-left: 36px;
+    margin-right: 24px;
+    border: 0;
+    outline: none;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link,
+.main {
+    color: white;
+}
+
+.container.main {
+    padding-top: 205px;
+}
+
+.container.main h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.container.main p {
+    margin-bottom: 32px;
+    font-size: 21px;
+    width: 70%;
+}
+
+.container.main button {
+    padding: 18px 48px;
+    color: black;
+    margin-right: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.container.main button._two {
+    background: #fffe00;
+}
+
+.container.main button._three {
+    background: white;
+}
+
+/* fix mobile */
+.fix-mobile {
+    position: relative;
+}
+
+.mobile {
+    position: absolute;
+    top: 25%;
+    right: 7%;
+    width: 300px;
+    transform: rotate(33deg);
+}
+
+/* ---------introduct---------- */
+.introduct {
+    padding-top: 115px;
+    padding-bottom: 106px;
+    text-align: center;
+}
+
+.introduct h2,
+.container.process h2,
+.container-fluid.end h2 {
+    font-size: 36;
+    margin-bottom: 22px;
+    color: black;
+    font-weight: 600;
+}
+
+/* --------------container process--------------- */
+.container-fluid.second {
+    background: #f2f2f2;
+    padding-bottom: 104px;
+    text-align: center;
+}
+
+.container-fluid.second h2 {
+    margin-bottom: 26px;
+    padding-top: 83px;
+}
+
+.container.second p {
+    margin-bottom: 42px;
+}
+
+.container.process img {
+    width: 100%;
+    /* margin: 0 20px; */
+}
+
+.shadow {
+    position: relative;
+}
+
+.shadow .title-img {
+    position: absolute;
+    bottom: 25px;
+    left: 18%;
+    color: white;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+/* ------section container-fluid end----- */
+#img-bg2 {
+    background: url(images/Rectangle5.png) no-repeat center;
+    background-size: cover;
+}
+.container-fluid.end {
+    text-align: center;
+    color: white;
+    padding-bottom: 53px;
+}
+
+.container-fluid.end h2 {
+    color: white;
+    padding-top: 86px;
+    font-size: 36px;
+}
+
+.container-fluid.end p {
+    padding-left: 94px;
+    padding-right: 94px;
+    padding-bottom: 53px;
+    font-size: 26px;
+}
+
+.container-fluid.end .icon {
+    color: #fffe00;
+    padding-right: 7px;
+}
+/* ----container-fluid end2---- */
+.container-fluid.end2 {
+    color: white;
+    padding-top: 77px;
+    padding-bottom: 82px;
+}
+
+#img-bg3 {
+    background: url(images/Rectangle4.png) no-repeat center;
+    background-size: cover;
+}
+
+.container-fluid.end2 button {
+    padding: 18px 21px;
+    color: black;
+    margin-right: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+    background: #fffe00;
+    float: right;
+}
+
+/* ------------footer--------------- */
+footer.container-fluid {
+    padding-top: 88px;
+    padding-bottom: 75px;
+}
+
+footer .brand {
+    font-weight: 800;
+    font-size: 28;
+    color: black;
+    padding-left: 37px;
+}
+footer a {
+    color: black;
+    padding-left: 32px;
+}
+
+/* hover */
+.navbar-light .navbar-brand:hover {
+    color: rgba(155, 148, 148, 0.7);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(155, 148, 148, 0.7);
+}
+
+a:hover {
+    color: rgb(133, 125, 125);
+}
+@media only screen and (max-width: 576px) {
+    .mobile {
+        position: absolute;
+        top: 90%;
+        left: 80%;
+        transform: rotate(33deg);
+    }
+
+    .mobile img {
+        width: 300px;
+    }
+
+    .container.main button {
+        padding: 18px 30px;
+        color: black;
+        margin-right: 20px;
+        border: 0;
+        outline: none;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+
+    .shadow img {
+        margin-bottom: 25px;
+    }
+
+    .container-fluid.end p {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+        font-size: 23px;
+    }
+
+    footer .row {
+        text-align: center;
+    }
+
+    footer a {
+        font-size: 16px;
+        padding-left: 30px;
+    }
+
+    .shadow .title-img {
+        bottom: 25px;
+        left: 30%;
+        font-weight: 600;
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile {
+        position: absolute;
+        top: 75%;
+        left: 70%;
+        transform: rotate(33deg);
+    }
+
+    .mobile img {
+        width: 300px;
+    }
+
+    .container-fluid.end p {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 23px;
+    }
+
+    .shadow img {
+        margin-bottom: 25px;
+    }
+
+    footer .row {
+        text-align: center;
+    }
+
+    .shadow .title-img {
+        font-weight: 500;
+        font-size: 21px;
+    }
+}
+
+/* @media only screen and (max-width: 992px) {
+    .shadow .title-img {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    footer .brand {
+        font-weight: 600;
+        font-size: 23;
+        color: black;
+        padding-left: 15px;
+    }
+
+    /* footer a {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+}  */
