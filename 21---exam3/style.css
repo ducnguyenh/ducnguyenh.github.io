@@ -12,7 +12,7 @@ body {
 }
 
 #bg-img {
-    background: url(images/Photo.png) no-repeat center;
+    background: url(images/Photo.png), url(images/bg.png) no-repeat center;
     background-size: cover;
 }
 
@@ -150,26 +150,30 @@ button.navbar-toggler {
     padding-top: 83px;
 }
 
-.container.second p {
+.container.second > p {
     margin-bottom: 42px;
-}
-
-.container.process img {
-    width: 100%;
-    /* margin: 0 20px; */
 }
 
 .shadow {
     position: relative;
+    display: inline-block;
 }
 
-.shadow .title-img {
+.shadow img {
+    display: block;
+    width: 100%;
+}
+
+.title-img {
+    width: 100%;
     position: absolute;
-    bottom: 25px;
-    left: 18%;
+    top: 75%;
+    left: 50%;
     color: white;
     font-weight: 600;
     font-size: 26px;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* ------section container-fluid end----- */
@@ -275,10 +279,6 @@ a:hover {
         font-weight: 500;
     }
 
-    .shadow img {
-        margin-bottom: 25px;
-    }
-
     .container-fluid.end p {
         padding-left: 15px;
         padding-right: 15px;
@@ -293,13 +293,6 @@ a:hover {
     footer a {
         font-size: 16px;
         padding-left: 30px;
-    }
-
-    .shadow .title-img {
-        bottom: 25px;
-        left: 30%;
-        font-weight: 600;
-        font-size: 26px;
     }
 }
 
@@ -321,35 +314,7 @@ a:hover {
         font-size: 23px;
     }
 
-    .shadow img {
-        margin-bottom: 25px;
-    }
-
     footer .row {
         text-align: center;
     }
-
-    .shadow .title-img {
-        font-weight: 500;
-        font-size: 21px;
-    }
 }
-
-/* @media only screen and (max-width: 992px) {
-    .shadow .title-img {
-        font-weight: 500;
-        font-size: 16px;
-    }
-
-    footer .brand {
-        font-weight: 600;
-        font-size: 23;
-        color: black;
-        padding-left: 15px;
-    }
-
-    /* footer a {
-        font-size: 16px;
-        padding-left: 10px;
-    }
-}  */
