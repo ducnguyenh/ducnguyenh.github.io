@@ -42,6 +42,7 @@ header.container-fluid {
 
 .navbar.navbar-expand-lg.navbar-light {
     padding-left: 0;
+    padding-right: 0;
     margin-left: 0;
     padding-top: 21px;
 }
@@ -124,10 +125,10 @@ button.navbar-toggler {
 
 .mobile {
     position: absolute;
-    top: 22%;
-    right: 7%;
+    top: 21%;
+    left: 75%;
     width: 300px;
-    transform: rotate(33deg);
+    transform: rotate(28deg);
 }
 
 /* ---------introduct---------- */
@@ -255,6 +256,7 @@ p.quote {
 footer.container-fluid {
     padding-top: 88px;
     padding-bottom: 75px;
+    float: left;
 }
 
 footer .brand {
@@ -334,13 +336,8 @@ a:hover {
         text-align: center;
     }
 
-    .col-md-6.col-sm-12.col-xs-12 .row {
+    .col-md-7.col-sm-12.col-xs-12 .row {
         margin: 20px 0;
-    }
-
-    footer a {
-        font-size: 16px;
-        padding-left: 30px;
     }
 }
 
@@ -374,6 +371,30 @@ a:hover {
 
 @media only screen and (max-width: 576px) {
     .mobile {
-        display: none;
+        top: 50%;
+        left: 70%;
+        transform: rotate(0deg);
+    }
+
+    .mobile img {
+        width: 100px;
+    }
+
+    .container.main button {
+        width: 200px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    header.container-fluid {
+        padding-bottom: 50px;
+    }
+
+    .container.main {
+        padding-top: 50px;
+    }
+
+    footer .brand {
+        padding-left: 15px;
     }
 }
