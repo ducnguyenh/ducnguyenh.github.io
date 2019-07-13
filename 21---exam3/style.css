@@ -188,6 +188,19 @@ button.navbar-toggler {
 #img-bg2 {
     background: url(images/Rectangle5.png) no-repeat center;
     background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.color-overlay2 {
+    width: 100%;
+    height: 100%;
+    background: url(images/Rectangle5.1.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .container-fluid.end {
     text-align: center;
