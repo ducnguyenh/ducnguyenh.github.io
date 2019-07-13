@@ -15,7 +15,7 @@ body {
     background: url(images/Photo.png) no-repeat center;
     background-size: cover;
     position: relative;
-    z-index: -1;
+    z-index: 3;
 }
 
 .color-overlay {
@@ -153,12 +153,14 @@ button.navbar-toggler {
     text-align: center;
 }
 
-.container-fluid.second h2 {
+h2.title {
     margin-bottom: 26px;
     padding-top: 83px;
+    font-weight: 600;
+    font-size: 36px;
 }
 
-.container.second > p {
+p.quote {
     margin-bottom: 42px;
 }
 
@@ -189,7 +191,7 @@ button.navbar-toggler {
     background: url(images/Rectangle5.png) no-repeat center;
     background-size: cover;
     position: relative;
-    z-index: -1;
+    z-index: 2;
 }
 
 .color-overlay2 {
@@ -275,9 +277,14 @@ footer a {
     color: rgba(155, 148, 148, 0.7);
 }
 
-a:hover {
+.navbar.navbar-expand-lg.navbar-light a:hover {
     color: rgb(133, 125, 125);
     text-decoration: none;
+    z-index: 1;
+}
+
+button:hover {
+    background: lightblue;
 }
 
 @media only screen and (max-width: 768px) {
