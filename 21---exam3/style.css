@@ -334,7 +334,7 @@ a:hover {
         text-align: center;
     }
 
-    .col-md-7.col-sm-12.col-xs-12 .row {
+    .col-md-6.col-sm-12.col-xs-12 .row {
         margin: 20px 0;
     }
 
@@ -366,7 +366,14 @@ a:hover {
         font-size: 18px;
     }
 
-    footer .row {
-        text-align: center;
+    footer a {
+        font-size: 15px;
+        padding-left: 14px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .mobile {
+        display: none;
     }
 }
