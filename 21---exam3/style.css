@@ -388,13 +388,13 @@ a:hover {
     }
 
     .mobile {
-        top: 50%;
-        left: 70%;
+        top: 40%;
+        left: 75%;
         transform: rotate(0deg);
     }
 
     .mobile img {
-        width: 100px;
+        width: 130px;
     }
 
     .container.main button {
