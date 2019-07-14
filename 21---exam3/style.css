@@ -382,6 +382,11 @@ a:hover {
 }
 
 @media only screen and (max-width: 576px) {
+    .navbar-brand {
+        padding-left: 15px;
+        padding-right: 0;
+    }
+
     .mobile {
         top: 50%;
         left: 70%;
