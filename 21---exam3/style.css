@@ -119,16 +119,16 @@ button.navbar-toggler {
 }
 
 /* fix mobile */
-.fix-mobile {
+.container.main {
     position: relative;
 }
 
 .mobile {
     position: absolute;
-    top: 21%;
-    left: 75%;
+    top: 15%;
+    left: 82%;
     width: 300px;
-    transform: rotate(28deg);
+    transform: rotate(32deg);
 }
 
 /* ---------introduct---------- */
