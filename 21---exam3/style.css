@@ -305,7 +305,7 @@ a:hover {
 
     .mobile {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 70%;
         transform: rotate(33deg);
     }
@@ -347,7 +347,7 @@ a:hover {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .mobile {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 70%;
         transform: rotate(33deg);
     }
@@ -388,7 +388,7 @@ a:hover {
     }
 
     .mobile {
-        top: 40%;
+        top: 35%;
         left: 75%;
         transform: rotate(0deg);
     }
