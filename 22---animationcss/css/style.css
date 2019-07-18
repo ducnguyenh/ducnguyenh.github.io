@@ -1,14 +1,34 @@
+@font-face {
+    font-family: "Filxgirl";
+    src: url("/22---animationcss/font/Filxgirl.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Valentine";
+    src: url("/22---animationcss/font/I\ Found\ My\ Valentine\ -\ TTF.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Love_and_Passion";
+    src: url("/22---animationcss/font/Love_and_Passion.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: rgba(18, 188, 194, 0.986);
-    /* width: 100%; */
-    /* position: relative; */
     animation: anim1 20s infinite;
+    /* font-family: "Valentine"; */
+    font-family: "Love_and_Passion";
 }
 
 #slideshow {
     margin: auto;
     position: relative;
-    /* width: 100%; */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -31,8 +51,8 @@ audio {
 /* animation for p tag */
 p {
     color: white;
+    font-family: "Love_and_Passion";
     font-size: 23px;
-    font-family: Lobster;
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
@@ -58,8 +78,9 @@ p:nth-child(5) {
 h1 {
     animation: blink 10s infinite;
     color: white;
-    font-family: Lobster;
-    font-size: 2rem;
+    font-family: "Filxgirl";
+    font-weight: 600;
+    font-size: 3rem;
 }
 
 @keyframes type {
@@ -177,6 +198,10 @@ h1 {
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     p {
-        font-size: 18px;
+        font-size: 14px;
+    }
+
+    div.container {
+        margin-top: 50px;
     }
 }
