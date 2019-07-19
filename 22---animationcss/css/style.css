@@ -69,7 +69,7 @@ audio {
 p {
     margin-left: 10px;
     margin-right: 10px;
-    color: #2888a5;
+    color: #0a94be;
     font-family: "Feeling Lovely";
     font-size: 23px;
     white-space: nowrap;
@@ -102,7 +102,7 @@ p:nth-child(5) {
 h1 {
     -webkit-animation: blink 10s infinite;
     animation: blink 10s infinite;
-    color: #0a99c4;
+    color: #0a94be;
     font-family: "Filxgirl";
     font-weight: 600;
     font-size: 3rem;
