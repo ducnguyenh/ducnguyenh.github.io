@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    color: #8c8c8c;
+}
+
+/* menu-contact */
+.contact-info {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 36px;
+    color: white;
+    background: #2a41e8;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+    padding: 0;
+    color: #4b4d4f;
+}
+
+.logo {
+    padding: 21px 33px 21px 36px;
+    border-right: 1px solid rgb(240, 233, 233);
+    font-size: 28px;
+    font-family: "Rubik";
+}
+
+.navbar-brand #logo {
+    padding-right: 14px;
+}
+
+.navbar-nav.left a.nav-item.nav-link {
+    padding-left: 34px;
+    padding-right: 0;
+    font-size: 14px;
+}
+
+.collapse.navbar-collapse .navbar-nav.right {
+    font-size: 14px;
+    justify-content: flex-end;
+}
+
+.navbar-nav i {
+    padding-left: 10px;
+}
+
+#bg-img {
+    background: url(images/hero-bg-image.png) no-repeat center;
+    background-size: cover;
+}
+
+section.container img {
+    width: 100%;
+}
+/* title */
+.title {
+    color: white;
+}
+
+#bg-img .container {
+    padding-top: 157px;
+    padding-bottom: 250px;
+}
+
+.find-bar {
+    width: 100%;
+    background: white;
+}
+
+.find-bar .col-md-5.col-sm-12,
+.find-bar .col-md-7.col-sm-12 {
+    padding: 30px;
+}
+
+/* container */
+.container h2,
+.container p {
+    text-align: center;
+}
