@@ -121,7 +121,7 @@ button.navbar-toggler {
 /* fix mobile */
 .container-fluid {
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .mobile {
