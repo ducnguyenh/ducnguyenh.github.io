@@ -75,28 +75,28 @@ p {
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
-    -webkit-animation: type 20s steps(180, end);
-    animation: type 20s steps(180, end);
+    -webkit-animation: type 10s steps(120, end);
+    animation: type 10s steps(120, end);
 }
 
 p:nth-child(2) {
-    -webkit-animation: type2 30s steps(180, end);
-    animation: type2 30s steps(180, end);
+    -webkit-animation: type2 15s steps(120, end);
+    animation: type2 15s steps(120, end);
 }
 
 p:nth-child(3) {
-    -webkit-animation: type2 40s steps(180, end);
-    animation: type2 40s steps(180, end);
+    -webkit-animation: type2 25s steps(120, end);
+    animation: type2 25s steps(120, end);
 }
 
 p:nth-child(4) {
-    -webkit-animation: type2 50s steps(180, end);
-    animation: type2 50s steps(180, end);
+    -webkit-animation: type2 30s steps(120, end);
+    animation: type2 30s steps(120, end);
 }
 
 p:nth-child(5) {
-    -webkit-animation: type2 60s steps(180, end);
-    animation: type2 60s steps(180, end);
+    -webkit-animation: type2 35s steps(120, end);
+    animation: type2 35s steps(120, end);
 }
 
 h1 {
