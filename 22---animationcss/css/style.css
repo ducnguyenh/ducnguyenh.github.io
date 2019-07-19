@@ -28,6 +28,7 @@ body {
 }
 
 div.container {
+    -webkit-animation: anim1 20s infinite;
     animation: anim1 20s infinite;
     margin-top: 20px;
     padding-bottom: 20px;
@@ -41,6 +42,7 @@ div.row {
 #slideshow {
     margin: auto;
     position: relative;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -70,26 +72,32 @@ p {
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
+    -webkit-animation: type 20s steps(180, end);
     animation: type 20s steps(180, end);
 }
 
 p:nth-child(2) {
+    -webkit-animation: type2 30s steps(180, end);
     animation: type2 30s steps(180, end);
 }
 
 p:nth-child(3) {
+    -webkit-animation: type2 40s steps(180, end);
     animation: type2 40s steps(180, end);
 }
 
 p:nth-child(4) {
+    -webkit-animation: type2 50s steps(180, end);
     animation: type2 50s steps(180, end);
 }
 
 p:nth-child(5) {
+    -webkit-animation: type2 60s steps(180, end);
     animation: type2 60s steps(180, end);
 }
 
 h1 {
+    -webkit-animation: blink 10s infinite;
     animation: blink 10s infinite;
     color: #0a99c4;
     font-family: "Filxgirl";
@@ -98,9 +106,28 @@ h1 {
     text-align: center;
 }
 
+@-webkit-keyframes type {
+    from {
+        width: 0;
+    }
+}
+
 @keyframes type {
     from {
         width: 0;
+    }
+}
+
+@-webkit-keyframes type2 {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 50;
     }
 }
 
@@ -118,6 +145,11 @@ h1 {
 }
 
 /* keyword main */
+@-webkit-keyframes blink {
+    to {
+        opacity: 0;
+    }
+}
 @keyframes blink {
     to {
         opacity: 0;
@@ -125,25 +157,38 @@ h1 {
 }
 
 /* animation background */
+@-webkit-keyframes anim1 {
+    0% {
+        background-image: url("https://pixiefy.com/themes/the-heart/img/footer-bg.png");
+    }
+    25% {
+        background-image: url("http://images.all-free-download.com/images/graphicthumb/hearts_on_red_background_194398.jpg");
+    }
+    50% {
+        background-image: url("http://www.loveimagesdownload.com/wp-content/uploads/2016/08/declaration-of-love_23-2147517078.jpg");
+    }
+    75% {
+        background-image: url("http://cdn1.theodysseyonline.com/files/2016/01/30/635897222461577840-361588591_pinky-love.jpg");
+    }
+    100% {
+        background-image: url("http://cerebrallemon.com/wp-content/uploads/2017/02/Love.jpg");
+    }
+}
 @keyframes anim1 {
     0% {
         background-image: url("https://pixiefy.com/themes/the-heart/img/footer-bg.png");
     }
     25% {
         background-image: url("http://images.all-free-download.com/images/graphicthumb/hearts_on_red_background_194398.jpg");
-        z-index: 3;
     }
     50% {
         background-image: url("http://www.loveimagesdownload.com/wp-content/uploads/2016/08/declaration-of-love_23-2147517078.jpg");
-        z-index: 3;
     }
     75% {
         background-image: url("http://cdn1.theodysseyonline.com/files/2016/01/30/635897222461577840-361588591_pinky-love.jpg");
-        z-index: 3;
     }
     100% {
         background-image: url("http://cerebrallemon.com/wp-content/uploads/2017/02/Love.jpg");
-        z-index: 3;
     }
 }
 
@@ -161,20 +206,25 @@ h1 {
     position: absolute;
     opacity: 0;
     background-color: #96327d;
+    -webkit-box-shadow: 0px 0px 50px 4px rgba(150, 50, 125, 0.7);
     box-shadow: 0px 0px 50px 4px rgba(150, 50, 125, 0.7);
+    -webkit-animation: animated-heart infinite ease-in;
     animation: animated-heart infinite ease-in;
 }
 
 .tiny-heart:before {
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
 :after,
 :before {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .tiny-heart:after {
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -190,17 +240,38 @@ h1 {
     background-color: #96327d;
 }
 
-@keyframes animated-heart {
+@-webkit-keyframes animated-heart {
     0% {
         opacity: 0;
+        -webkit-transform: translate(0, 0) rotate(45deg);
         transform: translate(0, 0) rotate(45deg);
     }
     50% {
         opacity: 1;
+        -webkit-transform: translate(0, -40%) rotate(45deg);
         transform: translate(0, -40%) rotate(45deg);
     }
     100% {
         opacity: 0;
+        -webkit-transform: translate(0, -1000%) rotate(45deg);
+        transform: translate(0, -1000%) rotate(45deg);
+    }
+}
+
+@keyframes animated-heart {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, 0) rotate(45deg);
+        transform: translate(0, 0) rotate(45deg);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: translate(0, -40%) rotate(45deg);
+        transform: translate(0, -40%) rotate(45deg);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(0, -1000%) rotate(45deg);
         transform: translate(0, -1000%) rotate(45deg);
     }
 }
