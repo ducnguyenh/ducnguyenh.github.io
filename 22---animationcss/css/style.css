@@ -20,10 +20,22 @@
 }
 
 body {
-    background-color: rgba(18, 188, 194, 0.986);
-    animation: anim1 20s infinite;
+    /* background-color: rgba(18, 188, 194, 0.986); */
+    background: url("https://pixiefy.com/themes/the-heart/img/the-heart-body-bg.png");
+    /* animation: anim1 20s infinite; */
     /* font-family: "Valentine"; */
     font-family: "Love_and_Passion";
+}
+
+div.container {
+    animation: anim1 20s infinite;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.row {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #slideshow {
@@ -32,7 +44,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-#slideshow > div {
+#slideshow > div.thumbnail {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -50,7 +62,9 @@ audio {
 
 /* animation for p tag */
 p {
-    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #0a99c4;
     font-family: "Love_and_Passion";
     font-size: 23px;
     white-space: nowrap;
@@ -77,10 +91,11 @@ p:nth-child(5) {
 
 h1 {
     animation: blink 10s infinite;
-    color: white;
+    color: #0a99c4;
     font-family: "Filxgirl";
     font-weight: 600;
     font-size: 3rem;
+    text-align: center;
 }
 
 @keyframes type {
@@ -116,15 +131,19 @@ h1 {
     }
     25% {
         background-image: url("http://images.all-free-download.com/images/graphicthumb/hearts_on_red_background_194398.jpg");
+        z-index: 3;
     }
     50% {
         background-image: url("http://www.loveimagesdownload.com/wp-content/uploads/2016/08/declaration-of-love_23-2147517078.jpg");
+        z-index: 3;
     }
     75% {
         background-image: url("http://cdn1.theodysseyonline.com/files/2016/01/30/635897222461577840-361588591_pinky-love.jpg");
+        z-index: 3;
     }
     100% {
         background-image: url("http://cerebrallemon.com/wp-content/uploads/2017/02/Love.jpg");
+        z-index: 3;
     }
 }
 
@@ -188,17 +207,19 @@ h1 {
 
 @media only screen and (max-width: 576px) {
     p {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
-/* @media only screen and (max-width: 768px) {
-	
-} */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     div.container {
