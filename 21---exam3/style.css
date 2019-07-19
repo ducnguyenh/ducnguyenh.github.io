@@ -119,8 +119,9 @@ button.navbar-toggler {
 }
 
 /* fix mobile */
-.container.main {
+.container-fluid {
     position: relative;
+    overflow: hidden;
 }
 
 .mobile {
@@ -400,6 +401,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 576px) {
+    #bg-img,
+    .container.main {
+        width: 100%;
+    }
     .navbar-expand-lg .navbar-nav .nav-link,
     .right button {
         float: right;
