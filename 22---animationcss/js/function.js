@@ -1,7 +1,7 @@
 function fun2() {
     window.scrollBy(0, 450)
 }
-setTimeout(fun2, 5000);
+setTimeout(fun2, 15000);
 
 $("#slideshow > div:gt(0)").hide();
 
