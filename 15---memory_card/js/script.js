@@ -1,6 +1,7 @@
 $(function () {
     const cards = document.querySelectorAll('.card');
     let counter = 0;
+    let sec = 0;
     let imgFound = 0;
     let hasFlippedCard = false;
     let lockBoard = false;
@@ -50,7 +51,9 @@ $(function () {
 
         imgFound++;
         if (imgFound == $('.card').length / 2) {
+            myStopFunction();
             $("#counter").prepend('<span id="success">You found all cards with </span>');
+            $("#timer").prepend('<span id="count-time">and </span>');
         };
     }
 
@@ -74,6 +77,12 @@ $(function () {
         shuffle();
         counter = 0;
         imgFound = 0;
+
+        $('#count-time').remove();
+
+        $("#minutes").html("00");
+        $("#seconds").html("00");
+
         $('#success').remove();
         $('#counter').html("" + counter);
         $('.card').removeClass('flip');
@@ -90,7 +99,20 @@ $(function () {
         });
     };
 
+
+    //count time
+    function pad(val) { return val > 9 ? val : "0" + val; }
+    var myTimer = setInterval(function () {
+        $("#seconds").html(pad(++sec % 60));
+        $("#minutes").html(pad(parseInt(sec / 60, 10)));
+    }, 1000);
+
+    function myStopFunction() {
+        clearInterval(myTimer);
+    }
+
     $('.card').click(flipCard);
     $('.reset').click(resetGame);
+
     shuffle();
 })
