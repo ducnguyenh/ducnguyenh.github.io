@@ -76,6 +76,7 @@ $(function () {
     function resetGame() {
         shuffle();
         counter = 0;
+        sec = 0;
         imgFound = 0;
 
         $('#count-time').remove();
