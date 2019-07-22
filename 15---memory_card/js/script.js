@@ -17,14 +17,14 @@ $(function () {
             //first click
             hasFlippedCard = true;
             firstCard = this;
-            counter++;
-
+            counter += 1;
+            $('#counter').html("" + counter);
             return;
         }
 
         //second click
         secondCard = this;
-        counter++;
+        counter += 1;
         lockBoard = true;
 
         $('#counter').html("" + counter);
