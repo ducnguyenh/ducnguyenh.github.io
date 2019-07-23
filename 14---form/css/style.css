@@ -8,8 +8,7 @@
 }
 
 body {
-    background: url(/ducnguyenh.github.io/14---form/images/background2.jpg)
-        no-repeat;
+    background: url(/14---form/images/background2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     font-size: 100%;
@@ -131,8 +130,8 @@ button.btn.btn-primary {
 /* --show/hide password-- */
 i.fa {
     position: absolute;
-    right: 5px;
-    top: 50%;
+    right: 0.75rem;
+    top: 2.5rem;
     margin-top: 0px;
     font-size: 30px;
     color: whitesmoke;
