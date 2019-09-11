@@ -1,0 +1,77 @@
+/* ----fonts---- */
+@font-face {
+    font-family: "SFProDisplayBold";
+    src: url("/fonts/SF-Pro-Display-Bold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFProDisplayMedium";
+    src: url("/fonts/SF-Pro-Display-Medium.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFProDisplayRegular";
+    src: url("/fonts/SF-Pro-Display-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+/* ------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "SFProDisplayRegular";
+    font-size: 0.875‬rem;
+    line-height: 1.5;
+    color: black;
+}
+
+p {
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+p.icon-plane {
+    text-align: center;
+}
+
+p.tour {
+    font-family: "SFProDisplayMedium";
+    font-size: 0.875rem;
+    color: black;
+}
+
+p.tour-price {
+    color: #ff0000;
+    float: right;
+}
+
+p i.detail {
+    color: #144c96;
+    float: right;
+}
+
+h2,
+h3 {
+    font-family: "SFProDisplayBold";
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.33;
+}
+
+h3 {
+    font-size: 1rem;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.travel-news h3 {
+    font-size: 1.125rem;
+}
