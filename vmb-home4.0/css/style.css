@@ -58,8 +58,7 @@ p i.detail {
     float: right;
 }
 
-h2,
-h3 {
+h2 {
     font-family: "SFProDisplayBold";
     font-size: 1.5rem;
     font-weight: bold;
@@ -67,6 +66,7 @@ h3 {
 }
 
 h3 {
+    font-family: "SFProDisplayBold";
     font-size: 1rem;
     line-height: normal;
     letter-spacing: normal;
@@ -74,4 +74,55 @@ h3 {
 
 .travel-news h3 {
     font-size: 1.125rem;
+}
+
+/* -----footer------ */
+footer {
+    background-color: #144c96;
+}
+
+footer .container {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+footer h3 {
+    margin-bottom: 0;
+}
+
+footer h3,
+footer li,
+footer a,
+footer p {
+    color: white;
+}
+
+footer li {
+    font-size: 0.875rem;
+    line-height: 22px;
+    font-family: "SFProDisplayRegular";
+    line-height: 1.57;
+    margin-bottom: 5px;
+}
+
+footer hr {
+    width: 140px;
+    /* float: left; */
+    height: 2px;
+    background-color: #ff9d19;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    border: 0;
+    border-top: none;
+}
+
+footer .line {
+    width: 269px;
+    background-color: #0087ff;
+    border: solid 1px #0087ff;
+}
+
+.trade-ministry {
+    /* margin-top: 3.875rem; */
+    margin-top: 6rem;
 }
