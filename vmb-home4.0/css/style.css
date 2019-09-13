@@ -76,6 +76,40 @@ h3 {
     font-size: 1.125rem;
 }
 
+/* -----con2-------- */
+section.con2 {
+    background: url(/images/pattern1.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+/* -----con4-------- */
+section.con4 {
+    background: url(/images/detail_image/bg.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+/* -----con5-------- */
+section.con5 {
+    width: 100%;
+    height: 100%;
+    background: url(/images/pattern.png) no-repeat center;
+    background-size: cover;
+    /* position: absolute; */
+    z-index: 3;
+}
+
+/* -----con7-------- */
+section.con7 {
+    background: url(/images/bg-section-02-default.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
 /* -----footer------ */
 footer {
     background-color: #144c96;
@@ -97,32 +131,68 @@ footer p {
     color: white;
 }
 
+.logo-footer {
+    margin-bottom: 1.5rem;
+}
+
+footer .icon img {
+    margin-right: 0.5rem;
+    width: 1rem;
+}
+
+.social div {
+    border-radius: 50%;
+    margin: 0 1rem 1rem 0;
+    border: 1px solid;
+    display: inline-block;
+    width: 1.5rem;
+    background: white;
+    text-align: center;
+}
+
+.social i {
+    color: #144c96;
+}
+
 footer li {
     font-size: 0.875rem;
     line-height: 22px;
     font-family: "SFProDisplayRegular";
     line-height: 1.57;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
-footer hr {
-    width: 140px;
-    /* float: left; */
-    height: 2px;
-    background-color: #ff9d19;
-    margin-top: 4px;
-    margin-bottom: 15px;
-    border: 0;
-    border-top: none;
+footer li {
+    position: relative;
+    left: -12px;
+}
+
+footer li a {
+    position: relative;
+    left: 11px;
+}
+
+footer a:hover {
+    color: #919699;
+    text-decoration: none;
 }
 
 footer .line {
     width: 269px;
     background-color: #0087ff;
     border: solid 1px #0087ff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.3125rem;
+}
+
+footer .three-line {
+    max-width: 140px;
+    height: 2px;
+    background-color: #ff9d19;
+    margin-top: 4px;
+    margin-bottom: 15px;
 }
 
 .trade-ministry {
-    /* margin-top: 3.875rem; */
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
