@@ -23,10 +23,11 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     font-family: "SFProDisplayRegular";
     font-size: 0.875‬rem;
     line-height: 1.5;
@@ -74,6 +75,82 @@ h3 {
 
 .travel-news h3 {
     font-size: 1.125rem;
+}
+
+/* -----header-on------ */
+.header-on {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#logo {
+    width: 197.7px;
+    height: 60px;
+}
+
+#travel-service {
+    height: 60px;
+    width: 485.3px;
+    text-align: center;
+}
+
+#hotline {
+    text-align: right;
+}
+
+#hotline button {
+    width: 203px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #0087ff;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+.social-header {
+    border-radius: 50%;
+    margin: 8px 8px 8px 0;
+    border: 1px solid;
+    display: inline-block;
+    width: 1.5rem;
+    background: white;
+    text-align: center;
+}
+
+.social-header i {
+    color: #0087ff;
+}
+
+/* -----header-main---- */
+.header-main {
+    background-color: #144c96;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.8125rem;
+    padding-left: 1.8125rem;
+}
+
+.navbar-light .navbar-toggler {
+    background: rgb(85, 136, 231);
+}
+
+.active {
+    background-color: #056dff;
 }
 
 /* -----con2-------- */
