@@ -253,6 +253,47 @@ section.con7 {
     background-size: cover;
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.con7 .email {
+    padding-top: 6.625rem;
+    padding-bottom: 6.5625rem;
+}
+
+h2.register {
+    color: white;
+    letter-spacing: normal;
+    margin-bottom: 20px;
+}
+
+.con7 input {
+    width: 203px;
+    height: 40px;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.con7 input[type="text"] {
+    padding: 12px 10px;
+}
+
+.con7 ::placeholder {
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.con7 button {
+    width: 171px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ff9300;
+    font-size: 14px;
+    color: white;
+    border: none;
+    font-weight: bold;
 }
 
 /* -----footer------ */
@@ -309,12 +350,12 @@ footer li {
 
 footer li {
     position: relative;
-    left: -12px;
+    left: 1.5rem;
 }
 
 footer li a {
     position: relative;
-    left: 11px;
+    left: 0.5rem;
 }
 
 footer a:hover {
