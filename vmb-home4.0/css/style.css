@@ -41,22 +41,16 @@ p {
 
 p.icon-plane {
     text-align: center;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: normal;
 }
 
-p.tour {
-    font-family: "SFProDisplayMedium";
-    font-size: 0.875rem;
-    color: black;
-}
-
-p.tour-price {
-    color: #ff0000;
-    float: right;
-}
-
-p i.detail {
-    color: #144c96;
-    float: right;
+.icon-plane img {
+    width: 1rem;
 }
 
 h2 {
@@ -64,6 +58,7 @@ h2 {
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.33;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -153,12 +148,85 @@ h3 {
     background-color: #056dff;
 }
 
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: white;
+    background-color: #056dff;
+}
+
 /* -----con2-------- */
 section.con2 {
     background: url(/images/pattern1.png) no-repeat center;
     background-size: cover;
     position: relative;
     z-index: 2;
+}
+
+/* ----con3----- */
+.con3 {
+    padding: 2.5rem 0;
+}
+
+.con3 > .row {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.con3 h2 {
+    padding-top: 20px;
+    line-height: 1.33;
+    letter-spacing: normal;
+}
+
+.right > .row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+p.tour {
+    font-family: "SFProDisplayMedium";
+    font-size: 0.875rem;
+    color: black;
+}
+
+p.tour-price {
+    color: #ff0000;
+    float: right;
+}
+
+p i.detail {
+    color: #144c96;
+    float: right;
+}
+
+p.booking,
+p.tour-price {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.booking img {
+    margin-right: 0.5rem;
+}
+
+p.tour,
+p.detail {
+    margin-bottom: 10px;
+    margin-left: 1.5rem;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+p.note {
+    margin-top: 10px;
+    margin-bottom: 9px;
+    color: #ff0013;
+}
+
+div.brand-plane {
+    height: 3.75rem;
+    line-height: 3.75rem;
+    text-align: center;
 }
 
 /* -----con4-------- */
