@@ -154,12 +154,136 @@ h3 {
     background-color: #056dff;
 }
 
+/* -------con1------- */
+.con1 {
+    background-color: #f4f4f4;
+    padding-bottom: 2.375rem;
+}
+
+/* booking */
+.booking {
+    padding-bottom: 2.5rem;
+}
+
+/* service */
+.con1 .service-all {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 5px;
+}
+
+.service-all .service-item {
+    flex: 1 1 auto;
+    background-color: white;
+    margin: 5px;
+    height: 174px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.service-item.first {
+    margin-left: -5px;
+}
+
+.service-item.last {
+    margin-right: -5px;
+}
+
+.service-item img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.service-item h3 {
+    color: black;
+}
+
+.service-item p {
+    margin: 0 10px 14px 10px;
+}
+
 /* -----con2-------- */
 section.con2 {
     background: url(/images/pattern1.png) no-repeat center;
     background-size: cover;
     position: relative;
     z-index: 2;
+    padding-top: 3.125rem;
+    padding-bottom: 2.25rem;
+}
+
+.left-top,
+.left-bottom,
+.con2 .right {
+    background: white;
+    border-radius: 3px;
+}
+
+.con2 .exchange {
+    text-align: center;
+    margin-bottom: 2.5625rem;
+}
+
+img.contact {
+    width: 20px;
+    margin-left: 8px;
+}
+
+img.avatar {
+    margin-top: 20px;
+    margin-bottom: 11px;
+}
+/* left-top */
+.con2 .left-top {
+    padding: 20px 5px;
+    margin-bottom: 1.5rem;
+}
+.support .tele-sales {
+    text-align: center;
+    width: 149px;
+    height: 140px;
+    border-radius: 5px;
+    border: 1px dotted #0087ff;
+}
+
+.tele-sales p {
+    color: black;
+    text-transform: capitalize;
+    line-height: normal;
+}
+/* left-bottom */
+.con2 .left-bottom {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.border-line {
+    margin: 0 16px 10px 16px;
+    border-radius: 5px;
+    border: dotted 1px #979797;
+}
+
+.border-line .col-md-2 {
+    height: 93px;
+    line-height: 93px;
+}
+
+.border-line .col-md-10 h3 {
+    padding-top: 14px;
+}
+
+/* right */
+.con2 .right {
+    padding-top: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.border-line .trans-bank0 {
+    padding: 10px 0;
+}
+.trans-bank {
+    padding-bottom: 1.5rem;
 }
 
 /* ----con3----- */
@@ -584,6 +708,16 @@ footer .three-line {
 
 /* ---------responsive-------- */
 @media only screen and (max-width: 576px) {
+    .con1 .service-all {
+        flex-wrap: wrap;
+    }
+
+    .service-all .service-item {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
     .famous-inside,
     .famous-outside {
         flex-wrap: wrap;
