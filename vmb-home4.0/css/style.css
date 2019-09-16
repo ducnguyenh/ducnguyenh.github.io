@@ -235,7 +235,6 @@ section.con4 {
     background-size: cover;
     position: relative;
     z-index: 2;
-    padding-bottom: 3rem;
     padding-top: 2.5rem;
 }
 
@@ -252,7 +251,7 @@ section.con4 {
     left: 50%;
     color: white;
     transform: translate(-50%, -50%);
-    width: 279px;
+    /* width: 279px; */
     height: 60px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -282,11 +281,90 @@ section.con4 {
     float: right;
     color: #ff9d19;
 }
-/* ---trend-place--- */
-.trend-place {
-    padding-top: 2.5rem;
+
+/* ---inside-place--- */
+.title-img {
+    width: 100%;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    color: white;
+    font-size: 1rem;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(9.6px);
+    backdrop-filter: blur(9.6px);
 }
 
+.cheap-ticket,
+.inside-place,
+.outside-place {
+    padding-bottom: 2.5rem;
+}
+
+.cheap-ticket .col-md-3 {
+    padding: 5px;
+}
+
+.famous-inside,
+.famous-outside {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.famous-inside .shadow,
+.famous-outside .shadow {
+    margin: 5px;
+}
+
+/* care-service */
+.care-service,
+.travel-news {
+    padding-bottom: 1rem;
+}
+
+.care-service .col-md-6,
+.travel-news .col-md-6 {
+    padding-bottom: 1.5rem;
+}
+
+.view-more {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    width: 146px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9300;
+}
+
+/* travel-news */
+.travel-news p.travel-tip {
+    color: #0087ff;
+    line-height: normal;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+
+.date-view {
+    margin-bottom: 0.5625rem;
+}
+
+p.travel-tip.more {
+    margin: 0;
+    text-align: center;
+}
 /* -----con5-------- */
 section.con5 {
     width: 100%;
@@ -323,6 +401,10 @@ div.partner {
 /* -----con6----- */
 section.con6 {
     padding-top: 2.375rem;
+}
+
+.con6 .col-md-4 {
+    padding-bottom: 2.5rem;
 }
 
 .con6 h3 {
@@ -498,4 +580,20 @@ footer .three-line {
 
 .trade-ministry {
     margin-top: 5rem;
+}
+
+/* ---------responsive-------- */
+@media only screen and (max-width: 576px) {
+    .famous-inside,
+    .famous-outside {
+        flex-wrap: wrap;
+    }
+
+    .cheap-ticket {
+        text-align: center;
+    }
+
+    .travel-news .col-md-6 {
+        padding-left: 15px !important;
+    }
 }
