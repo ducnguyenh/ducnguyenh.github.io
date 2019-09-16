@@ -78,14 +78,8 @@ h3 {
     margin-bottom: 10px;
 }
 
-#logo {
-    width: 197.7px;
-    height: 60px;
-}
-
 #travel-service {
-    height: 60px;
-    width: 485.3px;
+    width: 100%;
     text-align: center;
 }
 
@@ -161,8 +155,98 @@ h3 {
 }
 
 /* booking */
-.booking {
+.con1 .reserve {
     padding-bottom: 2.5rem;
+}
+
+.con1 .booking {
+    padding-bottom: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* img */
+.pick-up img {
+    width: 1rem;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* button */
+.booking button {
+    line-height: normal;
+    color: white;
+    font-size: 14px;
+    height: 36px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    text-transform: capitalize;
+}
+
+.booking .ticket-plane,
+.booking .travel-tour,
+.booking .motel {
+    text-align: left;
+    width: 145px;
+    background-color: #144c96;
+}
+
+.booking .ticket-plane,
+button.one-direction,
+button.two-way {
+    color: #144c96;
+    background-color: white;
+}
+
+button.one-direction,
+button.two-way {
+    width: 120px;
+}
+
+button.two-way {
+    color: white;
+    background-color: #0087ff;
+}
+
+.booking .search {
+    width: 140px;
+    border: none;
+    background-color: #ff9300;
+    text-transform: uppercase;
+}
+
+/* input */
+input[class="leave-point"],
+input[class="arrive-point"] {
+    width: 186px;
+}
+
+input[class="leave-point"] {
+    background: url(/images/takeoff.png) no-repeat scroll 8px 8px;
+}
+
+input[class="arrive-point"] {
+    background: url(/images/land.png) no-repeat scroll 8px 8px;
+}
+
+input[class="leave-date"],
+input[class="date"] {
+    background: url(/images/14.png) no-repeat scroll 8px 8px;
+    width: 140px;
+}
+
+input[class="person"] {
+    background: url(/images/12.png) no-repeat scroll 8px 8px;
+    width: 282px;
+}
+
+.booking input {
+    height: 36px;
+    background-size: 16px;
+    padding-left: 2rem;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.15);
 }
 
 /* service */
@@ -239,9 +323,20 @@ img.avatar {
     padding: 20px 5px;
     margin-bottom: 1.5rem;
 }
-.support .tele-sales {
+
+.con2 .support {
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    width: 149px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.support .tele-sales {
+    flex: 1 1 auto;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
     height: 140px;
     border-radius: 5px;
     border: 1px dotted #0087ff;
@@ -282,8 +377,9 @@ img.avatar {
 .border-line .trans-bank0 {
     padding: 10px 0;
 }
+
 .trans-bank {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.8rem;
 }
 
 /* ----con3----- */
@@ -313,12 +409,12 @@ p.tour {
 
 p.tour-price {
     color: #ff0000;
-    float: right;
+    text-align: right;
 }
 
-p i.detail {
+p.detail {
     color: #144c96;
-    float: right;
+    text-align: right;
 }
 
 p.booking,
@@ -551,7 +647,7 @@ section.con6 {
     color: white;
 }
 
-.ticket-plane img {
+.con6 .ticket-plane img {
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -603,7 +699,7 @@ h2.register {
     padding: 12px 10px;
 }
 
-.con7 ::placeholder {
+::placeholder {
     font-size: 14px;
     color: #bbbbbb;
 }
@@ -708,8 +804,53 @@ footer .three-line {
 
 /* ---------responsive-------- */
 @media only screen and (max-width: 576px) {
+    #logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    #logo img,
+    #travel-service img {
+        height: 30px;
+    }
+
+    #hotline {
+        text-align: center;
+    }
+
+    #hotline button {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
     .con1 .service-all {
         flex-wrap: wrap;
+    }
+    /*  */
+    .con2 .support {
+        flex-wrap: wrap;
+    }
+    .support .tele-sales {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .border-line .col-md-2 {
+        text-align: center;
+    }
+    /*  */
+    .con3 .left,
+    .con3 .right {
+        text-align: center;
+    }
+
+    p i.detail {
+        text-align: center;
+    }
+
+    p.tour-price {
+        text-align: center;
     }
 
     .service-all .service-item {
@@ -718,6 +859,12 @@ footer .three-line {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .shadow .left-travel1,
+    .shadow .left-travel2 {
+        text-align: left;
+    }
+
     .famous-inside,
     .famous-outside {
         flex-wrap: wrap;
@@ -729,5 +876,39 @@ footer .three-line {
 
     .travel-news .col-md-6 {
         padding-left: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 13px;
+    }
+
+    .service-all .service-item {
+        height: 100%;
+    }
+
+    .service-all .service-item h3 {
+        font-size: 14px;
+    }
+
+    .con6 li {
+        width: 100%;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: 13px;
+    }
+    .con6 li {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    p {
+        font-size: 13px;
     }
 }
