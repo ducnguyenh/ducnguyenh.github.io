@@ -405,8 +405,10 @@ img.avatar {
     padding: 2.5rem 0;
 }
 
-.con3 > .row {
+.con3 .container > .row {
     border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .con3 h2 {
@@ -415,8 +417,17 @@ img.avatar {
     letter-spacing: normal;
 }
 
-.right > .row {
+.con3 .right > .row {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    margin-right: 0;
+}
+
+.col-md-6.col-sm-12.left {
+    padding-left: 0;
+}
+
+.right .col-md-6.col-sm-12 {
+    padding-left: 2px;
 }
 
 p.tour {
@@ -464,7 +475,7 @@ p.note {
 div.brand-plane {
     height: 3.75rem;
     line-height: 3.75rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* -----con4-------- */
@@ -489,8 +500,7 @@ section.con4 {
     left: 50%;
     color: white;
     transform: translate(-50%, -50%);
-    /* width: 279px; */
-    height: 60px;
+    /* height: auto; */
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.2);
 }
@@ -715,6 +725,10 @@ h2.register {
 
 .con7 input[type="text"] {
     padding: 12px 10px;
+}
+
+.con7 input {
+    margin-bottom: 10px;
 }
 
 ::placeholder {
@@ -1046,10 +1060,6 @@ footer .three-line {
         padding-top: 20px;
     }
 
-    /* .border-line .trans-bank0 {
-        padding: 5px 0;
-    } */
-
     .trans-bank {
         padding-bottom: 23px;
     }
@@ -1057,6 +1067,41 @@ footer .three-line {
     .right .passport {
         width: 30px;
         height: auto;
+    }
+
+    /* con3 */
+    p.tour,
+    p.detail {
+        margin-left: 0;
+    }
+
+    /* con4 */
+    .shadow .left-travel1 {
+        margin: 0;
+        padding: 5px 10px 3px 8px;
+        font-size: 12px;
+    }
+
+    .shadow .left-travel2 {
+        margin: 0;
+        padding: 2px 10px 3px 8px;
+        margin-bottom: 0;
+        font-size: 11px;
+    }
+
+    .shadow .right-travel1,
+    .shadow .right-travel,
+    .shadow .left-travel2 {
+        font-size: 11px;
+    }
+
+    .tour-img {
+        height: auto;
+    }
+
+    /* con6 */
+    .con6 li {
+        width: 100%;
     }
 
     /* travel news */
@@ -1080,4 +1125,8 @@ footer .three-line {
     footer li {
         font-size: 12px;
     }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) {
+    /* ipad pro */
 }
