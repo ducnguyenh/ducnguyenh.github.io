@@ -1,0 +1,29 @@
+#blog .left-option .card-image div {
+    padding-bottom: calc(100% * 352 / 853);
+    position: relative;
+}
+
+#blog .right-option .card-image div {
+    padding-bottom: calc(100% * 170 / 283);
+    position: relative;
+}
+
+#blog .left-handbook .card-image div {
+    padding-bottom: calc(100% * 213 / 366);
+    position: relative;
+}
+
+#blog .right-handbook .card-image div {
+    padding-bottom: calc(100% * 110 / 183);
+    position: relative;
+}
+
+#blog .newest-view .card-image div {
+    padding-bottom: calc(100% * 90 / 120);
+    position: relative;
+}
+
+#blog .newest-view .advertise .card-image div {
+    padding-bottom: calc(100% * 300 / 269);
+    position: relative;
+}
