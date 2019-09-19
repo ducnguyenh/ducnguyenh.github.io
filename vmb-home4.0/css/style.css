@@ -526,6 +526,10 @@ section.con4 {
 }
 
 /* shadow */
+.left-travel1 img.white-arrow {
+    padding: 0 0.5rem;
+}
+
 .shadow {
     position: relative;
     display: inline-block;
