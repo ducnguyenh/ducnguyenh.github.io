@@ -1,0 +1,19 @@
+.slick-prev:before,
+.slick-next:before {
+    content: url(/images/right-1.png);
+    opacity: 0.8;
+}
+
+.shadow {
+    box-shadow: none !important;
+}
+
+.slick-prev {
+    transform: rotate(180deg);
+    z-index: 10;
+    left: 0.5%;
+}
+
+.slick-next {
+    right: 0.2%;
+}
