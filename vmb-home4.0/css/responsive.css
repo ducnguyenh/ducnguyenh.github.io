@@ -163,6 +163,11 @@
         width: 100%;
         font-size: 13px;
     }
+
+    .left-travel1 img.white-arrow {
+        padding: 0 0.2rem;
+        height: 12px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -241,6 +246,10 @@
     }
 
     /* con3 */
+    .left-travel1 img.white-arrow {
+        padding: 0 0.2rem;
+        height: 10px;
+    }
     p.tour,
     p.detail {
         margin-left: 0;
