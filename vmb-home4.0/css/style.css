@@ -191,7 +191,7 @@ h3 {
     font-size: 14px;
     height: 36px;
     border-radius: 5px;
-    border: solid 1px rgba(0, 0, 0, 0.15);
+    border: none;
     text-transform: capitalize;
 }
 
@@ -212,6 +212,7 @@ button.two-way {
 
 button.one-direction,
 button.two-way {
+    border: solid 1px rgba(0, 0, 0, 0.15);
     margin-top: 1rem;
     margin-left: 1rem;
     width: 120px;
@@ -659,7 +660,7 @@ section.con4 {
     position: relative;
 }
 
-.travel-news p.travel-tip {
+p.travel-tip {
     color: #0087ff;
     line-height: normal;
     font-size: 14px;
