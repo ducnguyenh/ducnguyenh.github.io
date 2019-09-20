@@ -1,25 +1,99 @@
 /* ---------responsive-------- */
 @media screen and (max-width: 1199px) {
+    #blog .cheap-tour .left-option .tour-title {
+        top: 10%;
+        left: 5%;
+    }
+
+    #blog .cheap-tour .right-option .tour-title {
+        top: 35%;
+        left: 5%;
+    }
+
+    #blog .tour-title h3 {
+        font-size: 13px;
+    }
 }
 
 /* ---------responsive-------- */
 @media screen and (max-width: 767px) {
+    /* ------cheap-tour------- */
+    /* left option */
+    #blog .cheap-tour .left-option .tour-title {
+        top: 10%;
+        left: 10%;
+    }
+
+    #blog .tour-title h2 {
+        width: 400px;
+        padding-top: 1rem;
+        font-size: 20px;
+    }
+    /* right option */
+    #blog .cheap-tour .col-md-3.col-xs-12 {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    /* -------- */
+    /* --------tour-handbook------ */
+    #blog .tour-handbook .col-md-3.col-xs-12 {
+        padding-left: 15px;
+    }
+
     #blog .tour-handbook .col-md-5.left-handbook {
         padding-right: 15px;
     }
 
     #blog .tour-handbook .right-handbook .col-md-7 {
         padding-left: 15px;
+        text-align: center;
     }
 
     #blog .tour-handbook .right-handbook .col-md-5 {
         padding-left: 15px;
         padding-right: 15px;
+        text-align: center;
+    }
+
+    /* #blog .tour-handbook h3 {
+        margin-top: 8px;
+    } */
+
+    /* ---newest-view--- */
+    #blog .newest-view .col-md-5 {
+        padding-right: 15px;
+    }
+
+    #blog .newest-view .col-md-7 {
+        padding-left: 15px;
     }
 }
 
 /* ---------responsive-------- */
 @media screen and (max-width: 575px) {
+    /* ------cheap-tour------- */
+    /* left option */
+    #blog .cheap-tour .left-option .tour-title {
+        top: 8%;
+        left: 10%;
+    }
+
+    #blog .tour-title h2 {
+        width: 230px;
+        padding-top: 1rem;
+        font-size: 16px;
+    }
+    /* right option */
+    #blog .cheap-tour .col-md-3.col-xs-12 {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    /* -------- */
+    /* --------tour-handbook------ */
+    #blog .tour-handbook .col-md-3.col-xs-12 {
+        padding-left: 15px;
+    }
+
     #blog .tour-handbook .col-md-5.left-handbook {
         padding-right: 15px;
     }
@@ -39,20 +113,12 @@
         margin-top: 8px;
     }
 
+    /* ---newest-view--- */
     #blog .newest-view .col-md-5 {
         padding-right: 15px;
     }
 
     #blog .newest-view .col-md-7 {
         padding-left: 15px;
-    }
-
-    #blog .tour-handbook .col-md-3.col-xs-12 {
-        padding-left: 15px;
-    }
-
-    .newest-view .flex-row {
-        /* display: flex; */
-        justify-content: space-between;
     }
 }
