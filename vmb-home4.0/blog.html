@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/slick/slick-theme.css">
     <link rel="stylesheet" href="/css/slick/slick.css">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/flex-test.css">
 
     <link rel="stylesheet" href="/css/blog-style.css">
+    <link rel="stylesheet" href="/css/blog-responsive.css">
 
     <title>VMB-Blog 4.0</title>
 </head>
@@ -140,6 +141,11 @@
     </header>
 
     <div id="blog">
+        <div class="container">
+            <p class="active-link"><span id="active-now">
+                    Trang chủ
+                </span> - Tour du lịch </p>
+        </div>
         <section class="container cheap-tour">
             <div class="row">
                 <div class="col-md-9 col-xs-12">
@@ -150,53 +156,65 @@
                             </div>
                         </a>
 
-                        <a href="#" class="tour-title">
-                            <p class="title">Du Lịch Giá Rẻ</p>
-                            <h2 class="text-capitalize">Tour Du Lịch Trung Quốc:
-                                Thành Đô – Tùng Bình Câu – Mâu Ni Câu – Nga My Sơn</h2>
-                        </a>
+                        <div class="tour-title">
+                            <a href="#">
+                                <p class="title">Du Lịch Giá Rẻ</p>
+                            </a>
+                            <a href="#">
+                                <h2 class="text-capitalize">Tour Du Lịch Trung Quốc:<br>
+                                    Thành Đô – Tùng Bình Câu – Mâu Ni Câu – Nga My Sơn</h2>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-xs-12">
                     <div class="right-option">
-                        <a href="#" class="card-image">
-                            <div>
-                                <img class="img-fluid" src="/images/blog/travel-54.png" alt="vietnam">
+                        <div class="above">
+                            <a href="#" class="card-image">
+                                <div>
+                                    <img class="img-fluid" src="/images/blog/travel-54.png" alt="vietnam">
+                                </div>
+                            </a>
+
+                            <div class="tour-title">
+                                <a href="#">
+                                    <p class="title">Du Lịch Giá Rẻ</p>
+                                </a>
+                                <a href="#">
+                                    <h3>Top 13 điểm du lịch 2 ngày 1 đêm miền bắc cực đẹp</h3>
+                                </a>
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="#" class="tour-title">
-                            <p class="title">Du Lịch Giá Rẻ</p>
-                            <h3>Top 13 điểm du lịch 2 ngày 1 đêm miền bắc cực đẹp</h3>
-                        </a>
-                    </div>
+                        <div class="below">
+                            <a href="#" class="card-image">
+                                <div>
+                                    <img class="img-fluid" src="/images/blog/travel-54_2.png" alt="vietnam">
+                                </div>
+                            </a>
 
-                    <div class="right-option">
-                        <a href="#" class="card-image">
-                            <div>
-                                <img class="img-fluid" src="/images/blog/travel-54_2.png" alt="vietnam">
+                            <div class="tour-title">
+                                <a href="#">
+                                    <p class="title">Du Lịch Giá Rẻ</p>
+                                </a>
+                                <a href="#">
+                                    <h3>Top 13 điểm du lịch 2 ngày 1 đêm miền bắc cực đẹp</h3>
+                                </a>
                             </div>
-                        </a>
-
-                        <a href="#" class="tour-title">
-                            <p class="title">Du Lịch Giá Rẻ</p>
-                            <h3>Top 13 điểm du lịch 2 ngày 1 đêm miền bắc cực đẹp</h3>
-                        </a>
+                        </div>
                     </div>
                 </div>
         </section>
 
         <section class="container tour-handbook">
-            <!-- <div class="travel-title">
-                    <h2 class="text-uppercase">cẩm nang du lịch</h2>
-                    <p class="travel-tip" style="text-align:right"><i>Xem thêm</i></p>
-                </div> -->
             <div class="row">
-                <div class="col-md-9 col-xs-12">
+                <div class="col-md-9 col-xs-12 left-column">
                     <div class="travel-title">
                         <h2 class="text-uppercase">cẩm nang du lịch</h2>
-                        <p class="travel-tip"><i>Xem thêm</i></p>
+                        <a href="#">
+                            <p class="travel-tip"><i>Xem thêm</i></p>
+                        </a>
                     </div>
 
                     <div class="row">
@@ -224,9 +242,8 @@
                                 Vietnam that they may have been exposed to cases of </p>
 
                         </div>
-
                         <div class="col-md-7 right-handbook">
-                            <div class="row">
+                            <div class="row col-xs-6">
                                 <div class="col-md-5 ">
                                     <a href="#" class="card-image">
                                         <img class="img-fluid" src="/images/blog/north-forest-22.png"
@@ -238,13 +255,13 @@
                                         <h3>Airport Hotels The Right Way To Start A Short Break Holiday</h3>
                                     </a>
                                     <a href="#">
-                                        <p class="travel-tip"><i>Vé máy bay</i></p>
+                                        <p class="travel-tip"><i>Cẩm nang du lịch</i></p>
                                     </a>
                                     <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <div class="row col-xs-6">
                                 <div class="col-md-5">
                                     <a href="#" class="card-image">
                                         <img class="img-fluid" src="/images/blog/north-forest-22_2.png"
@@ -258,7 +275,7 @@
                                     </a>
 
                                     <a href="#">
-                                        <p class="travel-tip"><i>Vé máy bay</i></p>
+                                        <p class="travel-tip"><i>Cẩm nang du lịch</i></p>
                                     </a>
                                     <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
                                 </div>
@@ -277,7 +294,7 @@
                                         <h3>It S Hurricane Season But We Are Visiting Hilton Head Island</h3>
                                     </a>
                                     <a href="#">
-                                        <p class="travel-tip"><i>Vé máy bay</i></p>
+                                        <p class="travel-tip"><i>Cẩm nang du lịch</i></p>
                                     </a>
                                     <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
                                 </div>
@@ -296,104 +313,444 @@
                                         <h3>Live Poker How To Win Tournament Games</h3>
                                     </a>
                                     <a href="#">
-                                        <p class="travel-tip"><i>Vé máy bay</i></p>
+                                        <p class="travel-tip"><i>Cẩm nang du lịch</i></p>
                                     </a>
                                     <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-------------------- line ------------------->
+                    <hr>
+                    <div class="travel-title">
+                        <h2 class="text-uppercase">du lịch giá rẻ</h2>
+                        <a href="#">
+                            <p class="travel-tip"><i>Xem thêm</i></p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 left-handbook">
+                            <a href="#" class="card-image">
+                                <div>
+                                    <img class="img-fluid" src="/images/blog/north-forest-2.png" alt="north-forest">
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <p class="travel-tip"><i>Kinh nghiệm du lịch</i></p>
+                            </a>
+
+                            <a href="#">
+                                <h3>Khám phá những khu rừng nguyên sơ tại cực bắc của tổ quốc trong tháng 12 này</h3>
+                            </a>
+                            <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                            <p class="short">The Centers for Disease Control & Prevention (CDC) on Saturday began
+                                distributing cards at
+                                airports receiving flights returning directly from Hong Kong warning travelers returning
+                                to
+                                the United States from Hong Kong & Guangdong Province, People’s Republic of China &
+                                Hanoi,
+                                Vietnam that they may have been exposed to cases of </p>
+
+                        </div>
+                        <div class="col-md-7 right-handbook">
+                            <div class="row col-xs-6">
+                                <div class="col-md-5 ">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22.png"
+                                            alt="north-forest-22">
+                                    </a>
+                                </div>
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>Airport Hotels The Right Way To Start A Short Break Holiday</h3>
+                                    </a>
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Du lịch giá rẻ</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+
+                            <div class="row col-xs-6">
+                                <div class="col-md-5">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22_2.png"
+                                            alt="north-forest-22_2">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
+                                    </a>
+
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Du lịch giá rẻ</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22_3.png"
+                                            alt="north-forest-22">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>It S Hurricane Season But We Are Visiting Hilton Head Island</h3>
+                                    </a>
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Du lịch giá rẻ</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-5 ">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22_4.png"
+                                            alt="north-forest-22">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>Live Poker How To Win Tournament Games</h3>
+                                    </a>
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Du lịch giá rẻ</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------- line ------------------->
+                    <hr>
+                    <div class="travel-title">
+                        <h2 class="text-uppercase">ẩm thực</h2>
+                        <a href="#">
+                            <p class="travel-tip"><i>Xem thêm</i></p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 left-handbook">
+                            <a href="#" class="card-image">
+                                <div>
+                                    <img class="img-fluid" src="/images/blog/north-forest-2.png" alt="north-forest">
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <p class="travel-tip"><i>Kinh nghiệm du lịch</i></p>
+                            </a>
+
+                            <a href="#">
+                                <h3>Khám phá những khu rừng nguyên sơ tại cực bắc của tổ quốc trong tháng 12 này</h3>
+                            </a>
+                            <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                            <p class="short">The Centers for Disease Control & Prevention (CDC) on Saturday began
+                                distributing cards at
+                                airports receiving flights returning directly from Hong Kong warning travelers returning
+                                to
+                                the United States from Hong Kong & Guangdong Province, People’s Republic of China &
+                                Hanoi,
+                                Vietnam that they may have been exposed to cases of </p>
+
+                        </div>
+                        <div class="col-md-7 right-handbook">
+                            <div class="row col-xs-6">
+                                <div class="col-md-5 ">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22.png"
+                                            alt="north-forest-22">
+                                    </a>
+                                </div>
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>Airport Hotels The Right Way To Start A Short Break Holiday</h3>
+                                    </a>
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Ẩm thực</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+
+                            <div class="row col-xs-6">
+                                <div class="col-md-5">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22_2.png"
+                                            alt="north-forest-22_2">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
+                                    </a>
+
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Ẩm thực</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22_3.png"
+                                            alt="north-forest-22">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>It S Hurricane Season But We Are Visiting Hilton Head Island</h3>
+                                    </a>
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Ẩm thực</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-5 ">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22_4.png"
+                                            alt="north-forest-22">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>Live Poker How To Win Tournament Games</h3>
+                                    </a>
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Ẩm thực</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------- line ------------------->
+                    <hr>
+                    <div class="travel-title">
+                        <h2 class="text-uppercase">ẩm thực</h2>
+                        <a href="#">
+                            <p class="travel-tip"><i>Xem thêm</i></p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 left-handbook">
+                            <a href="#" class="card-image">
+                                <div>
+                                    <img class="img-fluid" src="/images/blog/north-forest-2.png" alt="north-forest">
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <p class="travel-tip"><i>Kinh nghiệm du lịch</i></p>
+                            </a>
+
+                            <a href="#">
+                                <h3>Khám phá những khu rừng nguyên sơ tại cực bắc của tổ quốc trong tháng 12 này</h3>
+                            </a>
+                            <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                            <p class="short">The Centers for Disease Control & Prevention (CDC) on Saturday began
+                                distributing cards at
+                                airports receiving flights returning directly from Hong Kong warning travelers returning
+                                to
+                                the United States from Hong Kong & Guangdong Province, People’s Republic of China &
+                                Hanoi,
+                                Vietnam that they may have been exposed to cases of </p>
+
+                        </div>
+
+                        <div class="col-md-7 right-handbook">
+                            <div class="row col-xs-6">
+                                <div class="col-md-5 ">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22.png"
+                                            alt="north-forest-22">
+                                    </a>
+                                </div>
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>Airport Hotels The Right Way To Start A Short Break Holiday</h3>
+                                    </a>
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Ẩm thực</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+
+                            <div class="row col-xs-6">
+                                <div class="col-md-5">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22_2.png"
+                                            alt="north-forest-22_2">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
+                                    </a>
+
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Ẩm thực</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22_3.png"
+                                            alt="north-forest-22">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>It S Hurricane Season But We Are Visiting Hilton Head Island</h3>
+                                    </a>
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Ẩm thực</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-5 ">
+                                    <a href="#" class="card-image">
+                                        <img class="img-fluid" src="/images/blog/north-forest-22_4.png"
+                                            alt="north-forest-22">
+                                    </a>
+                                </div>
+
+                                <div class="col-md-7 ">
+                                    <a href="#">
+                                        <h3>Live Poker How To Win Tournament Games</h3>
+                                    </a>
+                                    <a href="#">
+                                        <p class="travel-tip"><i>Ẩm thực</i></p>
+                                    </a>
+                                    <p class="date-view">12/12/2014 - 123.000 Lượt xem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="col-md-3 col-xs-12">
-                    <h3 class="text-uppercase">tìm kiếm bài viết</h3>
-                    <div>
+                <div class="col-md-3 col-xs-12 right-column">
+                    <h3 class="search-content">tìm kiếm bài viết</h3>
+                    <div class="input-search">
                         <input type="text" placeholder="Nhập từ khóa tìm kiếm">
-                        <button><img src="/images/blog/2_3.png" alt="search"></button>
+                        <i class="fa fa-search" aria-hidden="true"></i>
                     </div>
                     <div class="newest-view">
                         <div class="view-option">
-                            <button>mới nhất</button>
-                            <button>xem nhiều</button>
+                            <button class="active">mới nhất</button>
+                            <button class="non-active">xem nhiều</button>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-5">
-                                <a href="#" class="card-image">
-                                    <div>
-                                        <img src="/images/blog/north-forest-22_5.png" alt="north-forest-22_5">
-                                    </div>
-                                </a>
+                        <div class="flex-row">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <a href="#" class="card-image">
+                                        <div>
+                                            <img src="/images/blog/north-forest-22_5.png" alt="north-forest-22_5">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-7">
+                                    <a href="#">
+                                        <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
+                                    </a>
+                                    <p class="date-view">12/12/2014</p>
+                                </div>
                             </div>
-                            <div class="col-md-7 pl-0">
-                                <a href="#">
-                                    <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
-                                </a>
-                                <p class="date-view">12/12/2014</p>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-md-5">
-                                <a href="#" class="card-image">
-                                    <div>
-                                        <img src="/images/blog/north-forest-22_6.png" alt="north-forest-22_6">
-                                    </div>
-                                </a>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <a href="#" class="card-image">
+                                        <div>
+                                            <img src="/images/blog/north-forest-22_6.png" alt="north-forest-22_6">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-7">
+                                    <a href="#">
+                                        <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
+                                    </a>
+                                    <p class="date-view">12/12/2014</p>
+                                </div>
                             </div>
-                            <div class="col-md-7 pl-0">
-                                <a href="#">
-                                    <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
-                                </a>
-                                <p class="date-view">12/12/2014</p>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-md-5">
-                                <a href="#" class="card-image">
-                                    <div>
-                                        <img src="/images/blog/north-forest-22_7.png" alt="north-forest-22_7">
-                                    </div>
-                                </a>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <a href="#" class="card-image">
+                                        <div>
+                                            <img src="/images/blog/north-forest-22_7.png" alt="north-forest-22_7">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-7">
+                                    <a href="#">
+                                        <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
+                                    </a>
+                                    <p class="date-view">12/12/2014</p>
+                                </div>
                             </div>
-                            <div class="col-md-7 pl-0">
-                                <a href="#">
-                                    <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
-                                </a>
-                                <p class="date-view">12/12/2014</p>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-md-5">
-                                <a href="#" class="card-image">
-                                    <div>
-                                        <img src="/images/blog/north-forest-22_8.png" alt="north-forest-22_8">
-                                    </div>
-                                </a>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <a href="#" class="card-image">
+                                        <div>
+                                            <img src="/images/blog/north-forest-22_8.png" alt="north-forest-22_8">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-7">
+                                    <a href="#">
+                                        <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
+                                    </a>
+                                    <p class="date-view">12/12/2014</p>
+                                </div>
                             </div>
-                            <div class="col-md-7 pl-0">
-                                <a href="#">
-                                    <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
-                                </a>
-                                <p class="date-view">12/12/2014</p>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-md-5">
-                                <a href="#" class="card-image">
-                                    <div>
-                                        <img src="/images/blog/north-forest-22_9.png" alt="north-forest-22_9">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-7 pl-0">
-                                <a href="#">
-                                    <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
-                                </a>
-                                <p class="date-view">12/12/2014</p>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <a href="#" class="card-image">
+                                        <div>
+                                            <img src="/images/blog/north-forest-22_9.png" alt="north-forest-22_9">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-7">
+                                    <a href="#">
+                                        <h3>Global Resorts Network Grn Putting Timeshares To Shame</h3>
+                                    </a>
+                                    <p class="date-view">12/12/2014</p>
+                                </div>
                             </div>
                         </div>
 
@@ -406,7 +763,7 @@
                         </div>
 
                         <div class="care-topic">
-                            <h3 class="text-uppercase">bạn quan tâm tới chủ đề gì</h3>
+                            <h3 class="search-content">bạn quan tâm tới chủ đề gì</h3>
 
                             <div class="topic">
                                 <button>Du lịch Phú Quốc</button>
@@ -421,6 +778,8 @@
                     </div>
                 </div>
             </div>
+
+
 
         </section>
     </div>
