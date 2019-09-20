@@ -1,0 +1,58 @@
+/* ---------responsive-------- */
+@media screen and (max-width: 1199px) {
+}
+
+/* ---------responsive-------- */
+@media screen and (max-width: 767px) {
+    #blog .tour-handbook .col-md-5.left-handbook {
+        padding-right: 15px;
+    }
+
+    #blog .tour-handbook .right-handbook .col-md-7 {
+        padding-left: 15px;
+    }
+
+    #blog .tour-handbook .right-handbook .col-md-5 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* ---------responsive-------- */
+@media screen and (max-width: 575px) {
+    #blog .tour-handbook .col-md-5.left-handbook {
+        padding-right: 15px;
+    }
+
+    #blog .tour-handbook .right-handbook .col-md-7 {
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    #blog .tour-handbook .right-handbook .col-md-5 {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    #blog .tour-handbook h3 {
+        margin-top: 8px;
+    }
+
+    #blog .newest-view .col-md-5 {
+        padding-right: 15px;
+    }
+
+    #blog .newest-view .col-md-7 {
+        padding-left: 15px;
+    }
+
+    #blog .tour-handbook .col-md-3.col-xs-12 {
+        padding-left: 15px;
+    }
+
+    .newest-view .flex-row {
+        /* display: flex; */
+        justify-content: space-between;
+    }
+}
