@@ -30,13 +30,13 @@
         font-size: 20px;
     }
     /* right option */
-    #blog .cheap-tour .col-md-3.col-xs-12 {
+    #blog .cheap-tour .col-md-3.col-12 {
         padding-top: 15px;
         padding-left: 15px;
     }
     /* -------- */
     /* --------tour-handbook------ */
-    #blog .tour-handbook .col-md-3.col-xs-12 {
+    #blog .tour-handbook .col-md-3.col-12 {
         padding-left: 15px;
     }
 
@@ -44,15 +44,9 @@
         padding-right: 15px;
     }
 
-    #blog .tour-handbook .right-handbook .col-md-7 {
-        padding-left: 15px;
-        text-align: center;
-    }
-
     #blog .tour-handbook .right-handbook .col-md-5 {
         padding-left: 15px;
         padding-right: 15px;
-        text-align: center;
     }
 
     /* #blog .tour-handbook h3 {
@@ -84,13 +78,13 @@
         font-size: 16px;
     }
     /* right option */
-    #blog .cheap-tour .col-md-3.col-xs-12 {
+    #blog .cheap-tour .col-md-3.col-12 {
         padding-top: 15px;
         padding-left: 15px;
     }
     /* -------- */
     /* --------tour-handbook------ */
-    #blog .tour-handbook .col-md-3.col-xs-12 {
+    #blog .tour-handbook .col-md-3.col-12 {
         padding-left: 15px;
     }
 
@@ -98,19 +92,23 @@
         padding-right: 15px;
     }
 
-    #blog .tour-handbook .right-handbook .col-md-7 {
-        padding-left: 15px;
-        text-align: center;
-    }
-
     #blog .tour-handbook .right-handbook .col-md-5 {
         padding-left: 15px;
         padding-right: 15px;
-        text-align: center;
     }
 
     #blog .tour-handbook h3 {
+        font-size: 14px;
+    }
+
+    #blog .tour-handbook p.travel-tip {
+        font-size: 12px;
         margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    #blog .tour-handbook .date-view {
+        font-size: 12px;
     }
 
     /* ---newest-view--- */
@@ -118,7 +116,7 @@
         padding-right: 15px;
     }
 
-    #blog .newest-view .col-md-7 {
-        padding-left: 15px;
+    #blog .tour-handbook .left-column > .row {
+        padding-bottom: 1rem;
     }
 }
