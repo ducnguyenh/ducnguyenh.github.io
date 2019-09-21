@@ -1,3 +1,4 @@
+/* icon right-arrow for banner, famous-inside, famous-outside in index.html*/
 .slick-prev:before,
 .slick-next:before {
     content: url(/images/right-1.png);
@@ -16,4 +17,38 @@
 
 .slick-next {
     right: 0.2%;
+}
+
+.banner .slick-prev {
+    left: 2%;
+}
+
+.banner .slick-next {
+    right: 2%;
+}
+
+/* icon for cheap-tour banner in blog.html*/
+ul.slick-dots button:before {
+    font-size: 24px;
+    top: 30%;
+    opacity: 0.25;
+    color: white;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: white;
+    font-size: 40px;
+}
+
+.slick-dots li {
+    margin: 0 3px;
+}
+
+#blog .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+#blog .slick-dots {
+    top: 85%;
 }
