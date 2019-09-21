@@ -1,20 +1,17 @@
 /* ---------responsive-------- */
+@media screen and (max-width: 1199px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
 
-
-
-@media screen and (max-width:1199px){
-
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link.active {
+        font-size: 14px;
+    }
 }
-/* ---------responsive-------- */
-@media screen and (max-width:767px){
-    
-}
 
-/* ---------responsive-------- */
-@media screen and (max-width:575px){
-    
-}
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
     p {
         font-size: 13px;
     }
@@ -63,16 +60,15 @@
     }
 
     /* con1 */
-	.con1 .reserve {
+    .con1 .reserve {
         padding-top: 2.75rem;
     }
 
     .pick-up {
         padding: 1rem 0;
         top: -20%; /* 576 */
-        
     }
-	
+
     .booking input {
         margin-left: 1rem;
         width: auto;
@@ -174,10 +170,9 @@
     .travel-news h3 {
         font-size: 1rem;
     }
-
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     p {
         font-size: 13px;
     }
