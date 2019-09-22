@@ -66,7 +66,7 @@
 
     .pick-up {
         padding: 1rem 0;
-        top: -20%; /* 576 */
+        top: -11.5%; /* 576 */
     }
 
     .booking input {
@@ -172,7 +172,7 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     p {
         font-size: 13px;
     }
@@ -193,6 +193,10 @@
     .left-travel1 img.white-arrow {
         padding: 0 0.2rem;
         height: 12px;
+    }
+
+    .pick-up {
+        top: -16%;
     }
 }
 
@@ -343,4 +347,7 @@
 
 @media only screen and (min-width: 1024px) and (max-height: 1366px) {
     /* ipad pro */
+    .pick-up {
+        top: -20.8%;
+    }
 }
