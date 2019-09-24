@@ -97,6 +97,29 @@
         margin-left: 5px;
     }
 
+    .ticket-type {
+        text-align: center;
+    }
+
+    button.one-direction,
+    button.two-way {
+        width: 100px;
+    }
+
+    button.one-direction {
+        margin-left: 0;
+    }
+
+    input[class="leave-point"],
+    input[class="arrive-point"],
+    input[class="leave-date"],
+    input[class="date"],
+    input[class="person"],
+    .booking .search {
+        width: 100%;
+        margin-left: 0;
+    }
+
     .con1 .service-all {
         flex-wrap: wrap;
     }
@@ -170,6 +193,11 @@
     .travel-news h3 {
         font-size: 1rem;
     }
+
+    .con6 li {
+        width: auto;
+        /* font-size: 13px; */
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -186,7 +214,7 @@
     }
 
     .con6 li {
-        width: 100%;
+        width: auto;
         font-size: 13px;
     }
 
