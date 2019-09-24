@@ -1,21 +1,21 @@
 /* ----fonts---- */
 @font-face {
     font-family: "SFProDisplayBold";
-    src: url("fonts/SF-Pro-Display-Bold.otf");
+    src: url("/fonts/SF-Pro-Display-Bold.otf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "SFProDisplayMedium";
-    src: url("fonts/SF-Pro-Display-Medium.otf");
+    src: url("/fonts/SF-Pro-Display-Medium.otf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "SFProDisplayRegular";
-    src: url("fonts/SF-Pro-Display-Regular.otf");
+    src: url("/fonts/SF-Pro-Display-Regular.otf");
     font-weight: normal;
     font-style: normal;
 }
