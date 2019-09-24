@@ -668,8 +668,16 @@ p.travel-tip {
     margin-bottom: 11px;
 }
 
+/* --date-view-- */
 .date-view {
     margin-bottom: 0.5625rem;
+}
+
+.date-view span::after {
+    content: "•";
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #666666;
 }
 
 p.travel-tip.more {
