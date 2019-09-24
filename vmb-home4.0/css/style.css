@@ -1,21 +1,21 @@
 /* ----fonts---- */
 @font-face {
     font-family: "SFProDisplayBold";
-    src: url("/fonts/SF-Pro-Display-Bold.otf");
+    src: url("fonts/SF-Pro-Display-Bold.otf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "SFProDisplayMedium";
-    src: url("/fonts/SF-Pro-Display-Medium.otf");
+    src: url("fonts/SF-Pro-Display-Medium.otf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "SFProDisplayRegular";
-    src: url("/fonts/SF-Pro-Display-Regular.otf");
+    src: url("fonts/SF-Pro-Display-Regular.otf");
     font-weight: normal;
     font-style: normal;
 }
@@ -239,21 +239,21 @@ input[class="arrive-point"] {
 }
 
 input[class="leave-point"] {
-    background: url(/images/home/takeoff.png) no-repeat scroll 8px 8px;
+    background: url(images/home/takeoff.png) no-repeat scroll 8px 8px;
 }
 
 input[class="arrive-point"] {
-    background: url(/images/home/land.png) no-repeat scroll 8px 8px;
+    background: url(images/home/land.png) no-repeat scroll 8px 8px;
 }
 
 input[class="leave-date"],
 input[class="date"] {
-    background: url(/images/home/1_2.png) no-repeat scroll 8px 8px;
+    background: url(images/home/1_2.png) no-repeat scroll 8px 8px;
     width: 140px;
 }
 
 input[class="person"] {
-    background: url(/images/home/1_3.png) no-repeat scroll 8px 8px;
+    background: url(images/home/1_3.png) no-repeat scroll 8px 8px;
     width: 280px;
 }
 
@@ -311,7 +311,7 @@ input[class="person"] {
 
 /* -----con2-------- */
 section.con2 {
-    background: url(/images/home/pattern_2.png) no-repeat center;
+    background: url(images/home/pattern_2.png) no-repeat center;
     background-size: cover;
     position: relative;
     z-index: 2;
@@ -492,7 +492,7 @@ div.brand-plane {
 
 /* -----con4-------- */
 section.con4 {
-    background: url(/images/home/bg.png) no-repeat center;
+    background: url(images/home/bg.png) no-repeat center;
     background-size: cover;
     position: relative;
     z-index: 2;
@@ -688,7 +688,7 @@ p.travel-tip.more {
 section.con5 {
     width: 100%;
     height: 100%;
-    background: url(/images/home/pattern.png) no-repeat center;
+    background: url(images/home/pattern.png) no-repeat center;
     background-size: cover;
     z-index: 3;
     padding: 2.5rem 0;
@@ -773,7 +773,7 @@ section.con6 {
 
 /* -----con7-------- */
 section.con7 {
-    background: url(/images/home/bg-section-02-default.png) no-repeat center;
+    background: url(images/home/bg-section-02-default.png) no-repeat center;
     background-size: cover;
     position: relative;
     z-index: 2;
