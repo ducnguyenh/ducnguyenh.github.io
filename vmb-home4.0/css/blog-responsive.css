@@ -15,6 +15,18 @@
     }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    #blog .cheap-tour .left-option .tour-title {
+        top: 10%;
+        left: 15%;
+    }
+
+    #blog .cheap-tour .right-option .tour-title {
+        top: 55%;
+        left: 5%;
+    }
+}
+
 /* ---------responsive-------- */
 @media screen and (max-width: 767px) {
     /* ------cheap-tour------- */
@@ -29,6 +41,16 @@
         padding-top: 1rem;
         font-size: 20px;
     }
+
+    #blog .tour-title h3 {
+        font-size: 16px;
+    }
+
+    #blog .cheap-tour .right-option .tour-title {
+        top: 70%;
+        left: 5%;
+    }
+
     /* right option */
     #blog .cheap-tour .col-md-3.col-12 {
         padding-top: 15px;
@@ -70,6 +92,15 @@
     #blog .cheap-tour .left-option .tour-title {
         top: 8%;
         left: 10%;
+    }
+
+    #blog .tour-title h3 {
+        font-size: 14px;
+    }
+
+    #blog .cheap-tour .right-option .tour-title {
+        top: 60%;
+        left: 5%;
     }
 
     #blog .tour-title h2 {
