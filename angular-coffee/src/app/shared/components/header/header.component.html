@@ -1,0 +1,23 @@
+<div class="container">
+  <nav class="navbar-menu">
+    <span class="navbar-toggle">
+      <i (click)="toggle()" class="fas fa-bars"></i>
+    </span>
+
+    <div class="brand">
+      <a class="brand-logo" routerLink="/">
+      <img id="logo" src="assets/images/logo.png" alt="logo" />
+      huyen coffee
+      <img id="logo" src="assets/images/logo.png" alt="logo" />
+    </a>
+    </div>
+
+    <ul class="main-nav" [class.active]="isToggle" *ngFor="let menu of menus">
+      <li>
+        <a href="#" class="nav-links" [routerLink]="menu.routerLink">
+          {{ menu.name }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
