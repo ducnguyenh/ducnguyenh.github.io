@@ -1,0 +1,40 @@
+.banner-tag {
+  background: url(/assets/images/banner2.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  min-height: 400px;
+}
+
+// reponsive
+@media (max-width: 1440px) {
+  .banner-tag {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .banner-tag {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 667px) {
+  .banner-tag {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 414px) {
+  .banner-tag {
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 320) {
+  .banner-tag {
+    min-height: 120px;
+  }
+}
