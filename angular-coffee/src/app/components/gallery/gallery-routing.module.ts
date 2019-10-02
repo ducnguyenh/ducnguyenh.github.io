@@ -3,7 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { GalleryComponent } from './gallery.component';
 
-const routes: Routes = [{ path: '', component: GalleryComponent }];
+const routes: Routes = [
+  { path: '', component: GalleryComponent },
+  { path: '/:slug', component: GalleryComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

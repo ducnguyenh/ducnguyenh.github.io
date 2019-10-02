@@ -1,0 +1,40 @@
+.about-us h3.huyen-title {
+  color: #482d2e;
+  font-size: 3rem;
+  // line-height: 36px;
+  font-weight: 400;
+  letter-spacing: 4.7px;
+}
+
+// about-bottom
+.about-bottom {
+  background: url(/assets/images/bg-about.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+
+  h4 {
+    font-size: 52px;
+    max-width: 600px;
+    font-weight: 800;
+    font-family: "Gentium Basic", serif;
+  }
+
+  p {
+    font-family: "Arizonia", cursive;
+    font-size: 36px;
+    position: relative;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      background: #fff;
+      height: 2px;
+      width: 14%;
+      left: 43%;
+      top: 4%;
+    }
+  }
+}
