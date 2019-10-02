@@ -31,6 +31,7 @@
   background-size: contain;
   animation: cup-go 6s ease-in-out 3s infinite;
   position: absolute;
+  z-index: -1;
 }
 
 // @keyframes line {

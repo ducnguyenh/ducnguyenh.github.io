@@ -14,7 +14,10 @@
 
     <ul class="main-nav" [class.active]="isToggle">
       <li *ngFor="let menu of menus">
-        <a href="#" class="nav-links" [routerLink]="menu.routerLink">
+        <a href="#"
+          class="nav-links"
+          [routerLink]="menu.routerLink"
+          routerLinkActive="isActived">
           {{ menu.name }}
         </a>
       </li>
