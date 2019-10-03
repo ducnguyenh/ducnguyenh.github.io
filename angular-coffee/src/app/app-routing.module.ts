@@ -12,11 +12,11 @@ const routes: Routes = [
     loadChildren: () => import('./components/about-us/about-us.module').then(m => m.AboutUsModule)
   },
   {
-    path: 'all-services',
+    path: 'services',
     loadChildren: () => import('./components/all-services/all-services.module').then(m => m.AllServicesModule)
   },
   {
-    path: 'drink-menu',
+    path: 'menu',
     loadChildren: () => import('./components/drink-menu/drink-menu.module').then(m => m.DrinkMenuModule)
   },
   {

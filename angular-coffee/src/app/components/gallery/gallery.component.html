@@ -1,57 +1,41 @@
 <!-- breadcrumb -->
 <div class="breadcrumb-box">
-	<div class="container">
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item">
-				<a routerLink="/">Home</a>
-			</li>
-			<li class="breadcrumb-item active" aria-current="page">gallery</li>
-		</ol>
-	</div>
+  <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/">Home</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">gallery</li>
+    </ol>
+  </div>
 </div>
 
 <!-- gallery -->
-<div class="agileits-services text-center py-5" id="gallery">
+<div class="all-services text-center py-5" id="gallery">
   <div class="container pb-md-5 pb-3">
     <h3 class="huyen-title">Gallery</h3>
     <h4 class="huyen-sub pt-3 pb-3">handcrafted beverages</h4>
-
+    <!-- row -->
     <div class="huyen_gallery_grids pt-md-5 pt-3">
-      <div class="row gallery_grid">
-        <div class="col-12 col-md-4  gallery_grid1 hover14" *ngFor="let item of items[0]">
+      <div class="row gallery_grid" *ngFor="let element of imagesGallery">
+        <div
+          class="col-12 col-md-4  gallery_grid1 hover14"
+          *ngFor="let item of element">
+
           <div class="w3_agile_gallery_effect">
-            <a [href]="item.src" class="sb" [title]="item.title">
-              <figure>
-                <img [src]="item.src" [alt]="item.alt" class="img-fluid" />
-              </figure>
+            <a
+              [routerLink]="'/gallery/' + item.alt"
+              class="sb"
+              [title]="item.title">
+
+              <img [src]="item.src" [alt]="item.alt" class="img-fluid" />
             </a>
           </div>
+
         </div>
+
       </div>
 
-      <div class="row gallery_grid">
-        <div class="col-12 col-md-4 gallery_grid1 hover14" *ngFor="let item of items[1]">
-          <div class="w3_agile_gallery_effect">
-            <a [href]="item.src" class="sb" [title]="item.title">
-
-                <img [src]="item.src" [alt]="item.alt" class="img-fluid" />
-
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row gallery_grid">
-        <div class="col-12 col-md-4 gallery_grid1 hover14" *ngFor="let item of items[2]">
-          <div class="w3_agile_gallery_effect">
-            <a [routerLink]="['/gallery', item.alt]" class="sb" [title]="item.title">
-
-                <img [src]="item.src" [alt]="item.alt" class="img-fluid" />
-
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
 
   </div>
