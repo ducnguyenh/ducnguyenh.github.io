@@ -9,8 +9,8 @@ export class HeaderComponent implements OnInit {
   menus = [
     { name: 'home', routerLink: '/' },
     { name: 'about us', routerLink: '/about-us' },
-    { name: 'services', routerLink: '/all-services' },
-    { name: 'menu', routerLink: '/drink-menu' },
+    { name: 'services', routerLink: '/services' },
+    { name: 'menu', routerLink: '/menu' },
     { name: 'gallery', routerLink: '/gallery' },
     { name: 'contact us', routerLink: '/contact-us' }
   ];
