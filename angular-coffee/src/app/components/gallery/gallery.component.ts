@@ -15,7 +15,6 @@ export class GalleryComponent implements OnInit {
   ngOnInit() {
     const temp = this.galleryImagesService.itemsGallery;
     this.imagesGallery = this.chunk(temp, 3);
-    console.log('images ', this.imagesGallery);
   }
 
 // group oject in array

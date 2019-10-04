@@ -1,0 +1,39 @@
+<!-- breadcrumb -->
+<div class="breadcrumb-box">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a routerLink="/">Home</a>
+      </li>
+
+      <li class="breadcrumb-item">
+        <a routerLink="/gallery">Gallery</a>
+      </li>
+
+      <li
+        class="breadcrumb-item active"
+        aria-current="page"
+        *ngFor="let image of imageDetail"
+      >
+        {{ image.alt }}
+      </li>
+    </ol>
+  </div>
+</div>
+
+<!-- detail gallery -->
+<!-- modal -->
+<div class="img-modal" id="gallery-modal">
+  <div *ngFor="let image of imageDetail">
+    <span (click)="onCloseHandled()" class="close-modal">&times;</span>
+
+    <img
+      class="img-modal-show img-thumbnail"
+      [src]="image.src"
+      [alt]="image.alt"
+      id="img-show"
+    />
+    <div class="caption">{{ image.title }}</div>
+  </div>
+</div>
+

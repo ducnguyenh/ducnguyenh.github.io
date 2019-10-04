@@ -20,23 +20,25 @@
       <div class="row gallery_grid" *ngFor="let element of imagesGallery">
         <div
           class="col-12 col-md-4  gallery_grid1 hover14"
-          *ngFor="let item of element">
-
-          <div class="w3_agile_gallery_effect">
+          *ngFor="let item of element"
+        >
+          <div class="images-effect">
             <a
               [routerLink]="'/gallery/' + item.alt"
               class="sb"
-              [title]="item.title">
-
-              <img [src]="item.src" [alt]="item.alt" class="img-fluid" />
+              [title]="item.title"
+            >
+              <figure>
+                <img
+                  [src]="item.src"
+                  [alt]="item.alt"
+                  class="img-fluid img-origin"
+                />
+              </figure>
             </a>
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </div>
 </div>
