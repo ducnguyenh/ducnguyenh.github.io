@@ -1,10 +1,30 @@
+.fixed-menu {
+  background: white;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   z-index: 990;
+//   background: #fff;
+ }
+
+.sticky{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 101;
+
+}
+
 img#logo {
   max-height: 4rem;
   padding-bottom: 5px;
 }
 
 nav.navbar-menu {
-  position: relative;
+  // position: relative;
   padding: 10px 0;
 }
 
@@ -20,8 +40,7 @@ nav.navbar-menu {
 .brand-logo {
   display: inline-block;
   font-size: 2.5rem;
-  font-family: "Dancing Script",
-    cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 .nav-links,
@@ -36,7 +55,9 @@ nav.navbar-menu {
 
 .nav-links {
   padding: 10px;
-  .isActived, &:hover, &:focus {
+  .isActived,
+  &:hover,
+  &:focus {
     color: #a84b4e;
     border-bottom: 1px solid #482d2e;
     border-top: 1px solid #482d2e;
