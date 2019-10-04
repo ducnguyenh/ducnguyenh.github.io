@@ -1,4 +1,6 @@
 /* footer */
+@import '~src/styles/icon/icon-social.scss';
+
 footer {
   background: #ccc7c7;
 }
@@ -15,34 +17,3 @@ h4.footer-title {
   font-style: italic;
 }
 
-ul.social-icons li {
-  display: inline-block;
-  border-radius: 50%;
-
-  a i.fab {
-    margin: 10px;
-    font-size: 1.5rem;
-    line-height: 38px;
-    width: 30px;
-    height: 38px;
-    border-radius: 50%;
-    background-color: transparent;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-  }
-
-  &:first-child a {
-    color: #3b5998;
-  }
-
-  &:last-child {
-    color: #287bbc;
-  }
-}
-
-i.fab.fa-google-plus-g {
-  color: #dc4a38;
-}
