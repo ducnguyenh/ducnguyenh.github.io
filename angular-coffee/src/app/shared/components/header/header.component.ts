@@ -16,20 +16,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   ];
 
   isToggle = false;
-
-  @ViewChild('stickyMenu', {static: true}) stickyMenu: ElementRef;
   sticky = false;
   elementPosition: any;
   currentPage: string;
 
+  @ViewChild('stickyMenu', {static: true}) stickyMenu: ElementRef;
   @Output() pagesEvent = new EventEmitter<string>();
-  ngOnInit() {
-  }
-
-  ngAfterViewInit() {
-    this.elementPosition = this.stickyMenu.nativeElement.offsetTop;
-  }
-
   @HostListener('window:scroll', ['$event'])
   handleScroll() {
     const windowScroll = window.pageYOffset;
@@ -38,6 +30,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     } else {
       this.sticky = false;
     }
+  }
+
+  ngOnInit() {
+  }
+
+  ngAfterViewInit() {
+    this.elementPosition = this.stickyMenu.nativeElement.offsetTop;
   }
 
   sendPages(event) {
