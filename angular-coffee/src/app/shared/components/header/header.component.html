@@ -18,7 +18,8 @@
         <a href="#"
           class="nav-links"
           [routerLink]="menu.routerLink"
-          routerLinkActive="isActived">
+          routerLinkActive="isActived"
+          (click)="sendPages($event)">
           {{ menu.name }}
         </a>
       </li>
@@ -27,3 +28,4 @@
 </div>
 
 </div>
+

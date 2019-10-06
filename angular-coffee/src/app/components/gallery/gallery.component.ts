@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleryImagesService } from '../../shared/services/gallery-images.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gallery',
@@ -10,9 +11,14 @@ export class GalleryComponent implements OnInit {
 
   imagesGallery;
 
-  constructor(private galleryImagesService: GalleryImagesService) { }
+  constructor(
+    private galleryImagesService: GalleryImagesService,
+    private router: Router,
+  ) {
+  }
 
   ngOnInit() {
+    // chunk data
     const temp = this.galleryImagesService.itemsGallery;
     this.imagesGallery = this.chunk(temp, 3);
   }

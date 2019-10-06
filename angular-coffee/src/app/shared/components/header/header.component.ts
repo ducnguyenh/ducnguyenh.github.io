@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, HostListener } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, HostListener, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -20,10 +20,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   @ViewChild('stickyMenu', {static: true}) stickyMenu: ElementRef;
   sticky = false;
   elementPosition: any;
+  currentPage: string;
+
+  @Output() pagesEvent = new EventEmitter<string>();
   ngOnInit() {
   }
 
-  ngAfterViewInit(): void {
+  ngAfterViewInit() {
     this.elementPosition = this.stickyMenu.nativeElement.offsetTop;
   }
 
@@ -35,7 +38,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     } else {
       this.sticky = false;
     }
-    }
+  }
+
+  sendPages(event) {
+    this.pagesEvent.emit(event.target.innerText);
+    console.log('event ', event.target.innerText);
+  }
 
   toggle() {
     this.isToggle = !this.isToggle;
