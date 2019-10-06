@@ -7,6 +7,7 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener }
 })
 export class BreadCrumbComponent implements OnInit, AfterViewInit {
   sticky = false;
+  display = 'none';
   elementPosition: any;
   currentPages: string;
 
@@ -19,7 +20,7 @@ export class BreadCrumbComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.elementPosition = this.stickyMenu.nativeElement.offsetTop;
+    // this.elementPosition = this.stickyMenu.nativeElement.offsetTop;
   }
 
   @HostListener('window: scroll', ['$event']) handleScroll() {
@@ -33,6 +34,11 @@ export class BreadCrumbComponent implements OnInit, AfterViewInit {
 
   receivevePages($event) {
     this.currentPages = $event;
+    if (this.currentPages !== 'Home') {
+      this.display = 'block';
+    } else {
+      this.display = 'none';
+    }
   }
 
 }
