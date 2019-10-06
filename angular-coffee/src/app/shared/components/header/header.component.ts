@@ -32,10 +32,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     const windowScroll = window.pageYOffset;
     if (windowScroll >= this.elementPosition) {
       this.sticky = true;
-      console.log('true ', this.sticky);
     } else {
       this.sticky = false;
-      console.log('false ', this.sticky);
     }
     }
 

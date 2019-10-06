@@ -8,6 +8,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { BannerComponent } from './shared/components/banner/banner.component';
 import { DialogComponent } from './shared/components/dialog/dialog.component';
+import { BreadCrumbComponent } from './shared/components/bread-crumb/bread-crumb.component';
+import { TopHeaderComponent } from './shared/components/top-header/top-header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { DialogComponent } from './shared/components/dialog/dialog.component';
     HeaderComponent,
     FooterComponent,
     BannerComponent,
-    DialogComponent
+    DialogComponent,
+    BreadCrumbComponent,
+    TopHeaderComponent
   ],
   imports: [
     BrowserModule,
