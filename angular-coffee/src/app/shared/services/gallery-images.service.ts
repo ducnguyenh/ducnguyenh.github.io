@@ -16,5 +16,6 @@ export class GalleryImagesService {
     { id: 8, src: 'assets/images/gallery2/g8.jpg', alt: 'g8', title: 'this is test text' },
     { id: 9, src: 'assets/images/gallery2/g9.jpg', alt: 'g9', title: 'this is test text' }
   ];
+
   constructor() { }
 }

@@ -1,0 +1,86 @@
+// map, contact form
+.map {
+  position: relative;
+}
+
+.contact-us iframe {
+  width: 100%;
+  min-height: 516px;
+  border: none;
+  display: block;
+}
+
+.contact-top {
+  position: absolute;
+  width: 38%;
+  top: 0;
+  padding: 3rem 2rem;
+  left: 31%;
+  background: #e2c69e;
+}
+//-----------------------
+// time open
+.details-bg {
+    border-top: 1px solid #ddd;
+    background-size: cover;
+    background: url(/assets/images/doodles.png) repeat 0px 0px;
+}
+
+.contact-main {
+    max-width: 500px;
+    h5 {
+    font-family: 'Gentium Basic', serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: 600;
+    }
+}
+
+.contact-left, .contact-right {
+    background: #eee;
+}
+
+.list-group-item, .bg-add {
+    background: #e8e8e8;
+}
+
+.list-group-item {
+    color: #482d2e;
+}
+
+// responesive
+@media screen and (max-width: 1080px) {
+  .contact-top {
+    width: 44%;
+    left: 28%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-top {
+    width: 50%;
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .contact-top {
+    width: 56%;
+    left: 22%;
+  }
+
+  ul.list-group.list-group-flush,
+  .bg-add, .contact-right {
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 600px)
+{
+  .contact-top {
+    width: 72%;
+    left: 14%;
+}
+}
+
+

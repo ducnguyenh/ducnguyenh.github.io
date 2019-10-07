@@ -34,10 +34,10 @@ export class BreadCrumbComponent implements OnInit, AfterViewInit {
 
   receivevePages($event) {
     this.currentPages = $event;
-    if (this.currentPages !== 'Home') {
-      this.display = 'block';
-    } else {
+    if (this.currentPages === 'Angular Café' || this.currentPages === 'Home') {
       this.display = 'none';
+    } else {
+      this.display = 'block';
     }
   }
 

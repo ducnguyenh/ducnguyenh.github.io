@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { BannerShareService } from '../../services/banner-share.service';
 
 @Component({
   selector: 'app-banner',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('banner', { static: true }) banner: ElementRef;
+  constructor(
+    private bannerShareService: BannerShareService,
+  ) { }
 
   ngOnInit() {
+    this.bannerShareService.sendBannerToComponent(this.banner.nativeElement);
+    console.log('banner', this.banner.nativeElement);
   }
 
 }
