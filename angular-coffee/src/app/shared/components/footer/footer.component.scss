@@ -2,18 +2,73 @@
 @import '~src/styles/icon/icon-social.scss';
 
 footer {
-  background: #ccc7c7;
+  background:#b7b7b7;
 }
 
-.copy-right p {
-  color: #333;
-  font-size: 1rem;
+.social-icons li p {
+  color: #482d2e;
+  font-weight: bold;
 }
 
-h4.footer-title {
-  font-size: 2rem;
-  color: #000;
+.footer-title h3 {
+  color: #482d2e;
+  font-weight: bold;
+  font-size: 1.5rem;
   font-family: "Gentium Basic", serif;
   font-style: italic;
+}
+
+//
+.payment-links li {
+    display: inline-block;
+    img {
+      height: 33px;
+      width: 50px;
+      margin-right: 5px;
+    }
+}
+
+button.submit-contact {
+    background: #ff3f34;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 8px 26px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inherit;
+    margin-top: 1rem;
+    border-radius: 4px;
+    &:hover {
+      opacity: 0.6;
+    }
+}
+
+.info-form-right input[type="text"],
+.info-form-right input[type="email"],
+.info-form-right textarea {
+    color: #000;
+    background: #f7f7f7;
+    outline: none;
+    font-size: 16px;
+    padding: 9px;
+    letter-spacing: 1px;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.info-form-right textarea {
+    resize: none;
+    min-height: 6rem;
+}
+
+.footer-text p {
+  color: black;
+  a {
+    color:  black;
+    &:hover {
+      text-decoration: underline;
+      color: #482d2e;
+    }
+  }
 }
 
