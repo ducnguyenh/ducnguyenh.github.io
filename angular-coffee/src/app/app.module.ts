@@ -4,25 +4,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
-import { BannerComponent } from './shared/components/banner/banner.component';
-import { BreadCrumbComponent } from './shared/components/bread-crumb/bread-crumb.component';
-import { TopHeaderComponent } from './shared/components/top-header/top-header.component';
+import { SharedModule } from './shared/shared.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    BannerComponent,
-    BreadCrumbComponent,
-    TopHeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
