@@ -20,6 +20,7 @@ export class GalleryDetailComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe(data => {
       const alt = data.get('slug');
+      console.log('alt detail', alt);
 
       this.imageDetail = this.galleryImagesService.itemsGallery
         .filter(item => {

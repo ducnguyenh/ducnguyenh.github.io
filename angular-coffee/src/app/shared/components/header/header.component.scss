@@ -57,7 +57,8 @@ nav.navbar-menu {
   padding: 10px;
   .isActived,
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: #a84b4e;
     border-bottom: 1px solid #482d2e;
     border-top: 1px solid #482d2e;
