@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleryImagesService } from '../../shared/services/gallery-images.service';
-import { Router, ActivatedRoute } from '@angular/router';
-import { url } from 'inspector';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-gallery',
