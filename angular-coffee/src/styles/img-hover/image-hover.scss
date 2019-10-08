@@ -1,19 +1,14 @@
 /*-- images hover --*/
 .images-effect {
-    position: relative;
-}
+  position: relative;
 
-a.sb {
-    display: block;
-}
-
-.hover14 figure {
+  figure {
     overflow: hidden;
     position: relative;
     margin: 0;
-}
+  }
 
-.hover14 figure::before {
+  figure::before {
     position: absolute;
     top: 0;
     left: -75%;
@@ -23,37 +18,41 @@ a.sb {
     width: 50%;
     height: 100%;
     background: -webkit-linear-gradient(
-        left,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.3) 100%
+      left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 100%
     );
     background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.3) 100%
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 100%
     );
     -webkit-transform: skewX(-17deg);
     -moz-transform: skewX(-17deg);
     -o-transform: skewX(-17deg);
     -ms-transform: skewX(-17deg);
     transform: skewX(-17deg);
+  }
+
+  figure:hover::before {
+    -webkit-animation: shine 0.75s;
+    -moz-animation: shine 0.75s;
+    animation: shine 0.75s;
+  }
 }
 
-.hover14 figure:hover::before {
-    -webkit-animation: shine 0.95s;
-    -moz-animation: shine 0.95s;
-    animation: shine 0.95s;
+a.sb {
+  display: block;
 }
 
 @-webkit-keyframes shine {
-    100% {
-        left: 125%;
-    }
+  100% {
+    left: 125%;
+  }
 }
 
 @keyframes shine {
-    100% {
-        left: 125%;
-    }
+  100% {
+    left: 125%;
+  }
 }
-
