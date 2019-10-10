@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'app-bread-crumb',
@@ -9,8 +9,9 @@ export class BreadCrumbComponent implements OnInit, AfterViewInit {
   sticky = false;
   display = 'none';
   elementPosition: any;
-  currentPages: string;
 
+  // tslint:disable-next-line: no-input-rename
+  @Input('currentPages') currentPages: string;
   @ViewChild('stickyMenu', { static: true }) stickyMenu: ElementRef;
 
   constructor(

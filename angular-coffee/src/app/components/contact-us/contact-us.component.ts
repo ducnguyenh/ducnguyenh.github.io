@@ -8,13 +8,13 @@ import { RouterLinkActive, Router } from '@angular/router';
 })
 export class ContactUsComponent implements OnInit {
 
-  currentPages: string;
-  constructor(private router: Router) {
+  namePage: string;
+  constructor(
+    private router: Router,
+  ) {
+    this.namePage = this.router.url.replace('/', '');
   }
 
-  ngOnInit() {
-    this.currentPages = this.router.url.replace('/', '');
-    console.log('url ', this.currentPages);
-  }
+  ngOnInit() { }
 
 }

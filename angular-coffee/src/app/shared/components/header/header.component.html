@@ -6,7 +6,7 @@
     </span>
 
     <div class="brand">
-      <a class="brand-logo" (click)="sendPages($event)" routerLink="/">
+      <a class="brand-logo" routerLink="/">
       <img id="logo" src="assets/images/logo.png" alt="logo" />
       angular café
       <img id="logo" src="assets/images/logo.png" alt="logo" />
@@ -18,8 +18,7 @@
         <a
           class="nav-links"
           [routerLink]="menu.routerLink"
-          routerLinkActive="isActived"
-          (click)="sendPages($event)">
+          routerLinkActive="isActived">
           {{ menu.name }}
         </a>
       </li>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-all-services',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./all-services.component.scss']
 })
 export class AllServicesComponent implements OnInit {
-
-  constructor() { }
+  namePage: string;
+  constructor(
+    private router: Router,
+  ) {
+    this.namePage = this.router.url.replace('/', '');
+  }
 
   ngOnInit() {
   }
