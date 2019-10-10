@@ -10,12 +10,14 @@ import { Location } from '@angular/common';
 })
 export class GalleryDetailComponent implements OnInit {
   imageDetail;
+  namePage = 'gallery';
 
   constructor(
     private galleryImagesService: GalleryImagesService,
     private activatedRoute: ActivatedRoute,
     private location: Location,
-  ) {}
+  ) {
+  }
 
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe(data => {
@@ -24,6 +26,7 @@ export class GalleryDetailComponent implements OnInit {
 
       this.imageDetail = this.galleryImagesService.itemsGallery
         .filter(item => {
+          console.log('item', item);
           return item.alt === alt;
         });
     });
