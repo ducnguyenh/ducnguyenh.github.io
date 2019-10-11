@@ -16,7 +16,7 @@ export class GalleryComponent implements OnInit {
     private galleryImagesService: GalleryImagesService,
     private router: Router,
   ) {
-    this.namePage = this.router.url.replace('/', '');
+    this.namePage = this.router.url.replace(/[^a-zA-Z ]/g, ' ').trim();
   }
 
   ngOnInit() {
