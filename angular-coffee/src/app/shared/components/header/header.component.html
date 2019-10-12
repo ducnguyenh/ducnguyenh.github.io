@@ -18,6 +18,7 @@
         <a
           class="nav-links"
           [routerLink]="menu.routerLink"
+          [routerLinkActiveOptions]="{ exact: true }"
           routerLinkActive="active">
           {{ menu.name }}
         </a>
