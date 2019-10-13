@@ -6,6 +6,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TopHeaderComponent } from './components/top-header/top-header.component';
 import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
 import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    NgbModule
   ],
   exports: [
     HeaderComponent,
@@ -25,6 +27,7 @@ import { RouterModule } from '@angular/router';
     BannerComponent,
     TopHeaderComponent,
     BreadCrumbComponent,
+    NgbModule
   ]
 })
 export class SharedModule { }

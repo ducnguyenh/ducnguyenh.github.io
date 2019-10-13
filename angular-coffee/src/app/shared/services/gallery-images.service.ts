@@ -17,5 +17,11 @@ export class GalleryImagesService {
     { id: 9, src: 'assets/images/gallery2/g9.jpg', alt: 'g9', title: 'this is test text' }
   ];
 
+  itemsBanner = [
+    { id: 1, src: 'assets/images/banner-slide/slide1.jpg', alt: 'slide1', title: 'Shop coffee mơ ước' },
+    { id: 1, src: 'assets/images/banner-slide/slide2.jpg', alt: 'slide2', title: 'Trải nghiệm café tuyệt đỉnh' },
+    { id: 1, src: 'assets/images/banner-slide/slide3.jpg', alt: 'slide3', title: 'Shop café mơ ước' }
+  ];
+
   constructor() { }
 }
