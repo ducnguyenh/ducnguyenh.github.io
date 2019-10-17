@@ -23,5 +23,12 @@ export class GalleryImagesService {
     { id: 1, src: 'assets/images/banner-slide/slide3.jpg', alt: 'slide3', title: 'Shop café mơ ước' }
   ];
 
+  itemsAdvertise = [
+    { id: 1, src: 'assets/images/cocktail.jpg', alt: 'cocktail', title: 'cocktail' },
+    { id: 2, src: 'assets/images/coffee.jpg', alt: 'coffee', title: 'coffee' },
+    { id: 3, src: 'assets/images/hotdrink.jpg', alt: 'hot-drink', title: 'hot-drink' },
+    { id: 4, src: 'assets/images/colddrink.jpg', alt: 'cold-drink', title: 'cold-drink' }
+  ];
+
   constructor() { }
 }
