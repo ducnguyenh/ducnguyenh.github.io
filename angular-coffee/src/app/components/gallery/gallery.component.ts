@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleryImagesService } from '../../shared/services/gallery-images.service';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gallery',
@@ -10,16 +10,14 @@ import { ActivatedRoute } from '@angular/router';
 export class GalleryComponent implements OnInit {
 
   imagesGallery;
+  namePage: string;
 
   constructor(
     private galleryImagesService: GalleryImagesService,
-    private activatedRoute: ActivatedRoute,
+    private router: Router,
   ) {
-    this.activatedRoute.paramMap.subscribe(data => {
-      const alt = data.get('gallery');
-      console.log('alt detail', alt);
-    });
-    }
+    this.namePage = this.router.url.replace(/[^a-zA-Z ]/g, ' ').trim();
+  }
 
   ngOnInit() {
     // chunk data
@@ -27,9 +25,7 @@ export class GalleryComponent implements OnInit {
     this.imagesGallery = this.chunk(temp, 3);
   }
 
-
-
-// group oject in array
+  // group oject in array
   chunk(array: any, size: number) {
     const chunkedArr = [];
     let index = 0;

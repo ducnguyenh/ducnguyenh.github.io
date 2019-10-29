@@ -36,13 +36,10 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
+    // get height header
     this.elementPosition = this.stickyMenu.nativeElement.offsetTop;
     console.log(this.stickyMenu.nativeElement.offsetTop);
     console.log(this.stickyMenu.nativeElement.offsetHeight);
-  }
-
-  sendPages(event) {
-    this.pagesEvent.emit(event.target.innerText);
   }
 
   toggle() {

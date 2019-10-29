@@ -15,7 +15,7 @@ export class BannerComponent implements OnInit {
 
   ngOnInit() {
     this.bannerShareService.sendBannerToComponent(this.banner.nativeElement);
-    console.log('banner', this.banner.nativeElement);
+    // console.log('banner', this.banner.nativeElement);
   }
 
 }

@@ -17,5 +17,18 @@ export class GalleryImagesService {
     { id: 9, src: 'assets/images/gallery2/g9.jpg', alt: 'g9', title: 'this is test text' }
   ];
 
+  itemsBanner = [
+    { id: 1, src: 'assets/images/banner-slide/slide1.jpg', alt: 'slide1', title: 'Shop coffee mơ ước' },
+    { id: 1, src: 'assets/images/banner-slide/slide2.jpg', alt: 'slide2', title: 'Trải nghiệm café tuyệt đỉnh' },
+    { id: 1, src: 'assets/images/banner-slide/slide3.jpg', alt: 'slide3', title: 'Shop café mơ ước' }
+  ];
+
+  itemsAdvertise = [
+    { id: 1, src: 'assets/images/cocktail.jpg', alt: 'cocktail', title: 'cocktail' },
+    { id: 2, src: 'assets/images/coffee.jpg', alt: 'coffee', title: 'coffee' },
+    { id: 3, src: 'assets/images/hotdrink.jpg', alt: 'hot-drink', title: 'hot-drink' },
+    { id: 4, src: 'assets/images/colddrink.jpg', alt: 'cold-drink', title: 'cold-drink' }
+  ];
+
   constructor() { }
 }

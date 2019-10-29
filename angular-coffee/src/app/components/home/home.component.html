@@ -1,1 +1,36 @@
-<p>home works!</p>
+<!-- slider -->
+<ngb-carousel>
+  <ng-template ngbSlide *ngFor="let image of imagesBanner">
+    <div class="picsum-img-wrapper card-image">
+      <div>
+        <img [src]="image.src" [alt]="image.alt" class="img-fluid" />
+      </div>
+    </div>
+    <div class="carousel-caption">
+      <h3>{{ image.title }}</h3>
+      <h4>ground beans</h4>
+      <h4>freshly brewed</h4>
+      <h4>espresso</h4>
+      <h4>aftertaste</h4>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<!-- advertisement 4 banner -->
+<div class="container">
+  <div class="advertisement">
+    <div class="row">
+      <div
+        class="col-md-3 col-3 box-img"
+        *ngFor="let item of imagesAdvertise"
+      >
+        <a href="#" class="card-image" >
+          <div>
+            <img [src]="item.src" [alt]="item.alt" class="img-fluid" />
+          </div>
+          <h3 class="title-img text-center">{{ item.title }}</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

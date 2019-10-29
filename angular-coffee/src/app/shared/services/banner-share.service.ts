@@ -13,7 +13,7 @@ export class BannerShareService {
   sendBannerToComponent(data: ElementRef) {
     this.bannerDataSubject.next(data);
     this.dataService = data;
-    console.log('service ', data);
+    // console.log('service ', data);
   }
 
   constructor() {
