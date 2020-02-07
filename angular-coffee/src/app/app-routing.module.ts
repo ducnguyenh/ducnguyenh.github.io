@@ -1,50 +1,50 @@
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: "",
-    pathMatch: "full",
+    path: '',
+    pathMatch: 'full',
     loadChildren: () =>
-      import("./components/home/home.module").then(m => m.HomeModule)
+      import('./components/home/home.module').then(m => m.HomeModule)
   },
   {
-    path: "about-us",
+    path: 'about-us',
     loadChildren: () =>
-      import("./components/about-us/about-us.module").then(m => m.AboutUsModule)
+      import('./components/about-us/about-us.module').then(m => m.AboutUsModule)
   },
   {
-    path: "services",
+    path: 'services',
     loadChildren: () =>
-      import("./components/all-services/all-services.module").then(
+      import('./components/all-services/all-services.module').then(
         m => m.AllServicesModule
       )
   },
   {
-    path: "menu",
+    path: 'menu',
     loadChildren: () =>
-      import("./components/drink-menu/drink-menu.module").then(
+      import('./components/drink-menu/drink-menu.module').then(
         m => m.DrinkMenuModule
       )
   },
   {
-    path: "gallery",
+    path: 'gallery',
     loadChildren: () =>
-      import("./components/gallery/gallery.module").then(m => m.GalleryModule)
+      import('./components/gallery/gallery.module').then(m => m.GalleryModule)
   },
   {
-    path: "contact-us",
+    path: 'contact-us',
     loadChildren: () =>
-      import("./components/contact-us/contact-us.module").then(
+      import('./components/contact-us/contact-us.module').then(
         m => m.ContactUsModule
       )
   },
 
-  { path: "", redirectTo: "/", pathMatch: "full" }
+  { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
