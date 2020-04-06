@@ -1,174 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" sizes="32x32" href="/15---memory_card/images/favicon.ico">
-    <title>Memory Card</title>
-    <link rel="stylesheet" href="/15---memory_card/css/style.css">
-</head>
+    <title>Memory Game</title>
+    <link rel="shortcut icon" type="images/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="boxbuttons">
+      <div class="button">
+        <span id="counter">0</span>
+        Clicks
+      </div>
 
-<body>
-    <section class="wrap">
-        <div id="picbox">
-            <span id="boxbuttons">
-                <span class="button">
-                    <span id="counter">0</span>
-                    Clicks
-                </span>
+      <div id="timer" class="button">
+        Time
+        <span id="minutes">00</span>:<span id="seconds">00</span>
+      </div>
 
-                <span id="timer" class="button">
-                    Time
-                    <span id="minutes">00</span>:<span id="seconds">00</span>
-                </span>
+      <div id="reset" class="button">Play again</div>
+    </div>
+    <section class="memory-game">
+      <div class="memory-card" data-framework="armoredBee">
+        <img class="front-card" src="images/armoredBee.jpg" alt="armoredBee" />
 
-                <span class="button reset">Play again</span>
-            </span>
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
+      <div class="memory-card" data-framework="armoredBee">
+        <img class="front-card" src="images/armoredBee.jpg" alt="armoredBee" />
 
-            <!-- <div class="content"> -->
-            <div class="grid">
-                <div class="card" data-framework="armoredBee">
-                    <img class="front-card" src="/15---memory_card/images/armoredBee.jpg" alt="armoredBee">
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
 
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="armoredBee">
-                    <img class="front-card" src="/15---memory_card/images/armoredBee.jpg" alt="armoredBee">
+      <div class="memory-card" data-framework="blackRoseDragon">
+        <img
+          class="front-card"
+          src="images/blackRoseDragon.jpg"
+          alt="blackRoseDragon"
+        />
 
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
+      <div class="memory-card" data-framework="blackRoseDragon">
+        <img
+          class="front-card"
+          src="images/blackRoseDragon.jpg"
+          alt="blackRoseDragon"
+        />
 
-                <div class="card" data-framework="blackRoseDragon">
-                    <img class="front-card" src="/15---memory_card/images/blackRoseDragon.jpg" alt="blackRoseDragon">
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
 
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="blackRoseDragon">
-                    <img class="front-card" src="/15---memory_card/images/blackRoseDragon.jpg" alt="blackRoseDragon">
+      <div class="memory-card" data-framework="heroShining">
+        <img
+          class="front-card"
+          src="images/heroShining.jpg"
+          alt="heroShining"
+        />
 
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
+      <div class="memory-card" data-framework="heroShining">
+        <img
+          class="front-card"
+          src="images/heroShining.jpg"
+          alt="heroShining"
+        />
 
-                <div class="card" data-framework="heroShining">
-                    <img class="front-card" src="/15---memory_card/images/heroShining.jpg" alt="heroShining">
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
 
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="heroShining">
-                    <img class="front-card" src="/15---memory_card/images/heroShining.jpg" alt="heroShining">
+      <div class="memory-card" data-framework="deusX">
+        <img class="front-card" src="images/deusX.jpg" alt="deusX" />
 
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
+      <div class="memory-card" data-framework="deusX">
+        <img class="front-card" src="images/deusX.jpg" alt="deusX" />
 
-                <div class="card" data-framework="deusX">
-                    <img class="front-card" src="/15---memory_card/images/deusX.jpg" alt="deusX">
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
+      <div class="memory-card" data-framework="blueRoseDragon">
+        <img
+          class="front-card"
+          src="images/blueRoseDragon.jpg"
+          alt="blueRoseDragon"
+        />
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
+      <div class="memory-card" data-framework="blueRoseDragon">
+        <img
+          class="front-card"
+          src="images/blueRoseDragon.jpg"
+          alt="blueRoseDragon"
+        />
 
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="deusX">
-                    <img class="front-card" src="/15---memory_card/images/deusX.jpg" alt="deusX">
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
 
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
+      <div class="memory-card" data-framework="blueEyesUltimateDragon">
+        <img
+          class="front-card"
+          src="images/blueEyesUltimateDragon.jpg"
+          alt="blueEyesUltimateDragon"
+        />
 
-                <div class="card" data-framework="fabledRagin">
-                    <img class="front-card" src="/15---memory_card/images/fabledRagin.jpg" alt="fabledRagin">
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
+      <div class="memory-card" data-framework="blueEyesUltimateDragon">
+        <img
+          class="front-card"
+          src="images/blueEyesUltimateDragon.jpg"
+          alt="blueEyesUltimateDragon"
+        />
 
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="fabledRagin">
-                    <img class="front-card" src="/15---memory_card/images/fabledRagin.jpg" alt="fabledRagin">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-
-                <div class="card" data-framework="darkWitch">
-                    <img class="front-card" src="/15---memory_card/images/darkWitch.jpg" alt="darkWitch">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="darkWitch">
-                    <img class="front-card" src="/15---memory_card/images/darkWitch.jpg" alt="darkWitch">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-
-                <div class="card" data-framework="blueRoseDragon">
-                    <img class="front-card" src="/15---memory_card/images/blueRoseDragon.jpg" alt="blueRoseDragon">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="blueRoseDragon">
-                    <img class="front-card" src="/15---memory_card/images/blueRoseDragon.jpg" alt="blueRoseDragon">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-
-                <div class="card" data-framework="blueEyesUltimateDragon">
-                    <img class="front-card" src="/15---memory_card/images/blueEyesUltimateDragon.jpg"
-                        alt="blueEyesUltimateDragon">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="blueEyesUltimateDragon">
-                    <img class="front-card" src="/15---memory_card/images/blueEyesUltimateDragon.jpg"
-                        alt="blueEyesUltimateDragon">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-
-                <div class="card" data-framework="metaphysDaedalus">
-                    <img class="front-card" src="/15---memory_card/images/metaphysDaedalus.jpg" alt="metaphysDaedalus">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="metaphysDaedalus">
-                    <img class="front-card" src="/15---memory_card/images/metaphysDaedalus.jpg" alt="metaphysDaedalus">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-
-                <div class="card" data-framework="magicianChaos">
-                    <img class="front-card" src="/15---memory_card/images/magicianChaos.jpg" alt="magicianChaos">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="magicianChaos">
-                    <img class="front-card" src="/15---memory_card/images/magicianChaos.jpg" alt="magicianChaos">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-
-                <div class="card" data-framework="lusterSolider">
-                    <img class="front-card" src="/15---memory_card/images/lusterSolider.jpg" alt="lusterSolider">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="lusterSolider">
-                    <img class="front-card" src="/15---memory_card/images/lusterSolider.jpg" alt="lusterSolider">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-
-                <div class="card" data-framework="junkDestroyer">
-                    <img class="front-card" src="/15---memory_card/images/junkDestroyer.jpg" alt="junkDestroyer">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-                <div class="card" data-framework="junkDestroyer">
-                    <img class="front-card" src="/15---memory_card/images/junkDestroyer.jpg" alt="junkDestroyer">
-
-                    <img class="back-card" src="/15---memory_card/images/backCard.jpg" alt="backCard">
-                </div>
-            </div>
-        </div>
-        <!-- </div> -->
+        <img class="back-card" src="images/backCard.jpg" alt="backCard" />
+      </div>
     </section>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
