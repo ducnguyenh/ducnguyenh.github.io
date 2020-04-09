@@ -2,6 +2,10 @@
 #popup-enroll {
   display: none;
 }
+
+.brand-logo img {
+  max-height: 61px;
+}
 .top-header input[type="text"] {
   height: 30px;
   background-color: #24c1ff;
@@ -160,12 +164,14 @@ footer {
   background-size: cover;
   color: white;
 }
+.footer-logo {
+  padding-bottom: 30px;
+}
 .footer-logo img {
-  max-height: 59px;
-  max-width: 202px;
+  max-height: 159px;
 }
 footer .address {
-  padding-top: 31px;
+  /* padding-top: 31px; */
   padding-bottom: 43px;
 }
 footer li {

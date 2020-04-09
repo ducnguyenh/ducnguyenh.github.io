@@ -60,9 +60,11 @@ li {
   font-size: 80px;
   line-height: 94px;
   color: #24c1ff;
+  text-transform: uppercase;
 }
 .banner .inner {
   color: #fca300;
+  text-transform: uppercase;
 }
 .banner .banner-item img {
   width: 100%;
