@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="body/css/slick.css" />
+    <link rel="stylesheet" href="body/css/slick-theme.css" />
+    <link rel="stylesheet" href="header_footer/css/header_footer.css" />
+    <link rel="stylesheet" href="body/css/body_style.css" />
+    <title>Darwin School</title>
+  </head>
+  <body>
+    <div class="top-header">
+      <div class="container box-header">
+        <div class="left">
+          <ul>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Thông báo - lịch học</a></li>
+            <li><a href="#">Thư viện</a></li>
+            <li><a href="#">Tài liệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="box-search">
+            <form action="" method="post">
+              <input type="text" placeholder="Search..." />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <div class="language">
+            <a class="viet-nam" href="#">
+              <img
+                src="header_footer/images/Flag_of_the_Viet_Nam.png"
+                alt="Flag_of_the_Viet_Nam"
+              />
+            </a>
+            <a class="english" href="#">
+              <img
+                src="header_footer/images/Flag_of_the_United_Kingdom.png"
+                alt="Flag_of_the_United_Kingdom"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header id="header">
+      <div class="container main-header">
+        <div class="brand-logo">
+          <a href="#">
+            <img src="header_footer/images/logo.png" alt="Darwin School Logo" />
+          </a>
+        </div>
+        <div class="menu-bar">
+          <li><a class="active" href="#">TRANG CHỦ</a></li>
+          <li>
+            <a href="#">TIỂU HỌC</a>
+            <ul class="sub-menu">
+              <li><a href="#">Giới thiệu chung</a></li>
+              <li><a href="#">Đội ngũ giáo viên</a></li>
+              <li><a href="#">Thông tin khác</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">TRUNG HỌC</a>
+            <ul class="sub-menu">
+              <li><a href="#">Giới thiệu chung</a></li>
+              <li><a href="#">Đội ngũ giáo viên</a></li>
+              <li><a href="#">Thông tin khác</a></li>
+            </ul>
+          </li>
+          <li><a href="#">BẢNG VÀNG THÀNH TÍCH</a></li>
+          <button class="register">
+            <a href="#"
+              ><i class="fa fa-pencil" aria-hidden="true"></i> Đăng ký tuyển
+              sinh</a
+            >
+          </button>
+          <div id="icon-click">
+            <a
+              href="javascript:void(0);"
+              style="font-size: 28px; color: #24c1ff;"
+              >&#9776;</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- mobide menu mode -->
+    <div id="mobile-sidebar-view">
+      <div class="mobile-sidebar">
+        <div class="close-sidebar">
+          ×
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img src="header_footer/images/logo.png" alt="Darwin School Logo" />
+          </a>
+        </div>
+        <div class="enrollment">
+          <button class="register">
+            <a href="#"
+              ><i class="fa fa-pencil" aria-hidden="true"></i> Đăng ký tuyển
+              sinh</a
+            >
+          </button>
+        </div>
+        <div class="">
+          <ul id="accordion" class="accordion">
+            <li>
+              <div class="link">
+                <a href="javascript:void(0)">TIỂU HỌC</a
+                ><i class="fa fa-chevron-down"></i>
+              </div>
+              <ul class="submenu">
+                <li>
+                  <a href="javascript:void(0)"
+                    ><i class="fa fa-chevron-right"></i>Giới thiệu chung</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><i class="fa fa-chevron-right"></i>Đội ngũ giáo viên</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><i class="fa fa-chevron-right"></i>Thông tin khác</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="link">
+                <a href="javascript:void(0)">TRUNG HỌC</a
+                ><i class="fa fa-chevron-down"></i>
+              </div>
+              <ul class="submenu">
+                <li>
+                  <a href="javascript:void(0)"
+                    ><i class="fa fa-chevron-right"></i>Giới thiệu chung</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><i class="fa fa-chevron-right"></i>Đội ngũ giáo viên</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><i class="fa fa-chevron-right"></i>Thông tin khác</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="link">
+                <a href="javascript:void(0)">BẢNG VÀNG THÀNH TÍCH</a>
+              </div>
+            </li>
+            <li>
+              <div class="link">
+                <a href="javascript:void(0)">Giới thiệu</a>
+              </div>
+            </li>
+            <li>
+              <div class="link">
+                <a href="javascript:void(0)">Tin tức</a>
+              </div>
+            </li>
+            <li>
+              <div class="link">
+                <a href="javascript:void(0)">Thông báo - lịch học</a>
+              </div>
+            </li>
+            <li>
+              <div class="link">
+                <a href="javascript:void(0)">Thư viện</a>
+              </div>
+            </li>
+            <li>
+              <div class="link">
+                <a href="javascript:void(0)">Tài liệu</a>
+              </div>
+            </li>
+            <li>
+              <div class="link">
+                <a href="javascript:void(0)">Liên hệ</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="shadow-bg"></div>
+    </div>
+    <!-- popup enrollment -->
+    <div id="popup-enroll">
+      <div class="content-enroll">
+        <div class="close-popup">
+          ×
+        </div>
+        <div class="box-form">
+          <h4 class="title-form">ĐĂNG KÝ TUYỂN SINH</h4>
+          <form action="" method="post">
+            <input
+              type="text"
+              placeholder="Họ và tên..."
+              name="uname"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Số điện thoại..."
+              name="phone"
+              required
+            />
+            <input type="email" placeholder="Email..." name="email" required />
+            <textarea
+              class="textNote"
+              type="text"
+              placeholder="Ghi chú..."
+              name="note"
+              rows="2"
+            ></textarea>
+            <button type="submit">
+              Gửi thông tin
+              <i style="margin-left: 6px;" class="fa fa-paper-plane-o"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="shadow-bg"></div>
+    </div>
+    <main>
+      <div class="banner">
+        <div class="banner-item">
+          <img src="body/images/banner.png" alt="" />
+          <span class="outer">
+            DARWIN <br />
+            <span class="inner">SCHOOL</span>
+          </span>
+        </div>
+        <div class="banner-item">
+          <img src="body/images/banner.png" alt="" />
+          <span class="outer">
+            DARWIN <br />
+            <span class="inner">SCHOOL</span>
+          </span>
+        </div>
+        <div class="banner-item">
+          <img src="body/images/banner.png" alt="" />
+          <span class="outer">
+            DARWIN <br />
+            <span class="inner">SCHOOL</span>
+          </span>
+        </div>
+      </div>
+      <section id="section1">
+        <div class="container">
+          <div class="row bg-teacher">
+            <div class="col-md-6 col-12 left">
+              <h2 class="part-title">GIỚI THIỆU</h2>
+              <hr />
+              <h3>Trường tiểu học và trung học cơ sở Darwin</h3>
+              <p class="short-text">
+                Lorem ipsum gravida nibh vel velit auctor aliquetn
+                sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh
+                id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+                . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                mauris…
+              </p>
+              <button class="view-more">
+                <a href="#">
+                  Tìm hiểu thêm
+                  <i class="fa fa-arrow-circle-o-right"></i>
+                </a>
+              </button>
+            </div>
+            <div class="col-md-6 col-12 right">
+              <a href="#"
+                ><img src="body/images/introSchool.png" alt="introSchool"
+              /></a>
+            </div>
+          </div>
+
+          <div class="row teacher">
+            <div class="col-md-4 col-12">
+              <div class="box-teach">
+                <div class="img">
+                  <a href="#"><img src="body/images/student.png" alt="" /></a>
+                </div>
+                <div class="info-teach">
+                  <h4 class="teacher-name">Clare Ledwidge</h4>
+                  <p class="teacher-profile">
+                    Giáo viên Ngữ Văn và Kịch nghệ tại trường Tiểu học và THCS
+                    Darwin
+                  </p>
+                  <button class="view-more">
+                    <a href="#">
+                      Xem thêm
+                      <i class="fa fa-arrow-circle-o-right"></i>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="box-teach">
+                <div class="img">
+                  <a href="#"><img src="body/images/student.png" alt="" /></a>
+                </div>
+                <div class="info-teach">
+                  <h4 class="teacher-name">Clare Ledwidge</h4>
+                  <p class="teacher-profile">
+                    Giáo viên Ngữ Văn và Kịch nghệ tại trường Tiểu học và THCS
+                    Darwin
+                  </p>
+                  <button class="view-more">
+                    <a href="#">
+                      Xem thêm
+                      <i class="fa fa-arrow-circle-o-right"></i>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="box-teach">
+                <div class="img">
+                  <a href="#"><img src="body/images/student.png" alt="" /></a>
+                </div>
+                <div class="info-teach">
+                  <h4 class="teacher-name">Clare Ledwidge</h4>
+                  <p class="teacher-profile">
+                    Giáo viên Ngữ Văn và Kịch nghệ tại trường Tiểu học và THCS
+                    Darwin
+                  </p>
+                  <button class="view-more">
+                    <a href="#">
+                      Xem thêm
+                      <i class="fa fa-arrow-circle-o-right"></i>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- popup teacher-detail -->
+          <div id="popup-teacher">
+            <div class="content-teacher">
+              <div class="close-popup">
+                ×
+              </div>
+              <div class="box-teacher">
+                <div class="info-teacher">
+                  <div class="img-teacher">
+                    <img src="body/images/school/teacher.png" alt="teacher1" />
+                  </div>
+                  <div class="exp-teacher">
+                    <h4 class="name">Clare Ledwidge</h4>
+                    <p class="subject">
+                      Giáo viên Ngữ Văn và Kịch nghệ tại trường Tiểu học và THCS
+                      Darwin
+                    </p>
+                    <ul class="certificate">
+                      <li>
+                        Cử nhân Giáo dục tiểu học – Trường Đại học Sư phạm
+                        TP.HCM
+                      </li>
+                      <li>Chứng chỉ Ứng dụng Công nghệ thông tin cơ bản</li>
+                      <li>Chứng chỉ Tiếng Anh trình độ B1</li>
+                      <li>1 năm kinh nghiệm giảng dạy tại AES</li>
+                    </ul>
+                    <div class="youtube-link">
+                      <p class="subject">Link youtube:</p>
+                      <a href="#"
+                        >https://www.youtube.com/watch?v=bwi5rBp7Ifc&feature=youtu.be</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="solution-teacher">
+                  <h5>Phương pháp giảng dạy</h5>
+                  <p class="text">
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a Latin professor at Hampden-Sydney College in
+                    Virginia, looked up one of the more obscure Latin words,
+                    consectetur, from a Lorem Ipsum passage, and going through
+                    the cites of the word in classical literature, discovered
+                    the undoubtable source. Lorem Ipsum comes from sections
+                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The
+                    Extremes of Good and Evil) by Cicero, written in 45 BC. This
+                    book is a treatise on the theory of ethics, very popular
+                    during the Renaissance. The first line of Lorem Ipsum,
+                    "Lorem ipsum dolor sit amet..", comes from a line in section
+                    1.10.32.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-bg"></div>
+          </div>
+        </div>
+      </section>
+      <section id="section2">
+        <div class="container">
+          <h2 class="part-title">BẢNG VÀNG THÀNH TÍCH</h2>
+          <hr />
+          <h3>Danh sách gương mặt tiêu biểu</h3>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="hot-face-img">
+                <a href="#">
+                  <img src="body/images/excellent.png" alt="" />
+                </a>
+                <div class="shadow-zoom">
+                  <a href="#">
+                    <i class="fa fa-search-plus"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="hot-face-profile">
+                <h4 class="name">Nguyễn Bùi Gia Hưng</h4>
+                <p>Lớp: 8V1 <br />Năm sinh: 3/29/2006</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="hot-face-img">
+                <a href="#">
+                  <img src="body/images/excellent.png" alt="" />
+                </a>
+                <div class="shadow-zoom">
+                  <a href="#">
+                    <i class="fa fa-search-plus"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="hot-face-profile">
+                <h4 class="name">Nguyễn Bùi Gia Hưng</h4>
+                <p>Lớp: 8V1</p>
+                <p>Năm sinh: 3/29/2006</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="hot-face-img">
+                <a href="#">
+                  <img src="body/images/excellent.png" alt="" />
+                </a>
+                <div class="shadow-zoom">
+                  <a href="#">
+                    <i class="fa fa-search-plus"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="hot-face-profile">
+                <h4 class="name">Nguyễn Bùi Gia Hưng</h4>
+                <p>Lớp: 8V1</p>
+                <p>Năm sinh: 3/29/2006</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="hot-face-img">
+                <a href="#">
+                  <img src="body/images/excellent.png" alt="" />
+                </a>
+                <div class="shadow-zoom">
+                  <a href="#">
+                    <i class="fa fa-search-plus"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="hot-face-profile">
+                <h4 class="name">Nguyễn Bùi Gia Hưng</h4>
+                <p>Lớp: 8V1</p>
+                <p>Năm sinh: 3/29/2006</p>
+              </div>
+            </div>
+            <div class="view-all">
+              <button class="view-more">
+                <a href="#">
+                  Xem tất cả
+                  <i class="fa fa-arrow-circle-o-right"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <!-- popup student-detail -->
+          <div id="popup-student">
+            <div class="content-student">
+              <div class="close-popup">
+                ×
+              </div>
+              <div class="card-student">
+                <div class="info-student">
+                  <div class="img-student">
+                    <img src="body/images/student_detail.png" alt="student1" />
+                  </div>
+                  <div class="exp-student">
+                    <h4 class="name">Nguyễn Bùi Gia Hưng</h4>
+                    <p class="subject">
+                      Học sinh tại trường Tiểu học và THCS Darwin
+                    </p>
+                    <ul class="certificate">
+                      <li>
+                        Lớp : 2V1
+                      </li>
+                      <li>Năm sinh : 7/3/2012</li>
+                    </ul>
+                    <div class="youtube-link">
+                      <p class="subject">Link youtube:</p>
+                      <a href="#"
+                        >https://www.youtube.com/watch?v=bwi5rBp7Ifc&feature=youtu.be</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="solution-student">
+                  <h5>Kết quả học tập</h5>
+                  <ul class="certificate">
+                    <li>Họ tên : DƯƠNG NGỌC MAI</li>
+                    <li>Lớp : 2V1</li>
+                    <li>Năm sinh : 7/3/2012</li>
+                    <li>Giải thưởng : Giải nhì cấp Quận môn Tiếng Anh</li>
+                    <li>Học bổng : 50%</li>
+                    <li>Giá trị học bổng : 37.500.000 VNĐ</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-bg"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section3">
+        <div class="container">
+          <h2 class="part-title">TIN TỨC</h2>
+          <hr />
+          <div class="highlight-blog">
+            <div class="trend-blog">Blog - tin tức nổi bật</div>
+            <div class="right-view">
+              <a class="view-more" href="#">
+                Xem tất cả
+                <i class="fa fa-arrow-circle-o-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-12 left">
+              <div class="box-blog-item">
+                <div class="box-img">
+                  <a href="#"><img src="body/images/blog.png" alt="" /></a>
+                </div>
+                <div class="blog-info">
+                  <h4 class="title">
+                    <a href="#">
+                      Họa sĩ Green - Thông điệp bảo vệ môi trường qua nét vẽ
+                      sáng tạo của Darwing
+                    </a>
+                  </h4>
+                  <p class="date-view">
+                    <i class="fa fa-calendar"></i> 21-03-2020
+                  </p>
+                  <p class="short-des">
+                    Những ngày nghỉ học vì Covid-19 bạn làm gì? Ôn bài, giúp đỡ
+                    bố mẹ, giữ gìn sức khỏe bản thân…
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 right">
+              <div class="box-row">
+                <div class="row">
+                  <div class="col-md-4 col-12">
+                    <a href="#">
+                      <img src="body/images/blog1.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="col-md-8 col-12">
+                    <div class="box-des">
+                      <h4 class="title">
+                        <a href="#">
+                          Báo Đất Việt: Trường ngoài công lập có cần được 'giải
+                          cứu' vì dịch Covid-19?
+                        </a>
+                      </h4>
+                      <p class="date-view">
+                        <i class="fa fa-calendar"></i> 21-03-2020
+                      </p>
+                      <p class="short-des">
+                        Trong bối cảnh các trường ngoài công lập cùng một số
+                        doanh nghiệp đầu tư…
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-row">
+                <div class="row">
+                  <div class="col-md-4 col-12">
+                    <a href="#">
+                      <img src="body/images/blog1.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="col-md-8 col-12">
+                    <div class="box-des">
+                      <h4 class="title">
+                        <a href="#">
+                          Báo Đất Việt: Trường ngoài công lập có cần được 'giải
+                          cứu' vì dịch Covid-19?
+                        </a>
+                      </h4>
+                      <p class="date-view">
+                        <i class="fa fa-calendar"></i> 21-03-2020
+                      </p>
+                      <p class="short-des">
+                        Trong bối cảnh các trường ngoài công lập cùng một số
+                        doanh nghiệp đầu tư…
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-row">
+                <div class="row">
+                  <div class="col-md-4 col-12">
+                    <a href="#">
+                      <img src="body/images/blog1.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="col-md-8 col-12">
+                    <div class="box-des">
+                      <h4 class="title">
+                        <a href="#">
+                          Báo Đất Việt: Trường ngoài công lập có cần được 'giải
+                          cứu' vì dịch Covid-19?
+                        </a>
+                      </h4>
+                      <p class="date-view">
+                        <i class="fa fa-calendar"></i> 21-03-2020
+                      </p>
+                      <p class="short-des">
+                        Trong bối cảnh các trường ngoài công lập cùng một số
+                        doanh nghiệp đầu tư…
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view-all">
+            <button class="view-more">
+              <a href="#">
+                Xem tất cả
+                <i class="fa fa-arrow-circle-o-right"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="section4">
+        <div class="container library">
+          <h2 class="part-title">THƯ VIỆN</h2>
+          <hr />
+          <h3>Video - hình ảnh về trường</h3>
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <div class="box-video">
+                <a href="#"><img src="body/images/video.png" alt="" /></a>
+                <div class="shadow-video">
+                  <a href="#"><i class="fa fa-play-circle-o"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="box-video">
+                <a href="#"><img src="body/images/video.png" alt="" /></a>
+                <div class="shadow-video">
+                  <a href="#"><i class="fa fa-play-circle-o"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="box-video">
+                <a href="#"><img src="body/images/video.png" alt="" /></a>
+                <div class="shadow-video">
+                  <a href="#"><i class="fa fa-play-circle-o"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view-all">
+            <button class="view-more">
+              <a href="#">
+                Xem tất cả
+                <i class="fa fa-arrow-circle-o-right"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+
+        <div class="container partner">
+          <h2 class="part-title">Đối tác & Khách hàng</h2>
+          <hr />
+          <div class="all-partner">
+            <div class="partner-item">
+              <a href="#"><img src="body/images/partner.png" alt="" /></a>
+            </div>
+            <div class="partner-item">
+              <a href="#"><img src="body/images/partner2.png" alt="" /></a>
+            </div>
+            <div class="partner-item">
+              <a href="#"><img src="body/images/partner3.png" alt="" /></a>
+            </div>
+            <div class="partner-item">
+              <a href="#"><img src="body/images/partner4.png" alt="" /></a>
+            </div>
+            <div class="partner-item">
+              <a href="#"><img src="body/images/partner5.png" alt="" /></a>
+            </div>
+            <div class="partner-item">
+              <a href="#"><img src="body/images/partner3.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <img src="header_footer/images/logo_footer.png" alt="logo_footer" />
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-12 address">
+            <ul>
+              <li>
+                <i class="fa fa-map-marker"></i>Địa chỉ: Lô A2.4 - TH01 - KĐT
+                Thanh Hà - Thanh Oai - Hà Nội
+              </li>
+              <li><i class="fa fa-mobile"></i>024 6653 6253 - 0889 662 899</li>
+              <li>
+                <i class="fa fa-envelope-o"></i>Email: darwingschool@gmail.com
+              </li>
+              <li>
+                <i class="fa fa-globe"></i>Website: http://darwinschool.edu.vn/
+              </li>
+            </ul>
+            <div class="box-info">
+              <h4>Đăng ký thông tin:</h4>
+              <form action="" method="post">
+                <input type="text" placeholder="Nhập email…" />
+                <button type="submit">
+                  <i class="fa fa-paper-plane-o"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-2 col-12">
+            <h4>Về chúng tôi:</h4>
+            <ul class="about-us">
+              <li>
+                <a href="#">Giới thiệu chung</a>
+              </li>
+              <li>
+                <a href="#">Sứ mệnh - Tầm nhìn</a>
+              </li>
+              <li>
+                <a href="#">
+                  Cơ sở vật chất
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Sơ đồ ban lãnh đạo
+                </a>
+              </li>
+              <li><a href="#">Các chương trình</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 col-12">
+            <h4>Trung học:</h4>
+            <ul class="top">
+              <li><a href="#">Giới thiệu chung</a></li>
+              <li><a href="#">Thông tin khác</a></li>
+              <li><a href="#">Đội ngũ giáo viên</a></li>
+            </ul>
+
+            <h4>Tiểu học:</h4>
+            <ul class="below">
+              <li><a href="#">Giới thiệu chung</a></li>
+              <li><a href="#">Thông tin khác</a></li>
+              <li><a href="#">Đội ngũ giáo viên</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-12">
+            <div class="iframe-fb">
+              <img src="header_footer/images/fb.png" alt="" />
+            </div>
+            <div class="social">
+              Kênh thông tin:
+              <span>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i> </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="below-footer">
+      <div class="container">
+        © Copyright 2020 by Darwing School.<br />
+        All Rights Reserved
+      </div>
+    </div>
+    <div id="messenger">
+      <img src="header_footer/images/messenger.png" alt="messenger" />
+    </div>
+    <div id="back-to-top" onclick="topFunction()">
+      <img src="header_footer/images/back_top.png" alt="back_to_top" />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="header_footer/js/main_header.js"></script>
+    <script src="body/js/slick.min.js"></script>
+    <script src="body/js/main_body.js"></script>
+  </body>
+</html>
